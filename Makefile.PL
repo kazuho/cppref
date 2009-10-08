@@ -11,6 +11,7 @@ configure_requires 'File::Slurp';
 requires 'File::ShareDir';
 
 install_script 'cppref';
+mkdir 'doc';
 install_share 'doc';
 
 auto_include;
