@@ -2,6 +2,8 @@
 
 use strict;
 use warnings;
+use File::Basename;
+use File::Find ();
 use File::ShareDir ();
 
 my $doc_dir = "doc";
@@ -16,8 +18,36 @@ $name .= '/start'
     if -d "$doc_dir/$name";
 
 # try by name
-if (-e "$doc_dir/$name.html") {
-    exec 'w3m', "$doc_dir/$name.html";
+open_file("$doc_dir/$name.html")
+    if -e "$doc_dir/$name.html";
+
+my @cand;
+my %cand_dir;
+File::Find::find(
+    {
+        wanted => sub {
+            my $fn = $_;
+            return if $cand_dir{dirname($fn)};
+            return unless $fn =~ m{/$name(?:\.|$)}i;
+            push @cand, -d $fn ? "$fn/start.html" : $fn;
+        },
+        no_chdir => 1,
+    },
+    $doc_dir,
+);
+if (@cand == 0) {
+    print STDERR "no document found for: $name\n";
+    exit 1;
+} elsif (@cand == 1) {
+    open_file($cand[0]);
+} else {
+    print STDERR "multiple choices:\n";
+    print map { s{(/start|)\.html$}{}; "  $_\n" } @cand;
+    exit 2;
 }
 
-print "OUHOU: $doc_dir/$name.html\n";
+sub open_file {
+    my $fn = shift;
+    exec 'w3m', $fn;
+    die "failed to exec w3m:$!";
+}
