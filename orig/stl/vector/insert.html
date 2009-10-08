@@ -36,7 +36,7 @@
 
     <div class="header">
       <div class="pagename">
-        [[<a href="stl/vector/stl/vector/insert.html"  title="Backlinks">insert</a>]]
+        [[<a href="../../stl/vector/insert.html"  title="Backlinks">insert</a>]]
       </div>
       <div class="logo">
         <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
@@ -47,11 +47,11 @@
     
     
         <div class="breadcrumbs">
-      <span class="bchead">You are here: </span><a href="stl/vector/start.html"  title="start">C++ Reference</a> &raquo; <a href="stl/vector/stl/start.html"  title="stl:start">C++ Standard Template Library</a> &raquo; <a href="stl/vector/stl/vector/start.html"  title="stl:vector:start">C++ Vectors</a> &raquo; <a href="stl/vector/stl/vector/insert.html"  title="stl:vector:insert">insert</a>    </div>
+      <span class="bchead">You are here: </span><a href="../../start.html"  title="start">C++ Reference</a> &raquo; <a href="../../stl/start.html"  title="stl:start">C++ Standard Template Library</a> &raquo; <a href="../../stl/vector/start.html"  title="stl:vector:start">C++ Vectors</a> &raquo; <a href="../../stl/vector/insert.html"  title="stl:vector:insert">insert</a>    </div>
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="stl/vector/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="stl/vector/stl/vector/insert.html" class="wikilink1" title="stl:vector:insert">en</a></span></div></li>  <li><div class="li"><a href="stl/vector/br-pt/stl/vector/insert.html" class="wikilink2" title="br-pt:stl:vector:insert" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="stl/vector/cn/stl/vector/insert.html" class="wikilink2" title="cn:stl:vector:insert" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="stl/vector/fr/stl/vector/insert.html" class="wikilink2" title="fr:stl:vector:insert" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="stl/vector/it/stl/vector/insert.html" class="wikilink1" title="it:stl:vector:insert">it</a></div></li>  <li><div class="li"><a href="stl/vector/pl/stl/vector/insert.html" class="wikilink2" title="pl:stl:vector:insert" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="stl/vector/ru/stl/vector/insert.html" class="wikilink1" title="ru:stl:vector:insert">ru</a></div></li>  <li><div class="li"><a href="stl/vector/tr/stl/vector/insert.html" class="wikilink2" title="tr:stl:vector:insert" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/vector/insert.html" class="wikilink1" title="stl:vector:insert">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/vector/insert.html" class="wikilink2" title="br-pt:stl:vector:insert" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/vector/insert.html" class="wikilink2" title="cn:stl:vector:insert" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/vector/insert.html" class="wikilink2" title="fr:stl:vector:insert" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/vector/insert.html" class="wikilink1" title="it:stl:vector:insert">it</a></div></li>  <li><div class="li"><a href="../../pl/stl/vector/insert.html" class="wikilink2" title="pl:stl:vector:insert" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/vector/insert.html" class="wikilink1" title="ru:stl:vector:insert">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/vector/insert.html" class="wikilink2" title="tr:stl:vector:insert" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -94,10 +94,10 @@ The insert method either:
 Note that inserting elements into a vector can be relatively time-intensive,
 since the underlying data structure for a vector is an array. In order to
 insert data into an array, you might need to displace a lot of the elements of
-that array, and this can take <a href="stl/vector/complexity.html" class="wikilink1" title="complexity">linear time</a>. If you are planning on doing a lot
+that array, and this can take <a href="../../complexity.html" class="wikilink1" title="complexity">linear time</a>. If you are planning on doing a lot
 of insertions into your vector and you care about speed, you might be better
 off using a container that has a linked list as its underlying data structure
-(such as a <a href="stl/vector/stl/list/start.html" class="wikilink1" title="stl:list:start">list</a> or a <a href="stl/vector/stl/deque/start.html" class="wikilink1" title="stl:deque:start">deque</a>).
+(such as a <a href="../../stl/list/start.html" class="wikilink1" title="stl:list:start">list</a> or a <a href="../../stl/deque/start.html" class="wikilink1" title="stl:deque:start">deque</a>).
 </p>
 
 <p>
@@ -159,7 +159,7 @@ When run, this code displays:
     Before, v2 is: 5 6 7 8
     After, v2 is: 5 6 7 8 0 1 2 3</pre>
 <p>
-Related Topics: <a href="stl/vector/stl/vector/assign.html" class="wikilink1" title="stl:vector:assign">assign</a>, <a href="stl/vector/stl/vector/erase.html" class="wikilink1" title="stl:vector:erase">erase</a>, <a href="stl/vector/stl/vector/push_back.html" class="wikilink1" title="stl:vector:push_back">push_back</a>, <span class="curid"><a href="stl/vector/stl/vector/insert.html" class="wikilink1" title="stl:vector:insert">insert</a></span>
+Related Topics: <a href="../../stl/vector/assign.html" class="wikilink1" title="stl:vector:assign">assign</a>, <a href="../../stl/vector/erase.html" class="wikilink1" title="stl:vector:erase">erase</a>, <a href="../../stl/vector/push_back.html" class="wikilink1" title="stl:vector:push_back">push_back</a>, <span class="curid"><a href="../../stl/vector/insert.html" class="wikilink1" title="stl:vector:insert">insert</a></span>
 </p>
 
 </div>
@@ -184,16 +184,16 @@ Related Topics: <a href="stl/vector/stl/vector/assign.html" class="wikilink1" ti
    
     <div class="bar" id="bar__bottom">
       <div class="bar-left" id="bar__bottomleft">
-        <a href="stl/vector/stl/vector/insert.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
-        <a href="stl/vector/stl/vector/insert.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+        <a href="../../stl/vector/insert.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="../../stl/vector/insert.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
       <div class="bar-right" id="bar__bottomright">
          &#149;
          &#149;
          &#149;
-        <a href="stl/vector/stl/vector/insert.html"  class="action login" rel="nofollow">Login</a> &#149;
-        <a href="stl/vector/stl/vector/insert.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
-        <a href="stl/vector/stl/vector/insert.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
-        <a  href="stl/vector/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href="../../stl/vector/insert.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="../../stl/vector/insert.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="../../stl/vector/insert.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="../../feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
         <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
         <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
       </div>
@@ -204,6 +204,6 @@ Related Topics: <a href="stl/vector/stl/vector/assign.html" class="wikilink1" ti
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Avector%3Ainsert&amp;1254990194" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Avector%3Ainsert&amp;1254994359" width="1" height="1" alt=""  /></div>
 </body>
 </html>

@@ -29,6 +29,7 @@ sub handle_link {
         push @queue, $dest
             unless $fetched{$dest};
     }
-    my $prefix = $base =~ m|/| ? dirname($base) : './';
+    my $prefix = $base =~ m|/| ? dirname($base) : '';
+    $prefix =~ s{[^/]+}{..}g;
     "$prefix/$dest.html";
 }

@@ -1,0 +1,24 @@
+#! /usr/bin/perl
+
+use strict;
+use warnings;
+use File::ShareDir ();
+
+my $doc_dir = "doc";
+eval {
+    $doc_dir = File::ShareDir::dist_dir('cppref') . "/doc";
+};
+
+my $name = shift @ARGV or do {
+    print "Usage: cppref (module|function)\n";
+    exit 0;
+};
+
+$name =~ s{::}{/}g;
+
+# try by name
+if (-e "$doc_dir/$name.html") {
+    exec 'w3m', "$doc_dir/$name.html";
+}
+
+print "OUHOU: $doc_dir/$name.html\n";

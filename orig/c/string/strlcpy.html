@@ -36,7 +36,7 @@
 
     <div class="header">
       <div class="pagename">
-        [[<a href="c/string/c/string/strlcpy.html"  title="Backlinks">strlcpy</a>]]
+        [[<a href="../../c/string/strlcpy.html"  title="Backlinks">strlcpy</a>]]
       </div>
       <div class="logo">
         <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
@@ -47,11 +47,11 @@
     
     
         <div class="breadcrumbs">
-      <span class="bchead">You are here: </span><a href="c/string/start.html"  title="start">C++ Reference</a> &raquo; <a href="c/string/c/start.html"  title="c:start">The Standard C Library</a> &raquo; <a href="c/string/c/string/start.html"  title="c:string:start">Standard C String and Character</a> &raquo; <a href="c/string/c/string/strlcpy.html"  title="c:string:strlcpy">strlcpy</a>    </div>
+      <span class="bchead">You are here: </span><a href="../../start.html"  title="start">C++ Reference</a> &raquo; <a href="../../c/start.html"  title="c:start">The Standard C Library</a> &raquo; <a href="../../c/string/start.html"  title="c:string:start">Standard C String and Character</a> &raquo; <a href="../../c/string/strlcpy.html"  title="c:string:strlcpy">strlcpy</a>    </div>
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="c/string/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="c/string/c/string/strlcpy.html" class="wikilink1" title="c:string:strlcpy">en</a></span></div></li>  <li><div class="li"><a href="c/string/br-pt/c/string/strlcpy.html" class="wikilink2" title="br-pt:c:string:strlcpy" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="c/string/cn/c/string/strlcpy.html" class="wikilink2" title="cn:c:string:strlcpy" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="c/string/fr/c/string/strlcpy.html" class="wikilink2" title="fr:c:string:strlcpy" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="c/string/it/c/string/strlcpy.html" class="wikilink2" title="it:c:string:strlcpy" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="c/string/pl/c/string/strlcpy.html" class="wikilink2" title="pl:c:string:strlcpy" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="c/string/ru/c/string/strlcpy.html" class="wikilink2" title="ru:c:string:strlcpy" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="c/string/tr/c/string/strlcpy.html" class="wikilink2" title="tr:c:string:strlcpy" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../c/string/strlcpy.html" class="wikilink1" title="c:string:strlcpy">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/c/string/strlcpy.html" class="wikilink2" title="br-pt:c:string:strlcpy" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/c/string/strlcpy.html" class="wikilink2" title="cn:c:string:strlcpy" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/c/string/strlcpy.html" class="wikilink2" title="fr:c:string:strlcpy" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/c/string/strlcpy.html" class="wikilink2" title="it:c:string:strlcpy" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../pl/c/string/strlcpy.html" class="wikilink2" title="pl:c:string:strlcpy" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/c/string/strlcpy.html" class="wikilink2" title="ru:c:string:strlcpy" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/c/string/strlcpy.html" class="wikilink2" title="tr:c:string:strlcpy" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -95,7 +95,7 @@ Syntax:
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;string.h&gt;  // On BSD or compatible systems</span>
     size_t strlcpy<span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy0">*</span>dst<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>src<span class="sy0">,</span> size_t siz<span class="br0">&#41;</span>;</pre>
 <p>
-An attempt of the BSD people to “fix” <a href="c/string/c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a>.  There is a reason this function is not in any <acronym title="International Organization for Standardization">ISO</acronym> standard.  See explanation after the description.
+An attempt of the BSD people to “fix” <a href="../../c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a>.  There is a reason this function is not in any <acronym title="International Organization for Standardization">ISO</acronym> standard.  See explanation after the description.
 </p>
 
 <p>
@@ -134,34 +134,34 @@ Perceived advantages of strlcpy are:
 </p>
 
 <p>
-The good and warm feeling of security that <code>strlcpy</code> may give its user is actually nothing more, than hiding an error.  And hiding an error is never a good idea. <a href="c/string/c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a> has a very blunt and effective way of reporting if the copy operation failed: it does not <code>NUL</code> terminate its target string.  This means, that 2 hours after the <a href="c/string/c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a> call that went unchecked (without error handling), it is still clearly visible (in memory) what has happened.  Our buffer has no terminating zero character.  However 2 hours after <code>strlcpy(buf,”assume”,3);</code> nothing whatsoever will show that the copy has failed, and the call went unchecked.  In the lucky case, it will just result in overwriting some files or some mysteriously failed operations.  In the very lucky case it will result in immediate damage. For example the overwritten files are important, and so the unchecked return value results in a crash or other system failure later on.  Why is this luckier?  Because we know there is a bug, even though <code>strlcpy</code> has tried its best to hide it.
+The good and warm feeling of security that <code>strlcpy</code> may give its user is actually nothing more, than hiding an error.  And hiding an error is never a good idea. <a href="../../c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a> has a very blunt and effective way of reporting if the copy operation failed: it does not <code>NUL</code> terminate its target string.  This means, that 2 hours after the <a href="../../c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a> call that went unchecked (without error handling), it is still clearly visible (in memory) what has happened.  Our buffer has no terminating zero character.  However 2 hours after <code>strlcpy(buf,”assume”,3);</code> nothing whatsoever will show that the copy has failed, and the call went unchecked.  In the lucky case, it will just result in overwriting some files or some mysteriously failed operations.  In the very lucky case it will result in immediate damage. For example the overwritten files are important, and so the unchecked return value results in a crash or other system failure later on.  Why is this luckier?  Because we know there is a bug, even though <code>strlcpy</code> has tried its best to hide it.
 </p>
 
 <p>
-Not much different from <a href="c/string/c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a> you might say.  You do not check the return value, you get problems.  Except that with <a href="c/string/c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a> a look at the dump will tell you exactly what the problem is. No <code>NUL</code> termination. With <code>strlcpy</code> all you see is a C-string, with no indication that it has been truncated.
+Not much different from <a href="../../c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a> you might say.  You do not check the return value, you get problems.  Except that with <a href="../../c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a> a look at the dump will tell you exactly what the problem is. No <code>NUL</code> termination. With <code>strlcpy</code> all you see is a C-string, with no indication that it has been truncated.
 </p>
 
 <p>
-<em>The second “advantage”</em> seems to be more straightforward.  If I copy 5 bytes into a 42K buffer, <a href="c/string/c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a> will write nearly 42K for no reason whatsoever, because we are only possibly interested in the <code>NUL</code> after the 5 characters and the <code>NUL</code> at the end of the buffer.  That may be a perforance hit you do not want to pay.  If you meet such a rare situation while coding ask yourself: what is the maximum size for what I am copying?  Is this the only thing that may go into that large buffer?  It may well turn out that instead of 42*1024, you actually need 255 bytes max. for that filename you are copying.  Depending on your situation, zeroing out a few bytes more might as well worth the trouble: you can use an <acronym title="International Organization for Standardization">ISO</acronym> <em>standard</em> function.
+<em>The second “advantage”</em> seems to be more straightforward.  If I copy 5 bytes into a 42K buffer, <a href="../../c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a> will write nearly 42K for no reason whatsoever, because we are only possibly interested in the <code>NUL</code> after the 5 characters and the <code>NUL</code> at the end of the buffer.  That may be a perforance hit you do not want to pay.  If you meet such a rare situation while coding ask yourself: what is the maximum size for what I am copying?  Is this the only thing that may go into that large buffer?  It may well turn out that instead of 42*1024, you actually need 255 bytes max. for that filename you are copying.  Depending on your situation, zeroing out a few bytes more might as well worth the trouble: you can use an <acronym title="International Organization for Standardization">ISO</acronym> <em>standard</em> function.
 </p>
 
 <p>
-So while there are corner cases when <code>strlcpy</code> may actually be a lot faster than <a href="c/string/c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a>, it is also true the other way around.  The designers of <code>strlcpy</code> have made the unfortunate decision of ignoring the golden rule of: do one thing (and do that well).  <code>strlcpy</code> does not report only whether or not the copy was successful.  Nope.  It reports also the <em>size</em> of the input.  Who asked for that?  This means, that if our hypothetical situation above is reversed, <code>strlcpy</code> will read 42K characters to find the length of the input, while it had only 5 bytes it could write.  The caller may not even be interested in the length of the input.  The caller just wants to give an error message saying “The filename is too long”.  A malicious entity figures this out and may just start sending large strings and slow down a server tenfold.
+So while there are corner cases when <code>strlcpy</code> may actually be a lot faster than <a href="../../c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a>, it is also true the other way around.  The designers of <code>strlcpy</code> have made the unfortunate decision of ignoring the golden rule of: do one thing (and do that well).  <code>strlcpy</code> does not report only whether or not the copy was successful.  Nope.  It reports also the <em>size</em> of the input.  Who asked for that?  This means, that if our hypothetical situation above is reversed, <code>strlcpy</code> will read 42K characters to find the length of the input, while it had only 5 bytes it could write.  The caller may not even be interested in the length of the input.  The caller just wants to give an error message saying “The filename is too long”.  A malicious entity figures this out and may just start sending large strings and slow down a server tenfold.
 </p>
 
 <p>
-So even the second, not-so-controversial “benefit” of <code>strlcpy</code> over <a href="c/string/c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a> is questionable at best, and bogus at worse.
+So even the second, not-so-controversial “benefit” of <code>strlcpy</code> over <a href="../../c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a> is questionable at best, and bogus at worse.
 </p>
 
 </div>
 <div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/string/strlcpy"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="595-4369" /><input type="hidden" name="rev" value="1233158272" /><input type="submit" value="Edit" class="button" title="Edit" /></div></form></div><div class="level2">
 
 <p>
-Related Topics: <a href="c/string/c/string/memcpy.html" class="wikilink1" title="c:string:memcpy">memcpy</a>, <a href="c/string/c/string/strchr.html" class="wikilink1" title="c:string:strchr">strchr</a>, <a href="c/string/c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a>, <a href="c/string/c/string/strncat.html" class="wikilink1" title="c:string:strncat">strncat</a>, <a href="c/string/c/string/strncmp.html" class="wikilink1" title="c:string:strncmp">strncmp</a>
+Related Topics: <a href="../../c/string/memcpy.html" class="wikilink1" title="c:string:memcpy">memcpy</a>, <a href="../../c/string/strchr.html" class="wikilink1" title="c:string:strchr">strchr</a>, <a href="../../c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a>, <a href="../../c/string/strncat.html" class="wikilink1" title="c:string:strncat">strncat</a>, <a href="../../c/string/strncmp.html" class="wikilink1" title="c:string:strncmp">strncmp</a>
 </p>
 
 <p>
-Another related (but non-standard) function is <a href="c/string/c/string/strlcat.html" class="wikilink1" title="c:string:strlcat">strlcat</a>.
+Another related (but non-standard) function is <a href="../../c/string/strlcat.html" class="wikilink1" title="c:string:strlcat">strlcat</a>.
 </p>
 
 </div>
@@ -186,16 +186,16 @@ Another related (but non-standard) function is <a href="c/string/c/string/strlca
    
     <div class="bar" id="bar__bottom">
       <div class="bar-left" id="bar__bottomleft">
-        <a href="c/string/c/string/strlcpy.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
-        <a href="c/string/c/string/strlcpy.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+        <a href="../../c/string/strlcpy.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="../../c/string/strlcpy.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
       <div class="bar-right" id="bar__bottomright">
          &#149;
          &#149;
          &#149;
-        <a href="c/string/c/string/strlcpy.html"  class="action login" rel="nofollow">Login</a> &#149;
-        <a href="c/string/c/string/strlcpy.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
-        <a href="c/string/c/string/strlcpy.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
-        <a  href="c/string/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href="../../c/string/strlcpy.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="../../c/string/strlcpy.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="../../c/string/strlcpy.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="../../feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
         <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
         <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
       </div>
@@ -206,6 +206,6 @@ Another related (but non-standard) function is <a href="c/string/c/string/strlca
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Astring%3Astrlcpy&amp;1254990286" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Astring%3Astrlcpy&amp;1254994443" width="1" height="1" alt=""  /></div>
 </body>
 </html>

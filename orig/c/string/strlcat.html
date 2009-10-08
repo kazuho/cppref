@@ -36,7 +36,7 @@
 
     <div class="header">
       <div class="pagename">
-        [[<a href="c/string/c/string/strlcat.html"  title="Backlinks">strlcat</a>]]
+        [[<a href="../../c/string/strlcat.html"  title="Backlinks">strlcat</a>]]
       </div>
       <div class="logo">
         <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
@@ -47,11 +47,11 @@
     
     
         <div class="breadcrumbs">
-      <span class="bchead">You are here: </span><a href="c/string/start.html"  title="start">C++ Reference</a> &raquo; <a href="c/string/c/start.html"  title="c:start">The Standard C Library</a> &raquo; <a href="c/string/c/string/start.html"  title="c:string:start">Standard C String and Character</a> &raquo; <a href="c/string/c/string/strlcat.html"  title="c:string:strlcat">strlcat</a>    </div>
+      <span class="bchead">You are here: </span><a href="../../start.html"  title="start">C++ Reference</a> &raquo; <a href="../../c/start.html"  title="c:start">The Standard C Library</a> &raquo; <a href="../../c/string/start.html"  title="c:string:start">Standard C String and Character</a> &raquo; <a href="../../c/string/strlcat.html"  title="c:string:strlcat">strlcat</a>    </div>
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="c/string/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="c/string/c/string/strlcat.html" class="wikilink1" title="c:string:strlcat">en</a></span></div></li>  <li><div class="li"><a href="c/string/br-pt/c/string/strlcat.html" class="wikilink2" title="br-pt:c:string:strlcat" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="c/string/cn/c/string/strlcat.html" class="wikilink2" title="cn:c:string:strlcat" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="c/string/fr/c/string/strlcat.html" class="wikilink2" title="fr:c:string:strlcat" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="c/string/it/c/string/strlcat.html" class="wikilink2" title="it:c:string:strlcat" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="c/string/pl/c/string/strlcat.html" class="wikilink2" title="pl:c:string:strlcat" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="c/string/ru/c/string/strlcat.html" class="wikilink2" title="ru:c:string:strlcat" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="c/string/tr/c/string/strlcat.html" class="wikilink2" title="tr:c:string:strlcat" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../c/string/strlcat.html" class="wikilink1" title="c:string:strlcat">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/c/string/strlcat.html" class="wikilink2" title="br-pt:c:string:strlcat" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/c/string/strlcat.html" class="wikilink2" title="cn:c:string:strlcat" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/c/string/strlcat.html" class="wikilink2" title="fr:c:string:strlcat" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/c/string/strlcat.html" class="wikilink2" title="it:c:string:strlcat" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../pl/c/string/strlcat.html" class="wikilink2" title="pl:c:string:strlcat" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/c/string/strlcat.html" class="wikilink2" title="ru:c:string:strlcat" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/c/string/strlcat.html" class="wikilink2" title="tr:c:string:strlcat" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -79,7 +79,7 @@ Syntax:
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;string.h&gt;  // On BSD or compatible systems</span>
     size_t strlcat<span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy0">*</span>dst<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>src<span class="sy0">,</span> size_t siz<span class="br0">&#41;</span>;</pre>
 <p>
-An attempt of the BSD people to “fix” <a href="c/string/c/string/strncat.html" class="wikilink1" title="c:string:strncat">strncat</a>.  There is a reason this function is not in any <acronym title="International Organization for Standardization">ISO</acronym> standard.  It is not a clear improvement over <a href="c/string/c/string/strncat.html" class="wikilink1" title="c:string:strncat">strncat</a>, but rather an “overload” with different tradeoffs.
+An attempt of the BSD people to “fix” <a href="../../c/string/strncat.html" class="wikilink1" title="c:string:strncat">strncat</a>.  There is a reason this function is not in any <acronym title="International Organization for Standardization">ISO</acronym> standard.  It is not a clear improvement over <a href="../../c/string/strncat.html" class="wikilink1" title="c:string:strncat">strncat</a>, but rather an “overload” with different tradeoffs.
 </p>
 
 <p>
@@ -98,11 +98,11 @@ Appends <code>src</code> to string <code>dst</code> of size <code>siz</code> (un
 <div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/string/strlcat"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1-774" /><input type="hidden" name="rev" value="1233158758" /><input type="submit" value="Edit" class="button" title="strlcat" /></div></form></div><div class="level2">
 
 <p>
-Related Topics: <a href="c/string/c/string/memcpy.html" class="wikilink1" title="c:string:memcpy">memcpy</a>, <a href="c/string/c/string/strchr.html" class="wikilink1" title="c:string:strchr">strchr</a>, <a href="c/string/c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a>, <a href="c/string/c/string/strncat.html" class="wikilink1" title="c:string:strncat">strncat</a>, <a href="c/string/c/string/strncmp.html" class="wikilink1" title="c:string:strncmp">strncmp</a>
+Related Topics: <a href="../../c/string/memcpy.html" class="wikilink1" title="c:string:memcpy">memcpy</a>, <a href="../../c/string/strchr.html" class="wikilink1" title="c:string:strchr">strchr</a>, <a href="../../c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a>, <a href="../../c/string/strncat.html" class="wikilink1" title="c:string:strncat">strncat</a>, <a href="../../c/string/strncmp.html" class="wikilink1" title="c:string:strncmp">strncmp</a>
 </p>
 
 <p>
-Another related (but non-standard) function is <a href="c/string/c/string/strlcpy.html" class="wikilink1" title="c:string:strlcpy">strlcpy</a>.
+Another related (but non-standard) function is <a href="../../c/string/strlcpy.html" class="wikilink1" title="c:string:strlcpy">strlcpy</a>.
 </p>
 
 </div>
@@ -127,16 +127,16 @@ Another related (but non-standard) function is <a href="c/string/c/string/strlcp
    
     <div class="bar" id="bar__bottom">
       <div class="bar-left" id="bar__bottomleft">
-        <a href="c/string/c/string/strlcat.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
-        <a href="c/string/c/string/strlcat.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+        <a href="../../c/string/strlcat.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="../../c/string/strlcat.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
       <div class="bar-right" id="bar__bottomright">
          &#149;
          &#149;
          &#149;
-        <a href="c/string/c/string/strlcat.html"  class="action login" rel="nofollow">Login</a> &#149;
-        <a href="c/string/c/string/strlcat.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
-        <a href="c/string/c/string/strlcat.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
-        <a  href="c/string/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href="../../c/string/strlcat.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="../../c/string/strlcat.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="../../c/string/strlcat.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="../../feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
         <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
         <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
       </div>
@@ -147,6 +147,6 @@ Another related (but non-standard) function is <a href="c/string/c/string/strlcp
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Astring%3Astrlcat&amp;1254990287" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Astring%3Astrlcat&amp;1254994444" width="1" height="1" alt=""  /></div>
 </body>
 </html>

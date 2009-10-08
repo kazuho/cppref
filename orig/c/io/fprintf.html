@@ -36,7 +36,7 @@
 
     <div class="header">
       <div class="pagename">
-        [[<a href="c/io/c/io/fprintf.html"  title="Backlinks">fprintf</a>]]
+        [[<a href="../../c/io/fprintf.html"  title="Backlinks">fprintf</a>]]
       </div>
       <div class="logo">
         <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
@@ -47,11 +47,11 @@
     
     
         <div class="breadcrumbs">
-      <span class="bchead">You are here: </span><a href="c/io/start.html"  title="start">C++ Reference</a> &raquo; <a href="c/io/c/start.html"  title="c:start">The Standard C Library</a> &raquo; <a href="c/io/c/io/start.html"  title="c:io:start">Standard C I/O</a> &raquo; <a href="c/io/c/io/fprintf.html"  title="c:io:fprintf">fprintf</a>    </div>
+      <span class="bchead">You are here: </span><a href="../../start.html"  title="start">C++ Reference</a> &raquo; <a href="../../c/start.html"  title="c:start">The Standard C Library</a> &raquo; <a href="../../c/io/start.html"  title="c:io:start">Standard C I/O</a> &raquo; <a href="../../c/io/fprintf.html"  title="c:io:fprintf">fprintf</a>    </div>
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="c/io/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="c/io/c/io/fprintf.html" class="wikilink1" title="c:io:fprintf">en</a></span></div></li>  <li><div class="li"><a href="c/io/br-pt/c/io/fprintf.html" class="wikilink2" title="br-pt:c:io:fprintf" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="c/io/cn/c/io/fprintf.html" class="wikilink2" title="cn:c:io:fprintf" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="c/io/fr/c/io/fprintf.html" class="wikilink2" title="fr:c:io:fprintf" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="c/io/it/c/io/fprintf.html" class="wikilink2" title="it:c:io:fprintf" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="c/io/pl/c/io/fprintf.html" class="wikilink2" title="pl:c:io:fprintf" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="c/io/ru/c/io/fprintf.html" class="wikilink2" title="ru:c:io:fprintf" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="c/io/tr/c/io/fprintf.html" class="wikilink2" title="tr:c:io:fprintf" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../c/io/fprintf.html" class="wikilink1" title="c:io:fprintf">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/c/io/fprintf.html" class="wikilink2" title="br-pt:c:io:fprintf" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/c/io/fprintf.html" class="wikilink2" title="cn:c:io:fprintf" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/c/io/fprintf.html" class="wikilink2" title="fr:c:io:fprintf" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/c/io/fprintf.html" class="wikilink2" title="it:c:io:fprintf" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../pl/c/io/fprintf.html" class="wikilink2" title="pl:c:io:fprintf" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/c/io/fprintf.html" class="wikilink2" title="ru:c:io:fprintf" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/c/io/fprintf.html" class="wikilink2" title="tr:c:io:fprintf" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -78,7 +78,7 @@ Syntax:
 
 The fprintf() function sends information (the arguments) according to the
 specified format to the file indicated by stream. fprintf() works just like
-<a href="c/io/c/io/printf.html" class="wikilink1" title="c:io:printf">printf()</a> as far as the format goes. The return value of fprintf() is the number
+<a href="../../c/io/printf.html" class="wikilink1" title="c:io:printf">printf()</a> as far as the format goes. The return value of fprintf() is the number
 of characters outputted, or a negative number if an error occurs. An example:
 </p>
 <pre class="c code c++" style="font-family:monospace;">     <span class="kw4">char</span> name<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="st0">&quot;Mary&quot;</span>;
@@ -86,7 +86,7 @@ of characters outputted, or a negative number if an error occurs. An example:
      <span class="kw1">if</span><span class="br0">&#40;</span> out <span class="sy0">!=</span> <span class="kw2">NULL</span> <span class="br0">&#41;</span>
        fprintf<span class="br0">&#40;</span> out<span class="sy0">,</span> <span class="st0">&quot;Hello %s<span class="es0">\n</span>&quot;</span><span class="sy0">,</span> name <span class="br0">&#41;</span>;</pre>
 <p>
-Related Topics: <a href="c/io/c/io/fputc.html" class="wikilink1" title="c:io:fputc">fputc</a>, <a href="c/io/c/io/fputs.html" class="wikilink1" title="c:io:fputs">fputs</a>, <a href="c/io/c/io/fscanf.html" class="wikilink1" title="c:io:fscanf">fscanf</a>, <a href="c/io/c/io/printf.html" class="wikilink1" title="c:io:printf">printf</a>, <a href="c/io/c/io/sprintf.html" class="wikilink1" title="c:io:sprintf">sprintf</a>
+Related Topics: <a href="../../c/io/fputc.html" class="wikilink1" title="c:io:fputc">fputc</a>, <a href="../../c/io/fputs.html" class="wikilink1" title="c:io:fputs">fputs</a>, <a href="../../c/io/fscanf.html" class="wikilink1" title="c:io:fscanf">fscanf</a>, <a href="../../c/io/printf.html" class="wikilink1" title="c:io:printf">printf</a>, <a href="../../c/io/sprintf.html" class="wikilink1" title="c:io:sprintf">sprintf</a>
 </p>
 
 </div>
@@ -111,16 +111,16 @@ Related Topics: <a href="c/io/c/io/fputc.html" class="wikilink1" title="c:io:fpu
    
     <div class="bar" id="bar__bottom">
       <div class="bar-left" id="bar__bottomleft">
-        <a href="c/io/c/io/fprintf.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
-        <a href="c/io/c/io/fprintf.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+        <a href="../../c/io/fprintf.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="../../c/io/fprintf.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
       <div class="bar-right" id="bar__bottomright">
          &#149;
          &#149;
          &#149;
-        <a href="c/io/c/io/fprintf.html"  class="action login" rel="nofollow">Login</a> &#149;
-        <a href="c/io/c/io/fprintf.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
-        <a href="c/io/c/io/fprintf.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
-        <a  href="c/io/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href="../../c/io/fprintf.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="../../c/io/fprintf.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="../../c/io/fprintf.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="../../feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
         <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
         <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
       </div>
@@ -131,6 +131,6 @@ Related Topics: <a href="c/io/c/io/fputc.html" class="wikilink1" title="c:io:fpu
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Aio%3Afprintf&amp;1254990049" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Aio%3Afprintf&amp;1254994208" width="1" height="1" alt=""  /></div>
 </body>
 </html>
