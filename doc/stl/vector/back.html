@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    back    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-09-06T23:55:24-0700" />
+<meta name="keywords" content="stl,vector,back" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/stl/vector/back?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=stl:vector" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/stl/vector/back?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/stl/vector/back" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/stl/vector/back" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="stl/vector/stl/vector/back.html"  title="Backlinks">back</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="stl/vector/start.html"  title="start">C++ Reference</a> &raquo; <a href="stl/vector/stl/start.html"  title="stl:start">C++ Standard Template Library</a> &raquo; <a href="stl/vector/stl/vector/start.html"  title="stl:vector:start">C++ Vectors</a> &raquo; <a href="stl/vector/stl/vector/back.html"  title="stl:vector:back">back</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="stl/vector/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="stl/vector/stl/vector/back.html" class="wikilink1" title="stl:vector:back">en</a></span></div></li>  <li><div class="li"><a href="stl/vector/br-pt/stl/vector/back.html" class="wikilink2" title="br-pt:stl:vector:back" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="stl/vector/cn/stl/vector/back.html" class="wikilink2" title="cn:stl:vector:back" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="stl/vector/fr/stl/vector/back.html" class="wikilink1" title="fr:stl:vector:back">fr</a></div></li>  <li><div class="li"><a href="stl/vector/it/stl/vector/back.html" class="wikilink1" title="it:stl:vector:back">it</a></div></li>  <li><div class="li"><a href="stl/vector/pl/stl/vector/back.html" class="wikilink2" title="pl:stl:vector:back" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="stl/vector/ru/stl/vector/back.html" class="wikilink1" title="ru:stl:vector:back">ru</a></div></li>  <li><div class="li"><a href="stl/vector/tr/stl/vector/back.html" class="wikilink2" title="tr:stl:vector:back" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="back" id="back">back</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;vector&gt;</span>
+    TYPE<span class="sy0">&amp;</span> back<span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> back<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span>;</pre>
+<p>
+The back() function returns a reference to the last element in the vector.
+For example:
+</p>
+<pre class="c code c++" style="font-family:monospace;">   vector<span class="sy0">&lt;</span>int<span class="sy0">&gt;</span> v;
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> <span class="nu0">5</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     v.<span class="me1">push_back</span><span class="br0">&#40;</span>i<span class="br0">&#41;</span>;
+   <span class="br0">&#125;</span>
+   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;The first element is &quot;</span> <span class="sy0">&lt;&lt;</span> v.<span class="me1">front</span><span class="br0">&#40;</span><span class="br0">&#41;</span>
+        <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; and the last element is &quot;</span> <span class="sy0">&lt;&lt;</span> v.<span class="me1">back</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">&lt;&lt;</span> endl;</pre>
+<p>
+This code produces the following output:
+</p>
+<pre class="code">
+   The first element is 0 and the last element is 4</pre>
+<p>
+The back() function runs in <a href="stl/vector/complexity.html" class="wikilink1" title="complexity">constant time</a>.
+</p>
+
+<p>
+Related Topics: <a href="stl/vector/stl/vector/front.html" class="wikilink1" title="stl:vector:front">front</a>, <a href="stl/vector/stl/vector/pop_back.html" class="wikilink1" title="stl:vector:pop_back">pop_back</a>
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/vector/back"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1252306524" /><input type="submit" value="Edit" class="button" title="back" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        stl/vector/back.txt &middot; Last modified: 09/06/2009 23:55 by 121.242.18.22      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="stl/vector/stl/vector/back.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="stl/vector/stl/vector/back.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="stl/vector/stl/vector/back.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="stl/vector/stl/vector/back.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="stl/vector/stl/vector/back.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="stl/vector/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Avector%3Aback&amp;1254990190" width="1" height="1" alt=""  /></div>
+</body>
+</html>

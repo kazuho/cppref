@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    realloc    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-05-13T00:02:27-0700" />
+<meta name="keywords" content="c,mem,realloc" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/c/mem/realloc?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=c:mem" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/c/mem/realloc?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/c/mem/realloc" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/c/mem/realloc" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="c/mem/c/mem/realloc.html"  title="Backlinks">realloc</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="c/mem/start.html"  title="start">C++ Reference</a> &raquo; <a href="c/mem/c/start.html"  title="c:start">The Standard C Library</a> &raquo; <a href="c/mem/c/mem/start.html"  title="c:mem:start">Standard C Memory</a> &raquo; <a href="c/mem/c/mem/realloc.html"  title="c:mem:realloc">realloc</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="c/mem/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="c/mem/c/mem/realloc.html" class="wikilink1" title="c:mem:realloc">en</a></span></div></li>  <li><div class="li"><a href="c/mem/br-pt/c/mem/realloc.html" class="wikilink2" title="br-pt:c:mem:realloc" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="c/mem/cn/c/mem/realloc.html" class="wikilink2" title="cn:c:mem:realloc" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="c/mem/fr/c/mem/realloc.html" class="wikilink2" title="fr:c:mem:realloc" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="c/mem/it/c/mem/realloc.html" class="wikilink2" title="it:c:mem:realloc" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="c/mem/pl/c/mem/realloc.html" class="wikilink2" title="pl:c:mem:realloc" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="c/mem/ru/c/mem/realloc.html" class="wikilink2" title="ru:c:mem:realloc" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="c/mem/tr/c/mem/realloc.html" class="wikilink2" title="tr:c:mem:realloc" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="realloc" id="realloc">realloc</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cstdlib&gt;</span>
+    <span class="kw4">void</span> <span class="sy0">*</span>realloc<span class="br0">&#40;</span> <span class="kw4">void</span> <span class="sy0">*</span>ptr<span class="sy0">,</span> size_t size <span class="br0">&#41;</span>;</pre>
+<p>
+
+The realloc() function changes the size of the object pointed to by ptr to the
+given size. size can be any size, larger or smaller than the original. The
+return value is a pointer to the new space, or NULL if there is an error. On
+failure the original memory block is not freed or moved.
+If ptr is NULL, realloc() acts just like malloc, creating a new memory space
+and returning the pointer to that new location.
+</p>
+
+<p>
+Related Topics: <a href="c/mem/c/mem/calloc.html" class="wikilink1" title="c:mem:calloc">calloc</a>, <a href="c/mem/c/mem/free.html" class="wikilink1" title="c:mem:free">free</a>, <a href="c/mem/c/mem/malloc.html" class="wikilink1" title="c:mem:malloc">malloc</a>
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/mem/realloc"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1242198147" /><input type="submit" value="Edit" class="button" title="realloc" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        c/mem/realloc.txt &middot; Last modified: 05/13/2009 00:02 by 193.185.201.149      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="c/mem/c/mem/realloc.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="c/mem/c/mem/realloc.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="c/mem/c/mem/realloc.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="c/mem/c/mem/realloc.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="c/mem/c/mem/realloc.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="c/mem/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Amem%3Arealloc&amp;1254990105" width="1" height="1" alt=""  /></div>
+</body>
+</html>

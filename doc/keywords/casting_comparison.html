@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    A comparison of the C++ casting operators    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-06-25T10:15:55-0700" />
+<meta name="keywords" content="keywords,casting_comparison" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/keywords/casting_comparison?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=keywords" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/keywords/casting_comparison?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/keywords/casting_comparison" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/keywords/casting_comparison" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="keywords/keywords/casting_comparison.html"  title="Backlinks">A comparison of the C++ casting operators</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="keywords/start.html"  title="start">C++ Reference</a> &raquo; <a href="keywords/keywords/start.html"  title="keywords:start">C++ Keywords</a> &raquo; <a href="keywords/keywords/casting_comparison.html"  title="keywords:casting_comparison">A comparison of the C++ casting operators</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="keywords/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="keywords/keywords/casting_comparison.html" class="wikilink1" title="keywords:casting_comparison">en</a></span></div></li>  <li><div class="li"><a href="keywords/br-pt/keywords/casting_comparison.html" class="wikilink2" title="br-pt:keywords:casting_comparison" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="keywords/cn/keywords/casting_comparison.html" class="wikilink2" title="cn:keywords:casting_comparison" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="keywords/fr/keywords/casting_comparison.html" class="wikilink2" title="fr:keywords:casting_comparison" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="keywords/it/keywords/casting_comparison.html" class="wikilink2" title="it:keywords:casting_comparison" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="keywords/pl/keywords/casting_comparison.html" class="wikilink2" title="pl:keywords:casting_comparison" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="keywords/ru/keywords/casting_comparison.html" class="wikilink2" title="ru:keywords:casting_comparison" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="keywords/tr/keywords/casting_comparison.html" class="wikilink2" title="tr:keywords:casting_comparison" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#a_comparison_of_the_c_casting_operators" class="toc">A comparison of the C++ casting operators</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#deficiencies_of_the_old_c-style_cast" class="toc">Deficiencies of the old C-style cast</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#different_operators_for_different_uses" class="toc">Different operators for different uses</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+
+
+<h2><a name="a_comparison_of_the_c_casting_operators" id="a_comparison_of_the_c_casting_operators">A comparison of the C++ casting operators</a></h2>
+<div class="level2">
+
+<p>
+
+In addition to the C-style casting operator (provided for backwards compatibility) the C++ standard defines four additional casting operators:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="keywords/keywords/static_cast.html" class="wikilink1" title="keywords:static_cast">static_cast</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="keywords/keywords/const_cast.html" class="wikilink1" title="keywords:const_cast">const_cast</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="keywords/keywords/dynamic_cast.html" class="wikilink1" title="keywords:dynamic_cast">dynamic_cast</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="keywords/keywords/reinterpret_cast.html" class="wikilink1" title="keywords:reinterpret_cast">reinterpret_cast</a></div>
+</li>
+</ul>
+
+<p>
+
+The purpose of these new casting operators is to provide better type checking.  Their use is encouraged over the old C-style casting operator.
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/keywords/casting_comparison"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1-428" /><input type="hidden" name="rev" value="1245950155" /><input type="submit" value="Edit" class="button" title="A comparison of the C++ casting operators" /></div></form></div>
+<h3><a name="deficiencies_of_the_old_c-style_cast" id="deficiencies_of_the_old_c-style_cast">Deficiencies of the old C-style cast</a></h3>
+<div class="level3">
+
+<p>
+
+Two forms of the C-style cast are supported in C++:
+</p>
+<pre class="c code c++" style="font-family:monospace;">  <span class="kw4">int</span> age <span class="sy0">=</span> <span class="br0">&#40;</span><span class="kw4">int</span><span class="br0">&#41;</span> sqrt<span class="br0">&#40;</span> foo <span class="sy0">/</span> <span class="nu16">3.25</span> <span class="br0">&#41;</span>;
+  <span class="kw4">int</span> age <span class="sy0">=</span> <span class="kw4">int</span><span class="br0">&#40;</span> sqrt<span class="br0">&#40;</span>foo<span class="sy0">/</span><span class="nu16">3.25</span> <span class="br0">&#41;</span> <span class="br0">&#41;</span>;</pre>
+<p>
+However, using the same syntax for a variety of different casting operations can make the intent of the programmer unclear.
+</p>
+
+<p>
+Furthermore, it can be difficult to find a specific type of cast in a large codebase.
+</p>
+
+<p>
+Finally, the generality of the C-style cast can be overkill for situations where all that is needed is a simple conversion.  The ability to select between several different casting operators of differing degrees of power can prevent programmers from inadvertently casting to an incorrect type. 
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/keywords/casting_comparison"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="429-1125" /><input type="hidden" name="rev" value="1245950155" /><input type="submit" value="Edit" class="button" title="Deficiencies of the old C-style cast" /></div></form></div>
+<h3><a name="different_operators_for_different_uses" id="different_operators_for_different_uses">Different operators for different uses</a></h3>
+<div class="level3">
+
+<p>
+
+The four casting operators in C++ can be used in different cases, where each is most appropriate:
+</p>
+
+<p>
+<a href="keywords/keywords/static_cast.html" class="wikilink1" title="keywords:static_cast">static_cast</a> is the most useful cast. 
+It can be used to perform any implicit cast. When an implicit conversion loses some information, some compilers will produce warnings, and static_cast will eliminate these warnings. Making implicit conversion through static_cast is also useful to resolve ambiguity or to clarify the conversion presence.
+It also can be used to call an unary constructor, declared as <a href="keywords/keywords/explicit.html" class="wikilink1" title="keywords:explicit">explicit</a>.
+It also can be used to cast up and down a class hierarchy, like dynamic_cast, except that no runtime checking is performed.
+</p>
+
+<p>
+<a href="keywords/keywords/const_cast.html" class="wikilink1" title="keywords:const_cast">const_cast</a> is used to apply or remove <a href="keywords/keywords/const.html" class="wikilink1" title="keywords:const">const</a> or <a href="keywords/keywords/volatile.html" class="wikilink1" title="keywords:volatile">volatile</a> qualifier from a variable.
+</p>
+
+<p>
+<a href="keywords/keywords/dynamic_cast.html" class="wikilink1" title="keywords:dynamic_cast">dynamic_cast</a> is used on polymorphic pointers or references to move up or down a class hierarchy.  Note that dynamic_cast performs runtime-checks: if the object&#039;s type is not the one expected, it will return NULL during a pointer-cast and throw a std::bad_cast exception during a reference-cast.
+</p>
+
+<p>
+<a href="keywords/keywords/reinterpret_cast.html" class="wikilink1" title="keywords:reinterpret_cast">reinterpret_cast</a> is used to perform conversions between unrelated types, like conversion between unrelated pointers and references or conversion between an integer and a pointer.
+</p>
+
+<p>
+Old-style cast may correspond to static_cast, reinterpret_cast or const_cast, or even a combination of them. This means that none of these casting operators is as powerful as old-style cast.
+</p>
+
+<p>
+Related links:  <a href="http://www.acm.org/crossroads/xrds3-1/ovp3-1.html" class="urlextern" title="http://www.acm.org/crossroads/xrds3-1/ovp3-1.html"  rel="nofollow">http://www.acm.org/crossroads/xrds3-1/ovp3-1.html</a>
+
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/keywords/casting_comparison"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1126-" /><input type="hidden" name="rev" value="1245950155" /><input type="submit" value="Edit" class="button" title="Different operators for different uses" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        keywords/casting_comparison.txt &middot; Last modified: 06/25/2009 10:15 by 216.94.43.50      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="keywords/keywords/casting_comparison.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="keywords/keywords/casting_comparison.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="keywords/keywords/casting_comparison.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="keywords/keywords/casting_comparison.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="keywords/keywords/casting_comparison.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="keywords/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=keywords%3Acasting_comparison&amp;1254990285" width="1" height="1" alt=""  /></div>
+</body>
+</html>

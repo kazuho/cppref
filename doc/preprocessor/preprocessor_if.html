@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    Preprocessor Conditionals    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2008-10-14T15:42:05-0700" />
+<meta name="keywords" content="preprocessor,preprocessor_if" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/preprocessor/preprocessor_if?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=preprocessor" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/preprocessor/preprocessor_if?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/preprocessor/preprocessor_if" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/preprocessor/preprocessor_if" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="preprocessor/preprocessor/preprocessor_if.html"  title="Backlinks">Preprocessor Conditionals</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="preprocessor/start.html"  title="start">C++ Reference</a> &raquo; <a href="preprocessor/preprocessor/start.html"  title="preprocessor:start">Preprocessor Commands</a> &raquo; <a href="preprocessor/preprocessor/preprocessor_if.html"  title="preprocessor:preprocessor_if">Preprocessor Conditionals</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="preprocessor/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="preprocessor/preprocessor/preprocessor_if.html" class="wikilink1" title="preprocessor:preprocessor_if">en</a></span></div></li>  <li><div class="li"><a href="preprocessor/br-pt/preprocessor/preprocessor_if.html" class="wikilink2" title="br-pt:preprocessor:preprocessor_if" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="preprocessor/cn/preprocessor/preprocessor_if.html" class="wikilink2" title="cn:preprocessor:preprocessor_if" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="preprocessor/fr/preprocessor/preprocessor_if.html" class="wikilink2" title="fr:preprocessor:preprocessor_if" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="preprocessor/it/preprocessor/preprocessor_if.html" class="wikilink1" title="it:preprocessor:preprocessor_if">it</a></div></li>  <li><div class="li"><a href="preprocessor/pl/preprocessor/preprocessor_if.html" class="wikilink2" title="pl:preprocessor:preprocessor_if" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="preprocessor/ru/preprocessor/preprocessor_if.html" class="wikilink2" title="ru:preprocessor:preprocessor_if" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="preprocessor/tr/preprocessor/preprocessor_if.html" class="wikilink2" title="tr:preprocessor:preprocessor_if" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="preprocessor_conditionals" id="preprocessor_conditionals">Preprocessor Conditionals</a></h2>
+<div class="level2">
+<pre class="c code c++" style="font-family:monospace;"><span class="co2">#if, #ifdef, #ifndef, #else, #elif, #endif</span></pre>
+<p>
+These six preprocessor commands give simple logic control to the compiler. As a file is being
+compiled, you can use these commands to cause certain lines of code to be
+included or not included.
+
+</p>
+<pre class="c code c++" style="font-family:monospace;">     <span class="co2">#if expression</span></pre>
+<p>
+If the value of expression is true, then the code that immediately follows the
+command will be compiled.
+
+</p>
+<pre class="c code c++" style="font-family:monospace;">     <span class="co2">#ifdef macro</span></pre>
+<p>
+If the macro has been defined by a <a href="preprocessor/preprocessor/define.html" class="wikilink1" title="preprocessor:define">#define</a> statement, then the code immediately
+following the command will be compiled.
+
+</p>
+<pre class="c code c++" style="font-family:monospace;">     <span class="co2">#ifndef macro</span></pre>
+<p>
+If the macro has not been defined by a <a href="preprocessor/preprocessor/define.html" class="wikilink1" title="preprocessor:define">#define</a> statement, then the code
+immediately following the command will be compiled.
+</p>
+
+<p>
+A few side notes: The command #elif is simply a horribly truncated way to say
+“elseif” and works like you think it would. You can also throw in a “defined”
+or ”!defined” after an #if to get added functionality.
+</p>
+
+<p>
+Here&#039;s an example of all these:
+
+</p>
+<pre class="c code c++" style="font-family:monospace;">     <span class="co2">#ifdef DEBUG</span>
+       <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;This is the test version, i=&quot;</span> <span class="sy0">&lt;&lt;</span> i <span class="sy0">&lt;&lt;</span> endl;
+     <span class="co2">#else</span>
+       <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;This is the production version!&quot;</span> <span class="sy0">&lt;&lt;</span> endl;
+     <span class="co2">#endif</span></pre>
+<p>
+You might notice how that second example could make debugging a lot easier than
+inserting and removing a million “cout”s in your code.
+</p>
+
+<p>
+Related topics: <a href="preprocessor/preprocessor/define.html" class="wikilink1" title="preprocessor:define">#define</a>
+</p>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        preprocessor/preprocessor_if.txt &middot; Last modified: 10/14/2008 15:42 (external edit)      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="preprocessor/preprocessor/preprocessor_if.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="preprocessor/preprocessor/preprocessor_if.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="preprocessor/preprocessor/preprocessor_if.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="preprocessor/preprocessor/preprocessor_if.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="preprocessor/preprocessor/preprocessor_if.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="preprocessor/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=preprocessor%3Apreprocessor_if&amp;1254990010" width="1" height="1" alt=""  /></div>
+</body>
+</html>

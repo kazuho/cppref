@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    C++ Standard Template Library    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-09-03T08:02:12-0700" />
+<meta name="keywords" content="stl,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/stl/start?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=stl" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/stl/start?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/stl/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/stl/start" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="stl/stl/start.html"  title="Backlinks">C++ Standard Template Library</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="stl/start.html"  title="start">C++ Reference</a> &raquo; <a href="stl/stl/start.html"  title="stl:start">C++ Standard Template Library</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="stl/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="stl/stl/start.html" class="wikilink1" title="stl:start">en</a></span></div></li>  <li><div class="li"><a href="stl/br-pt/stl/start.html" class="wikilink1" title="br-pt:stl:start">br-pt</a></div></li>  <li><div class="li"><a href="stl/cn/stl/start.html" class="wikilink2" title="cn:stl:start" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="stl/fr/stl/start.html" class="wikilink1" title="fr:stl:start">fr</a></div></li>  <li><div class="li"><a href="stl/it/stl/start.html" class="wikilink1" title="it:stl:start">it</a></div></li>  <li><div class="li"><a href="stl/pl/stl/start.html" class="wikilink2" title="pl:stl:start" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="stl/ru/stl/start.html" class="wikilink1" title="ru:stl:start">ru</a></div></li>  <li><div class="li"><a href="stl/tr/stl/start.html" class="wikilink2" title="tr:stl:start" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#c_standard_template_library" class="toc">C++ Standard Template Library</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#data_structures" class="toc">Data Structures</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#algorithms" class="toc">Algorithms</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#iterators" class="toc">Iterators</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#function_objects" class="toc">Function Objects</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#memory" class="toc">Memory</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#utility" class="toc">Utility</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+
+
+<h2><a name="c_standard_template_library" id="c_standard_template_library">C++ Standard Template Library</a></h2>
+<div class="level2">
+
+<p>
+
+The C++ STL (Standard Template Library) is a generic collection of class
+templates and algorithms that allow programmers to easily implement standard
+data structures like queues, lists, and stacks.
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1-240" /><input type="hidden" name="rev" value="1251990132" /><input type="submit" value="Edit" class="button" title="C++ Standard Template Library" /></div></form></div>
+<h3><a name="data_structures" id="data_structures">Data Structures</a></h3>
+<div class="level3">
+
+<p>
+
+The C++ STL provides programmers with the following constructs, grouped into
+three categories:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> Sequences</div>
+<ul>
+<li class="level2"><div class="li"> <a href="stl/stl/vector/start.html" class="wikilink1" title="stl:vector:start">C++ Vectors</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="stl/stl/list/start.html" class="wikilink1" title="stl:list:start">C++ Lists</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="stl/stl/deque/start.html" class="wikilink1" title="stl:deque:start">C++ Double-Ended Queues</a></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Container Adapters</div>
+<ul>
+<li class="level2"><div class="li"> <a href="stl/stl/stack/start.html" class="wikilink1" title="stl:stack:start">C++ Stacks</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="stl/stl/queue/start.html" class="wikilink1" title="stl:queue:start">C++ Queues</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="stl/stl/priority_queue/start.html" class="wikilink1" title="stl:priority_queue:start">C++ Priority Queues</a></div>
+</li>
+</ul>
+</li>
+<li class="level1"><div class="li"> Associative Containers</div>
+<ul>
+<li class="level2"><div class="li"> <a href="stl/stl/bitset/start.html" class="wikilink1" title="stl:bitset:start">C++ Bitsets</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="stl/stl/map/start.html" class="wikilink1" title="stl:map:start">C++ Maps</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="stl/stl/multimap/start.html" class="wikilink1" title="stl:multimap:start">C++ Multimaps</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="stl/stl/set/start.html" class="wikilink1" title="stl:set:start">C++ Sets</a></div>
+</li>
+<li class="level2"><div class="li"> <a href="stl/stl/multiset/start.html" class="wikilink1" title="stl:multiset:start">C++ Multisets</a></div>
+</li>
+</ul>
+</li>
+</ul>
+
+<p>
+
+The idea behind the C++ STL is that the hard part of using complex data
+structures has already been completed. If a programmer would like to use a
+stack of integers, all one has to do is use this code:
+</p>
+<pre class="c code c++" style="font-family:monospace;">  stack<span class="sy0">&lt;</span>int<span class="sy0">&gt;</span> myStack;</pre>
+<p>
+With minimal effort, one can now <a href="stl/stl/stack/push.html" class="wikilink1" title="stl:stack:push">push</a> and
+<a href="stl/stl/stack/pop.html" class="wikilink1" title="stl:stack:pop">pop</a> integers onto this stack.  Through the magic of C++
+Templates, one could specify any data type, not just integers. The STL
+Stack class will provide generic functionality of a stack, regardless
+of the data in the stack.
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="241-1350" /><input type="hidden" name="rev" value="1251990132" /><input type="submit" value="Edit" class="button" title="Data Structures" /></div></form></div>
+<h3><a name="algorithms" id="algorithms">Algorithms</a></h3>
+<div class="level3">
+
+<p>
+
+In addition, the STL also provides a bunch of useful
+<a href="stl/stl/algorithm/start.html" class="wikilink1" title="stl:algorithm:start">algorithms</a> – such as <a href="stl/stl/algorithm/binary_search.html" class="wikilink1" title="stl:algorithm:binary_search">binary_search</a>,
+<a href="stl/stl/algorithm/sort.html" class="wikilink1" title="stl:algorithm:sort">sort</a>, and <a href="stl/stl/algorithm/for_each.html" class="wikilink1" title="stl:algorithm:for_each">for_each</a> – that can
+be  used on a variety of containers or data structures.
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1351-1621" /><input type="hidden" name="rev" value="1251990132" /><input type="submit" value="Edit" class="button" title="Algorithms" /></div></form></div>
+<h3><a name="iterators" id="iterators">Iterators</a></h3>
+<div class="level3">
+
+<p>
+
+<a href="stl/stl/iterators.html" class="wikilink1" title="stl:iterators">C++ Iterators</a> provide a generic way of iterating over the STL data structures.
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1622-1725" /><input type="hidden" name="rev" value="1251990132" /><input type="submit" value="Edit" class="button" title="Iterators" /></div></form></div>
+<h3><a name="function_objects" id="function_objects">Function Objects</a></h3>
+<div class="level3">
+
+<p>
+
+The <a href="stl/stl/functional/start.html" class="wikilink1" title="stl:functional:start">&lt;functional&gt; header file</a> defines methods related to the creation of function objects.
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1726-1862" /><input type="hidden" name="rev" value="1251990132" /><input type="submit" value="Edit" class="button" title="Function Objects" /></div></form></div>
+<h3><a name="memory" id="memory">Memory</a></h3>
+<div class="level3">
+
+<p>
+
+The <a href="stl/stl/memory/start.html" class="wikilink1" title="stl:memory:start">&lt;memory&gt; header file</a> provides simple memory management structures like <a href="stl/stl/memory/auto_ptr.html" class="wikilink1" title="stl:memory:auto_ptr">auto_ptr</a>.
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1863-1995" /><input type="hidden" name="rev" value="1251990132" /><input type="submit" value="Edit" class="button" title="Memory" /></div></form></div>
+<h3><a name="utility" id="utility">Utility</a></h3>
+<div class="level3">
+
+<p>
+
+There are several generic utility methods like <a href="stl/stl/utility/make_pair.html" class="wikilink1" title="stl:utility:make_pair">make_pair</a> in the <a href="stl/stl/utility/start.html" class="wikilink1" title="stl:utility:start">&lt;utility&gt; header file</a>.
+
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1996-" /><input type="hidden" name="rev" value="1251990132" /><input type="submit" value="Edit" class="button" title="Utility" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        stl/start.txt &middot; Last modified: 09/03/2009 08:02 by 212.90.165.14      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="stl/stl/start.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="stl/stl/start.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="stl/stl/start.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="stl/stl/start.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="stl/stl/start.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="stl/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Astart&amp;1254989999" width="1" height="1" alt=""  /></div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    flush    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-03-09T12:16:07-0700" />
+<meta name="keywords" content="io,flush" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/io/flush?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=io" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/io/flush?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/io/flush" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/io/flush" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="io/io/flush.html"  title="Backlinks">flush</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="io/start.html"  title="start">C++ Reference</a> &raquo; <a href="io/io/start.html"  title="io:start">C++ I/O</a> &raquo; <a href="io/io/flush.html"  title="io:flush">flush</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="io/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="io/io/flush.html" class="wikilink1" title="io:flush">en</a></span></div></li>  <li><div class="li"><a href="io/br-pt/io/flush.html" class="wikilink2" title="br-pt:io:flush" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="io/cn/io/flush.html" class="wikilink2" title="cn:io:flush" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="io/fr/io/flush.html" class="wikilink2" title="fr:io:flush" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="io/it/io/flush.html" class="wikilink2" title="it:io:flush" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="io/pl/io/flush.html" class="wikilink2" title="pl:io:flush" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="io/ru/io/flush.html" class="wikilink2" title="ru:io:flush" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="io/tr/io/flush.html" class="wikilink2" title="tr:io:flush" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="flush" id="flush">flush</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    ostream<span class="sy0">&amp;</span> ostream<span class="sy0">::</span><span class="me2">flush</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+<p>
+
+The flush() function causes the buffer for the current output stream to be
+actually written out to the attached device.
+This function is useful for printing out debugging information, because
+sometimes programs abort before they have a chance to write their output
+buffers to the screen. Judicious use of flush() can ensure that all of your
+debugging statements actually get printed.
+</p>
+
+<p>
+You should use cerr for debugging, which does not buffer output by default.
+</p>
+
+<p>
+Related Topics: <a href="io/io/put.html" class="wikilink1" title="io:put">put</a>, <a href="io/io/write.html" class="wikilink1" title="io:write">write</a>
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/io/flush"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1236626167" /><input type="submit" value="Edit" class="button" title="flush" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        io/flush.txt &middot; Last modified: 03/09/2009 12:16 by 164.76.9.87      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="io/io/flush.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="io/io/flush.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="io/io/flush.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="io/io/flush.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="io/io/flush.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="io/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=io%3Aflush&amp;1254990134" width="1" height="1" alt=""  /></div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    end    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2008-10-14T15:42:07-0700" />
+<meta name="keywords" content="stl,multimap,end" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/stl/multimap/end?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=stl:multimap" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/stl/multimap/end?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/stl/multimap/end" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/stl/multimap/end" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="stl/multimap/stl/multimap/end.html"  title="Backlinks">end</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="stl/multimap/start.html"  title="start">C++ Reference</a> &raquo; <a href="stl/multimap/stl/start.html"  title="stl:start">C++ Standard Template Library</a> &raquo; <a href="stl/multimap/stl/multimap/start.html"  title="stl:multimap:start">C++ Multimaps</a> &raquo; <a href="stl/multimap/stl/multimap/end.html"  title="stl:multimap:end">end</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="stl/multimap/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="stl/multimap/stl/multimap/end.html" class="wikilink1" title="stl:multimap:end">en</a></span></div></li>  <li><div class="li"><a href="stl/multimap/br-pt/stl/multimap/end.html" class="wikilink2" title="br-pt:stl:multimap:end" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="stl/multimap/cn/stl/multimap/end.html" class="wikilink2" title="cn:stl:multimap:end" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="stl/multimap/fr/stl/multimap/end.html" class="wikilink2" title="fr:stl:multimap:end" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="stl/multimap/it/stl/multimap/end.html" class="wikilink2" title="it:stl:multimap:end" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="stl/multimap/pl/stl/multimap/end.html" class="wikilink2" title="pl:stl:multimap:end" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="stl/multimap/ru/stl/multimap/end.html" class="wikilink2" title="ru:stl:multimap:end" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="stl/multimap/tr/stl/multimap/end.html" class="wikilink2" title="tr:stl:multimap:end" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="end" id="end">end</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;map&gt;</span>
+    iterator end<span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    const_iterator end<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span>;</pre>
+<p>
+The end() function returns an iterator just past the end of the multimap.
+Note that before you can access the last element of the multimap using an
+iterator that you get from a call to end(), you&#039;ll have to decrement the
+iterator first.
+</p>
+
+<p>
+end() runs in <a href="stl/multimap/complexity.html" class="wikilink1" title="complexity">constant time</a>.
+</p>
+
+<p>
+Related Topics: <a href="stl/multimap/stl/multimap/begin.html" class="wikilink1" title="stl:multimap:begin">begin</a>, <a href="stl/multimap/stl/multimap/rbegin.html" class="wikilink1" title="stl:multimap:rbegin">rbegin</a>, <a href="stl/multimap/stl/multimap/rend.html" class="wikilink1" title="stl:multimap:rend">rend</a>
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/multimap/end"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1224024127" /><input type="submit" value="Edit" class="button" title="end" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        stl/multimap/end.txt &middot; Last modified: 10/14/2008 15:42 (external edit)      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="stl/multimap/stl/multimap/end.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="stl/multimap/stl/multimap/end.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="stl/multimap/stl/multimap/end.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="stl/multimap/stl/multimap/end.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="stl/multimap/stl/multimap/end.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="stl/multimap/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Amultimap%3Aend&amp;1254990271" width="1" height="1" alt=""  /></div>
+</body>
+</html>

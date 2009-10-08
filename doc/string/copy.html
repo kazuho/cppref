@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    copy    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2008-10-17T14:54:04-0700" />
+<meta name="keywords" content="string,copy" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/string/copy?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=string" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/string/copy?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/string/copy" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/string/copy" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="string/string/copy.html"  title="Backlinks">copy</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="string/start.html"  title="start">C++ Reference</a> &raquo; <a href="string/string/start.html"  title="string:start">C++ Strings</a> &raquo; <a href="string/string/copy.html"  title="string:copy">copy</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="string/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="string/string/copy.html" class="wikilink1" title="string:copy">en</a></span></div></li>  <li><div class="li"><a href="string/br-pt/string/copy.html" class="wikilink2" title="br-pt:string:copy" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="string/cn/string/copy.html" class="wikilink2" title="cn:string:copy" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="string/fr/string/copy.html" class="wikilink2" title="fr:string:copy" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="string/it/string/copy.html" class="wikilink2" title="it:string:copy" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="string/pl/string/copy.html" class="wikilink2" title="pl:string:copy" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="string/ru/string/copy.html" class="wikilink2" title="ru:string:copy" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="string/tr/string/copy.html" class="wikilink2" title="tr:string:copy" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="copy" id="copy">copy</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;string&gt;</span>
+    size_type copy<span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy0">*</span> str<span class="sy0">,</span> size_type num<span class="sy0">,</span> size_type index <span class="sy0">=</span> <span class="nu19">0</span> <span class="br0">&#41;</span>;</pre>
+<p>
+
+The copy() function copies num characters of the current string (starting at
+index if it&#039;s specified, 0 otherwise) into str.
+The return value of copy() is the number of characters copied.
+For example, the following code uses copy() to extract a substring of a string
+into an array of characters:
+</p>
+<pre class="c code c++" style="font-family:monospace;">   <span class="kw4">char</span> buf<span class="br0">&#91;</span><span class="nu0">30</span><span class="br0">&#93;</span>;
+   memset<span class="br0">&#40;</span> buf<span class="sy0">,</span> <span class="st0">'<span class="es0">\0</span>'</span><span class="sy0">,</span> <span class="nu0">30</span> <span class="br0">&#41;</span>;
+   <span class="kw4">string</span> str <span class="sy0">=</span> <span class="st0">&quot;Trying is the first step towards success.&quot;</span>;
+   str.<span class="me1">copy</span><span class="br0">&#40;</span> buf<span class="sy0">,</span> <span class="nu0">24</span> <span class="br0">&#41;</span>;
+   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> buf <span class="sy0">&lt;&lt;</span> endl;</pre>
+<p>
+
+When run, this code displays:
+</p>
+<pre class="c code c++" style="font-family:monospace;">   Trying is the first step</pre>
+<p>
+
+Note that before calling copy(), we first call (Standard C String and
+Character) memset() to fill the destination array with copies of the NULL
+character. This step is included to make sure that the resulting array of
+characters is NULL-terminated.
+</p>
+
+<p>
+Related Topics: <a href="string/string/substr.html" class="wikilink1" title="string:substr">substr</a>
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/string/copy"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1224280444" /><input type="submit" value="Edit" class="button" title="copy" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        string/copy.txt &middot; Last modified: 10/17/2008 14:54 by 70.102.76.74      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="string/string/copy.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="string/string/copy.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="string/string/copy.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="string/string/copy.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="string/string/copy.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="string/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=string%3Acopy&amp;1254990119" width="1" height="1" alt=""  /></div>
+</body>
+</html>

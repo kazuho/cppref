@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="http://www.cppreference.com/wiki/lib/exe/css.php?s=feed" type="text/css"?>
+<rdf:RDF
+    xmlns="http://purl.org/rss/1.0/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel rdf:about="http://www.cppreference.com/wiki/feed.php">
+        <title>C++ Reference</title>
+        <description></description>
+        <link>http://www.cppreference.com/wiki/</link>
+        <image rdf:resource="http://www.cppreference.com/wiki/lib/images/favicon.ico" />
+       <dc:date>2009-10-07T23:32:47-07:00</dc:date>
+        <items>
+            <rdf:Seq>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/cn/c/other/rand?rev=1254983553&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/it/stl/deque/deque_operators?rev=1254951719&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/ru/c/math/abs?rev=1254914808&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/it/keywords/start?rev=1254903134&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/it/keywords/try?rev=1254903065&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/it/keywords/throw?rev=1254902258&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/it/keywords/catch?rev=1254901619&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/pl/stl/stack/stack_constructors?rev=1254854752&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/pl/stl/queue/queue_constructors?rev=1254844738&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/it/stl/deque/rbegin?rev=1254842629&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/pl/ascii?rev=1254842313&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/ru/c/string/isdigit?rev=1254841898&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/it/keywords/class?rev=1254821907&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/it/start?rev=1254820854&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/it/keywords/switch?rev=1254815347&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/it/keywords/true?rev=1254814253&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/it/keywords/false?rev=1254814198&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/it/keywords/default?rev=1254813577&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/it/keywords/case?rev=1254813409&amp;do=diff"/>
+                <rdf:li rdf:resource="http://www.cppreference.com/wiki/it/keywords/export?rev=1254757587&amp;do=diff"/>
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="http://www.cppreference.com/wiki/lib/images/favicon.ico">
+        <title>C++ Reference</title>
+        <link>http://www.cppreference.com/wiki/</link>
+        <url>http://www.cppreference.com/wiki/lib/images/favicon.ico</url>
+    </image>
+    <item rdf:about="http://www.cppreference.com/wiki/cn/c/other/rand?rev=1254983553&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-07T23:32:33-07:00</dc:date>
+        <title>cn:c:other:rand - created</title>
+        <link>http://www.cppreference.com/wiki/cn/c/other/rand?rev=1254983553&amp;do=diff</link>
+        <description>语法:
+
+  #include &lt;cstdlib&gt;
+  int rand( void );
+
+函数rand()返回一个0到RAND_MAX的整形. 例子:
+
+   srand( time(NULL) );
+   for( i = 0; i &lt; 10; i++ )
+     printf( &quot;Random number #%d: %d\n&quot;, i, rand() );
+
+注意: 不要用%去限制产生的数. 应该使用算法产生指定范围的数:</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/it/stl/deque/deque_operators?rev=1254951719&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-07T14:41:59-07:00</dc:date>
+        <dc:creator>Massimo Manghi</dc:creator>
+        <title>Deque operators - link rotto riparato</title>
+        <link>http://www.cppreference.com/wiki/it/stl/deque/deque_operators?rev=1254951719&amp;do=diff</link>
+        <description>Deque operators
+
+
+Sintassi:
+
+    #include &lt;deque&gt;
+    TYPE&amp; operator[]( size_type index );
+    const TYPE&amp; operator[]( size_type index ) const;
+    deque operator=(const deque&amp; c2);
+    bool operator==(const deque&amp; c1, const deque&amp; c2);
+    bool operator!=(const deque&amp; c1, const deque&amp; c2);
+    bool operator&lt;(const deque&amp; c1, const deque&amp; c2);
+    bool operator&gt;(const deque&amp; c1, const deque&amp; c2);
+    bool operator&lt;=(const deque&amp; c1, const deque&amp; c2);
+    bool operator&gt;=(const deque&amp; c1, const de…</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/ru/c/math/abs?rev=1254914808&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-07T04:26:48-07:00</dc:date>
+        <dc:creator>Ruslan Sennov</dc:creator>
+        <title>abs</title>
+        <link>http://www.cppreference.com/wiki/ru/c/math/abs?rev=1254914808&amp;do=diff</link>
+        <description>abs
+
+Синтаксис:
+
+    #include &lt;cstdlib&gt;
+    int abs( int num );
+
+
+Функция abs() возвращает значение модуля аргумента. Например:
+
+     int magic_number = 10;
+     cout &lt;&lt; &quot;Enter a guess: &quot;;
+     cin &gt;&gt; x;
+     cout &lt;&lt; &quot;Your guess was &quot; &lt;&lt; abs( magic_number - x ) &lt;&lt; &quot; away from the magic number.&quot; &lt;&lt; endl;</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/it/keywords/start?rev=1254903134&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-07T01:12:14-07:00</dc:date>
+        <dc:creator>Massimo Manghi</dc:creator>
+        <title>C++ Keywords - era sfuggita la traduzione di una voce</title>
+        <link>http://www.cppreference.com/wiki/it/keywords/start?rev=1254903134&amp;do=diff</link>
+        <description>Questa e' la lista delle parole riservate in C++. Sono quelle che posso essere utilizzate nel linguaggio, ma i programmatori non possono ridefinire (o usare per l'overloading) queste parole.
+
+KeywordDescriptionasminserisce codice assemblyautodichiara una variabile localebooldichiara una variabile booleanabreakinterrompe un loopcasedefinisce un blocco di codice nel costrutto switch catchgestisce eccezioni sollevate da throwchardichiara una variabile di tipo charclassdichiara una classeconstdichia…</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/it/keywords/try?rev=1254903065&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-07T01:11:05-07:00</dc:date>
+        <dc:creator>Massimo Manghi</dc:creator>
+        <title>try - creata</title>
+        <link>http://www.cppreference.com/wiki/it/keywords/try?rev=1254903065&amp;do=diff</link>
+        <description>try
+
+
+Il comando try definisce un blocco di codice che potrebbe generare eccezioni
+in caso di errori. Alla pagina del comando throw c'è una descrizione più dettagliata
+di come usare try
+
+Argomenti correlati: catch, throw</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/it/keywords/throw?rev=1254902258&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-07T00:57:38-07:00</dc:date>
+        <dc:creator>Massimo Manghi</dc:creator>
+        <title>throw - creata</title>
+        <link>http://www.cppreference.com/wiki/it/keywords/throw?rev=1254902258&amp;do=diff</link>
+        <description>throw
+
+Sintassi:
+
+    try {
+        statement list;
+    }
+    catch( typeA arg ) {
+        statement list;
+    }
+    catch( typeB arg ){
+        statement list;
+    }
+    ...
+    catch( typeN arg ) {
+        statement list;
+    }
+
+Il comando throw è parte del meccanismo del C++ per la gestione delle eccezioni.
+Questo comando, unitamente a try e catch, costituisce il costrutto del C++
+per la gestione di errori segnalati tramite eccezioni.</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/it/keywords/catch?rev=1254901619&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-07T00:46:59-07:00</dc:date>
+        <dc:creator>Massimo Manghi</dc:creator>
+        <title>catch - creata</title>
+        <link>http://www.cppreference.com/wiki/it/keywords/catch?rev=1254901619&amp;do=diff</link>
+        <description>catch
+
+La parola catch definisce un handler di eccezioni generate dal comando throw.
+
+Argomenti correlat: throw, try</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/pl/stl/stack/stack_constructors?rev=1254854752&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-06T11:45:52-07:00</dc:date>
+        <dc:creator>Szymon</dc:creator>
+        <title>Konstruktor Stosu - Poprawa zmiennej</title>
+        <link>http://www.cppreference.com/wiki/pl/stl/stack/stack_constructors?rev=1254854752&amp;do=diff</link>
+        <description>Konstruktor Stosu
+
+Składnia:
+
+    #include &lt;stack&gt;
+    stack();
+    stack( const Container&amp; con );
+
+Stosy mają zarówno pusty konstruktor jak i konstruktor służący do wyszczególnienia typu.
+
+Przykładowy program:
+
+    stack&lt;int&gt; stos;
+    int a;
+    cout &lt;&lt; &quot;Odliczanie nastapi od liczby: &quot;
+    cin &gt;&gt; a;
+    for (int i =0; i&lt;=a; i++)
+         stos.push(i);
+    while( !stos.empty() )
+    {
+      cout &lt;&lt; stos.top() &lt;&lt; endl;
+      kolejka.pop();
+    }
+    cout &lt;&lt; &quot;Bum!&quot;;</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/pl/stl/queue/queue_constructors?rev=1254844738&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-06T08:58:58-07:00</dc:date>
+        <dc:creator>Szymon</dc:creator>
+        <title>Konstruktor Kolejek - utworzono</title>
+        <link>http://www.cppreference.com/wiki/pl/stl/queue/queue_constructors?rev=1254844738&amp;do=diff</link>
+        <description>Konstruktor Kolejek
+
+Składnia:
+
+    #include &lt;queue&gt;
+    queue();
+    queue( const queue&amp; other );
+
+Kolejki mają domyślny konstruktor jak również konstruktor kopiujący.
+
+Na przykład poniższy kod tworzy kolejkę stringów, następnie wczytuje pewne dane od użytkownika i je wypisuje:</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/it/stl/deque/rbegin?rev=1254842629&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-06T08:23:49-07:00</dc:date>
+        <dc:creator>Massimo Manghi</dc:creator>
+        <title>rbegin - corretta errata traduzione...</title>
+        <link>http://www.cppreference.com/wiki/it/stl/deque/rbegin?rev=1254842629&amp;do=diff</link>
+        <description>rbegin
+
+Sintassi:
+
+    #include &lt;deque&gt;
+    reverse_iterator rbegin();
+    const_reverse_iterator rbegin() const;
+
+La funzione rbegin() ritorna un reverse_iterator alla corrente fine della deque
+
+rbegin() gira a tempo costante.
+
+Argomenti correlati: begin, end, rend</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/pl/ascii?rev=1254842313&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-06T08:18:33-07:00</dc:date>
+        <dc:creator>Szymon</dc:creator>
+        <title>Tabela ASCII - utworzono</title>
+        <link>http://www.cppreference.com/wiki/pl/ascii?rev=1254842313&amp;do=diff</link>
+        <description>Tabela ASCII
+
+
+W poniższej tabeli znajduje się 128 kodów ASCII w systemach: dziesiętnym, ósemkowym i szesnastkowym.
+DziesiętnyÓsemkowySzenastkowyZnakOpis0000NUL1101SOHstart of header2202STXstart of text3303ETXend of text4404EOTend of transmission5505ENQenquiry6606ACKacknowledge7707BELbell81008BSbackspace91109HThorizontal tab10120ALFline feed11130BVTvertical tab12140CFFform feed13150DCRcarriage return14160ESOshift out15170FSIshift in162010DLEdata link escape172111DC1nie przypisany, ale zwykle XON…</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/ru/c/string/isdigit?rev=1254841898&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-06T08:11:38-07:00</dc:date>
+        <dc:creator>Ruslan Sennov</dc:creator>
+        <title>isdigit - создано</title>
+        <link>http://www.cppreference.com/wiki/ru/c/string/isdigit?rev=1254841898&amp;do=diff</link>
+        <description>isdigit
+
+Синтаксис:
+
+    #include &lt;cctype&gt;
+    int isdigit( int ch );
+
+
+Функция isdigit() возвращяет ненулевое значение если её аргумент является цифрой. Иначе возвращает ноль.</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/it/keywords/class?rev=1254821907&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-06T02:38:27-07:00</dc:date>
+        <dc:creator>Massimo Manghi</dc:creator>
+        <title>class</title>
+        <link>http://www.cppreference.com/wiki/it/keywords/class?rev=1254821907&amp;do=diff</link>
+        <description>class
+
+Sintassi:
+
+    class class-name : inheritance-list {
+      private:
+        private-members-list;
+      protected:
+        protected-members-list;
+      public:
+        public-members-list;
+    } object-list;
+
+La parola riservata class permette di definire nuove classi. class-name
+è il nome della classe che viene definita e la inheritance-list è una lista
+opzionale di classi ereditate dalla nuova classe.</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/it/start?rev=1254820854&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-06T02:20:54-07:00</dc:date>
+        <dc:creator>Massimo Manghi</dc:creator>
+        <title>C++ Reference (Italiano)</title>
+        <link>http://www.cppreference.com/wiki/it/start?rev=1254820854&amp;do=diff</link>
+        <description>C++ Reference (Italiano)
+
+Argomenti Generali
+
+
+	*  FAQ
+	*  Comandi del preprocessore
+	*  Precedenza degli operatori
+	*  Sequenze di escape
+	*  Tabella caratteri ASCII
+	*  Tipi di dati
+	*  Parole riservate
+
+Libreria Standard del C
+
+
+	*  Introduzione
+	*  Input/Output in C
+	*  Stringhe e Caratteri
+	*  Funzioni Matematiche
+	*  Data e Ora in C
+	*  Allocazione della memoria
+	*  Altre funzioni standard del C</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/it/keywords/switch?rev=1254815347&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-06T00:49:07-07:00</dc:date>
+        <title>switch</title>
+        <link>http://www.cppreference.com/wiki/it/keywords/switch?rev=1254815347&amp;do=diff</link>
+        <description>switch
+
+Syntax:
+
+    switch( expression ) {
+    case A:
+    statement list;
+    break;
+    case B:
+    statement list;
+    break;
+    ...
+    case N:
+    statement list;
+    break;
+    default:
+    statement list;
+    break;
+    }
+
+Il costrutto switch permette di confrontare expression con una serie di valori
+ed eseguire il codice definito da un blocco case che ha come argomento la costante
+che soddisfa la condizione di uguaglianza con expression. Questo costrutto si usa
+spesso come alternativa …</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/it/keywords/true?rev=1254814253&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-06T00:30:53-07:00</dc:date>
+        <dc:creator>Massimo Manghi</dc:creator>
+        <title>true - creata</title>
+        <link>http://www.cppreference.com/wiki/it/keywords/true?rev=1254814253&amp;do=diff</link>
+        <description>true
+
+
+Parola riservata che rappresenta la costante booleana con valore “true”.
+
+Argomenti correlati: bool, false</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/it/keywords/false?rev=1254814198&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-06T00:29:58-07:00</dc:date>
+        <dc:creator>Massimo Manghi</dc:creator>
+        <title>false - creata</title>
+        <link>http://www.cppreference.com/wiki/it/keywords/false?rev=1254814198&amp;do=diff</link>
+        <description>false
+
+
+Parola riservata che rappresenta una costante booleana con valore “false”. Di solito equivale al
+valore intero 0.
+
+Argomenti correlati: bool, true</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/it/keywords/default?rev=1254813577&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-06T00:19:37-07:00</dc:date>
+        <dc:creator>Massimo Manghi</dc:creator>
+        <title>default - creata</title>
+        <link>http://www.cppreference.com/wiki/it/keywords/default?rev=1254813577&amp;do=diff</link>
+        <description>default
+
+
+La parola default viene usata in una struttura switch per definire il blocco
+di codice che verrà eseguito se tutte le stanze definite dai case non hanno trovato
+un match
+
+Related Topics: case, switch</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/it/keywords/case?rev=1254813409&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-06T00:16:49-07:00</dc:date>
+        <dc:creator>Massimo Manghi</dc:creator>
+        <title>case - creata</title>
+        <link>http://www.cppreference.com/wiki/it/keywords/case?rev=1254813409&amp;do=diff</link>
+        <description>case
+
+La parola riservata case è usata per confrontare il valore di una variabile
+con un certo valore all'interno di una struttura case
+
+Argomenti correlati: default, switch</description>
+    </item>
+    <item rdf:about="http://www.cppreference.com/wiki/it/keywords/export?rev=1254757587&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2009-10-05T08:46:27-07:00</dc:date>
+        <dc:creator>Massimo Manghi</dc:creator>
+        <title>export - external links added</title>
+        <link>http://www.cppreference.com/wiki/it/keywords/export?rev=1254757587&amp;do=diff</link>
+        <description>export
+
+
+La parola riservata export è intesa a permettere la definizione dei template del C++ separatamente dalla
+loro dichiarazione. Mentre questa parola è ufficialmente parte degli standard del C++ sollo alcuni compilatori
+la supportano (ad esempio il compilatore Comeau C++) e non è supportata da 
+alcuni compilatori comuni tra gli sviluppatori, come il compilatore GCC e 
+Visual C++.</description>
+    </item>
+</rdf:RDF>

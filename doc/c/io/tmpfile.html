@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    tmpfile    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-04-12T10:53:45-0700" />
+<meta name="keywords" content="c,io,tmpfile" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/c/io/tmpfile?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=c:io" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/c/io/tmpfile?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/c/io/tmpfile" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/c/io/tmpfile" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="c/io/c/io/tmpfile.html"  title="Backlinks">tmpfile</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="c/io/start.html"  title="start">C++ Reference</a> &raquo; <a href="c/io/c/start.html"  title="c:start">The Standard C Library</a> &raquo; <a href="c/io/c/io/start.html"  title="c:io:start">Standard C I/O</a> &raquo; <a href="c/io/c/io/tmpfile.html"  title="c:io:tmpfile">tmpfile</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="c/io/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="c/io/c/io/tmpfile.html" class="wikilink1" title="c:io:tmpfile">en</a></span></div></li>  <li><div class="li"><a href="c/io/br-pt/c/io/tmpfile.html" class="wikilink2" title="br-pt:c:io:tmpfile" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="c/io/cn/c/io/tmpfile.html" class="wikilink2" title="cn:c:io:tmpfile" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="c/io/fr/c/io/tmpfile.html" class="wikilink2" title="fr:c:io:tmpfile" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="c/io/it/c/io/tmpfile.html" class="wikilink2" title="it:c:io:tmpfile" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="c/io/pl/c/io/tmpfile.html" class="wikilink2" title="pl:c:io:tmpfile" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="c/io/ru/c/io/tmpfile.html" class="wikilink2" title="ru:c:io:tmpfile" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="c/io/tr/c/io/tmpfile.html" class="wikilink2" title="tr:c:io:tmpfile" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="tmpfile" id="tmpfile">tmpfile</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cstdio&gt;</span>
+    FILE <span class="sy0">*</span>tmpfile<span class="br0">&#40;</span> <span class="kw4">void</span> <span class="br0">&#41;</span>;</pre>
+<p>
+
+The function tmpfile() opens a temporary file with a unique filename and
+returns a pointer to that file. If there is an error, null is returned.
+</p>
+
+<p>
+Related Topics: <a href="c/io/c/io/tmpnam.html" class="wikilink1" title="c:io:tmpnam">tmpnam</a>
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/io/tmpfile"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1239558825" /><input type="submit" value="Edit" class="button" title="tmpfile" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        c/io/tmpfile.txt &middot; Last modified: 04/12/2009 10:53 by 85.223.109.93      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="c/io/c/io/tmpfile.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="c/io/c/io/tmpfile.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="c/io/c/io/tmpfile.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="c/io/c/io/tmpfile.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="c/io/c/io/tmpfile.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="c/io/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Aio%3Atmpfile&amp;1254990061" width="1" height="1" alt=""  /></div>
+</body>
+</html>

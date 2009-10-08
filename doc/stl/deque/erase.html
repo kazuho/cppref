@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    erase    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-08-06T02:03:22-0700" />
+<meta name="keywords" content="stl,deque,erase" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/stl/deque/erase?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=stl:deque" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/stl/deque/erase?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/stl/deque/erase" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/stl/deque/erase" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="stl/deque/stl/deque/erase.html"  title="Backlinks">erase</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="stl/deque/start.html"  title="start">C++ Reference</a> &raquo; <a href="stl/deque/stl/start.html"  title="stl:start">C++ Standard Template Library</a> &raquo; <a href="stl/deque/stl/deque/start.html"  title="stl:deque:start">C++ Double-ended Queues</a> &raquo; <a href="stl/deque/stl/deque/erase.html"  title="stl:deque:erase">erase</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="stl/deque/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="stl/deque/stl/deque/erase.html" class="wikilink1" title="stl:deque:erase">en</a></span></div></li>  <li><div class="li"><a href="stl/deque/br-pt/stl/deque/erase.html" class="wikilink2" title="br-pt:stl:deque:erase" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="stl/deque/cn/stl/deque/erase.html" class="wikilink2" title="cn:stl:deque:erase" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="stl/deque/fr/stl/deque/erase.html" class="wikilink2" title="fr:stl:deque:erase" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="stl/deque/it/stl/deque/erase.html" class="wikilink1" title="it:stl:deque:erase">it</a></div></li>  <li><div class="li"><a href="stl/deque/pl/stl/deque/erase.html" class="wikilink2" title="pl:stl:deque:erase" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="stl/deque/ru/stl/deque/erase.html" class="wikilink1" title="ru:stl:deque:erase">ru</a></div></li>  <li><div class="li"><a href="stl/deque/tr/stl/deque/erase.html" class="wikilink2" title="tr:stl:deque:erase" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="erase" id="erase">erase</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;deque&gt;</span>
+    iterator erase<span class="br0">&#40;</span> iterator loc <span class="br0">&#41;</span>;
+    iterator erase<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end <span class="br0">&#41;</span>;</pre>
+<p>
+The erase() function either deletes the element at location loc, or deletes the
+elements between start and end (including start but not including end). The
+return value is the element after the last element erased.
+</p>
+
+<p>
+The first version of erase (the version that deletes a single element at
+location loc) runs in <a href="stl/deque/complexity.html" class="wikilink1" title="complexity">constant time</a> for lists and <a href="stl/deque/complexity.html" class="wikilink1" title="complexity">linear time</a> for vectors,
+deques, and strings. The multiple-element version of erase always takes
+<a href="stl/deque/complexity.html" class="wikilink1" title="complexity">linear time</a>.
+</p>
+
+<p>
+For example:
+</p>
+<pre class="c code c++" style="font-family:monospace;">   <span class="co1">// Create a deque, load it with the first ten characters of the alphabet</span>
+   deque<span class="sy0">&lt;</span>char<span class="sy0">&gt;</span> alphaDeque;
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy0">=</span><span class="nu19">0</span>; i <span class="sy0">&lt;</span> <span class="nu0">10</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     alphaDeque.<span class="me1">push_back</span><span class="br0">&#40;</span> i <span class="sy0">+</span> <span class="nu0">65</span> <span class="br0">&#41;</span>;
+   <span class="br0">&#125;</span>
+   <span class="kw4">int</span> size <span class="sy0">=</span> alphaDeque.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+   deque<span class="sy0">&lt;</span>char<span class="sy0">&gt;::</span><span class="me2">iterator</span> startIterator;
+   deque<span class="sy0">&lt;</span>char<span class="sy0">&gt;::</span><span class="me2">iterator</span> tempIterator;
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy0">=</span><span class="nu19">0</span>; i <span class="sy0">&lt;</span> size; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     startIterator <span class="sy0">=</span> alphaDeque.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+     alphaDeque.<span class="me1">erase</span><span class="br0">&#40;</span> startIterator <span class="br0">&#41;</span>;
+     <span class="co1">// Display the deque</span>
+     <span class="kw1">for</span><span class="br0">&#40;</span> tempIterator <span class="sy0">=</span> alphaDeque.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; tempIterator <span class="sy0">!=</span> alphaDeque.<span class="me1">end</span> <span class="br0">&#40;</span><span class="br0">&#41;</span>; tempIterator<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="sy0">*</span>tempIterator;
+     <span class="br0">&#125;</span>
+     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;
+   <span class="br0">&#125;</span></pre>
+<p>
+That code would display the following output:
+</p>
+<pre class="code">
+   BCDEFGHIJ
+   CDEFGHIJ
+   DEFGHIJ
+   EFGHIJ
+   FGHIJ
+   GHIJ
+   HIJ
+   IJ
+   J</pre>
+<p>
+In the next example, erase() is called with two iterators to delete a range of
+elements from a deque:
+</p>
+<pre class="c code c++" style="font-family:monospace;">   <span class="co1">// create a deque, load it with the first ten characters of the alphabet</span>
+   deque<span class="sy0">&lt;</span>char<span class="sy0">&gt;</span> alphaDeque;
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i<span class="sy0">=</span><span class="nu19">0</span>; i <span class="sy0">&lt;</span> <span class="nu0">10</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     alphaDeque.<span class="me1">push_back</span><span class="br0">&#40;</span> i <span class="sy0">+</span> <span class="nu0">65</span> <span class="br0">&#41;</span>;
+   <span class="br0">&#125;</span>
+   <span class="co1">// display the complete deque</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> alphaDeque.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> alphaDeque<span class="br0">&#91;</span>i<span class="br0">&#93;</span>;
+   <span class="br0">&#125;</span>
+   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;
+&nbsp;
+   <span class="co1">// use erase to remove all but the first two and last three elements</span>
+   <span class="co1">// of the deque</span>
+   alphaDeque.<span class="me1">erase</span><span class="br0">&#40;</span> alphaDeque.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">+</span><span class="nu0">2</span><span class="sy0">,</span> alphaDeque.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">-</span><span class="nu0">3</span> <span class="br0">&#41;</span>;
+   <span class="co1">// display the modified deque</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> alphaDeque.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> alphaDeque<span class="br0">&#91;</span>i<span class="br0">&#93;</span>;
+   <span class="br0">&#125;</span>
+   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;</pre>
+<p>
+When run, the above code displays:
+</p>
+<pre class="code">
+   ABCDEFGHIJ
+   ABHIJ</pre>
+<p>
+
+Related Topics: <a href="stl/deque/stl/deque/clear.html" class="wikilink1" title="stl:deque:clear">clear</a>, <a href="stl/deque/stl/deque/insert.html" class="wikilink1" title="stl:deque:insert">insert</a>, <a href="stl/deque/stl/deque/pop_back.html" class="wikilink1" title="stl:deque:pop_back">pop_back</a>, <a href="stl/deque/stl/deque/pop_front.html" class="wikilink1" title="stl:deque:pop_front">pop_front</a>
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/deque/erase"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1249549402" /><input type="submit" value="Edit" class="button" title="erase" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        stl/deque/erase.txt &middot; Last modified: 08/06/2009 02:03 by n-839      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="stl/deque/stl/deque/erase.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="stl/deque/stl/deque/erase.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="stl/deque/stl/deque/erase.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="stl/deque/stl/deque/erase.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="stl/deque/stl/deque/erase.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="stl/deque/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Adeque%3Aerase&amp;1254990202" width="1" height="1" alt=""  /></div>
+</body>
+</html>

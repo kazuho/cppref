@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    Standard C String and Character    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-09-20T16:56:31-0700" />
+<meta name="keywords" content="c,string,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/c/string/start?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=c:string" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/c/string/start?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/c/string/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/c/string/start" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="c/string/c/string/start.html"  title="Backlinks">Standard C String and Character</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="c/string/start.html"  title="start">C++ Reference</a> &raquo; <a href="c/string/c/start.html"  title="c:start">The Standard C Library</a> &raquo; <a href="c/string/c/string/start.html"  title="c:string:start">Standard C String and Character</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="c/string/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="c/string/c/string/start.html" class="wikilink1" title="c:string:start">en</a></span></div></li>  <li><div class="li"><a href="c/string/br-pt/c/string/start.html" class="wikilink2" title="br-pt:c:string:start" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="c/string/cn/c/string/start.html" class="wikilink2" title="cn:c:string:start" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="c/string/fr/c/string/start.html" class="wikilink2" title="fr:c:string:start" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="c/string/it/c/string/start.html" class="wikilink2" title="it:c:string:start" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="c/string/pl/c/string/start.html" class="wikilink1" title="pl:c:string:start">pl</a></div></li>  <li><div class="li"><a href="c/string/ru/c/string/start.html" class="wikilink2" title="ru:c:string:start" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="c/string/tr/c/string/start.html" class="wikilink2" title="tr:c:string:start" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h1><a name="standard_c_string_and_character" id="standard_c_string_and_character">Standard C String and Character</a></h1>
+<div class="level1">
+<table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="c/string/c/string/atof.html" class="wikilink1" title="c:string:atof">atof</a></td><td class="col1">converts a string to a double</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="c/string/c/string/atoi.html" class="wikilink1" title="c:string:atoi">atoi</a></td><td class="col1">converts a string to an integer</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="c/string/c/string/atol.html" class="wikilink1" title="c:string:atol">atol</a></td><td class="col1">converts a string to a long</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="c/string/c/string/isalnum.html" class="wikilink1" title="c:string:isalnum">isalnum</a></td><td class="col1">true if a character is alphanumeric</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="c/string/c/string/isalpha.html" class="wikilink1" title="c:string:isalpha">isalpha</a></td><td class="col1">true if a character is alphabetic</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="c/string/c/string/iscntrl.html" class="wikilink1" title="c:string:iscntrl">iscntrl</a></td><td class="col1">true if a character is a control character</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="c/string/c/string/isdigit.html" class="wikilink1" title="c:string:isdigit">isdigit</a></td><td class="col1">true if a character is a digit</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="c/string/c/string/isgraph.html" class="wikilink1" title="c:string:isgraph">isgraph</a></td><td class="col1">true if a character is a graphical character</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="c/string/c/string/islower.html" class="wikilink1" title="c:string:islower">islower</a></td><td class="col1">true if a character is lowercase</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="c/string/c/string/isprint.html" class="wikilink1" title="c:string:isprint">isprint</a></td><td class="col1">true if a character is a printing character</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="c/string/c/string/ispunct.html" class="wikilink1" title="c:string:ispunct">ispunct</a></td><td class="col1">true if a character is punctuation</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="c/string/c/string/isspace.html" class="wikilink1" title="c:string:isspace">isspace</a></td><td class="col1">true if a character is a space character</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="c/string/c/string/isupper.html" class="wikilink1" title="c:string:isupper">isupper</a></td><td class="col1">true if a character is an uppercase character</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="c/string/c/string/isxdigit.html" class="wikilink1" title="c:string:isxdigit">isxdigit</a></td><td class="col1">true if a character is a hexadecimal character</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="c/string/c/string/memchr.html" class="wikilink1" title="c:string:memchr">memchr</a></td><td class="col1">searches an array for the first occurrence of a character</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="c/string/c/string/memcmp.html" class="wikilink1" title="c:string:memcmp">memcmp</a></td><td class="col1">compares two buffers</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="c/string/c/string/memcpy.html" class="wikilink1" title="c:string:memcpy">memcpy</a></td><td class="col1">copies one buffer to another</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="c/string/c/string/memmove.html" class="wikilink1" title="c:string:memmove">memmove</a></td><td class="col1">moves one buffer to another</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="c/string/c/string/memset.html" class="wikilink1" title="c:string:memset">memset</a></td><td class="col1">fills a buffer with a character</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="c/string/c/string/strcat.html" class="wikilink1" title="c:string:strcat">strcat</a></td><td class="col1">concatenates two strings</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="c/string/c/string/strchr.html" class="wikilink1" title="c:string:strchr">strchr</a></td><td class="col1">finds the first occurrence of a character in a string</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="c/string/c/string/strcmp.html" class="wikilink1" title="c:string:strcmp">strcmp</a></td><td class="col1">compares two strings</td>
+	</tr>
+	<tr class="row22">
+		<td class="col0"><a href="c/string/c/string/strcoll.html" class="wikilink1" title="c:string:strcoll">strcoll</a></td><td class="col1">compares two strings in accordance to the current locale</td>
+	</tr>
+	<tr class="row23">
+		<td class="col0"><a href="c/string/c/string/strcpy.html" class="wikilink1" title="c:string:strcpy">strcpy</a></td><td class="col1">copies one string to another</td>
+	</tr>
+	<tr class="row24">
+		<td class="col0"><a href="c/string/c/string/strcspn.html" class="wikilink1" title="c:string:strcspn">strcspn</a></td><td class="col1">searches one string for any characters in another</td>
+	</tr>
+	<tr class="row25">
+		<td class="col0"><a href="c/string/c/string/strerror.html" class="wikilink1" title="c:string:strerror">strerror</a></td><td class="col1">returns a text version of a given error code</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0"><a href="c/string/c/string/strlen.html" class="wikilink1" title="c:string:strlen">strlen</a></td><td class="col1">returns the length of a given string</td>
+	</tr>
+	<tr class="row27">
+		<td class="col0"><a href="c/string/c/string/strncat.html" class="wikilink1" title="c:string:strncat">strncat</a></td><td class="col1">concatenates a certain amount of characters of two strings</td>
+	</tr>
+	<tr class="row28">
+		<td class="col0"><a href="c/string/c/string/strncmp.html" class="wikilink1" title="c:string:strncmp">strncmp</a></td><td class="col1">compares a certain amount of characters of two strings</td>
+	</tr>
+	<tr class="row29">
+		<td class="col0"><a href="c/string/c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a></td><td class="col1">copies a certain amount of characters from one string to another</td>
+	</tr>
+	<tr class="row30">
+		<td class="col0"><a href="c/string/c/string/strpbrk.html" class="wikilink1" title="c:string:strpbrk">strpbrk</a></td><td class="col1">finds the first location of any character in one string, in another string</td>
+	</tr>
+	<tr class="row31">
+		<td class="col0"><a href="c/string/c/string/strrchr.html" class="wikilink1" title="c:string:strrchr">strrchr</a></td><td class="col1">finds the last occurrence of a character in a string</td>
+	</tr>
+	<tr class="row32">
+		<td class="col0"><a href="c/string/c/string/strspn.html" class="wikilink1" title="c:string:strspn">strspn</a></td><td class="col1">returns the length of a substring of characters of a string</td>
+	</tr>
+	<tr class="row33">
+		<td class="col0"><a href="c/string/c/string/strstr.html" class="wikilink1" title="c:string:strstr">strstr</a></td><td class="col1">finds the first occurrence of a substring of characters</td>
+	</tr>
+	<tr class="row34">
+		<td class="col0"><a href="c/string/c/string/strtod.html" class="wikilink1" title="c:string:strtod">strtod</a></td><td class="col1">converts a string to a double</td>
+	</tr>
+	<tr class="row35">
+		<td class="col0"><a href="c/string/c/string/strtok.html" class="wikilink1" title="c:string:strtok">strtok</a></td><td class="col1">finds the next token in a string</td>
+	</tr>
+	<tr class="row36">
+		<td class="col0"><a href="c/string/c/string/strtol.html" class="wikilink1" title="c:string:strtol">strtol</a></td><td class="col1">converts a string to a long</td>
+	</tr>
+	<tr class="row37">
+		<td class="col0"><a href="c/string/c/string/strtoul.html" class="wikilink1" title="c:string:strtoul">strtoul</a></td><td class="col1">converts a string to an unsigned long</td>
+	</tr>
+	<tr class="row38">
+		<td class="col0"><a href="c/string/c/string/strxfrm.html" class="wikilink1" title="c:string:strxfrm">strxfrm</a></td><td class="col1">converts a substring so that it can be used by string comparison functions</td>
+	</tr>
+	<tr class="row39">
+		<td class="col0"><a href="c/string/c/string/tolower.html" class="wikilink1" title="c:string:tolower">tolower</a></td><td class="col1">converts a character to lowercase</td>
+	</tr>
+	<tr class="row40">
+		<td class="col0"><a href="c/string/c/string/toupper.html" class="wikilink1" title="c:string:toupper">toupper</a></td><td class="col1">converts a character to uppercase</td>
+	</tr>
+</table>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        c/string/start.txt &middot; Last modified: 09/20/2009 16:56 by 89.180.117.164      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="c/string/c/string/start.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="c/string/c/string/start.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="c/string/c/string/start.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="c/string/c/string/start.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="c/string/c/string/start.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="c/string/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Astring%3Astart&amp;1254989995" width="1" height="1" alt=""  /></div>
+</body>
+</html>

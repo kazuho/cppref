@@ -1,0 +1,519 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    C++ Operator Precedence    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-09-12T11:59:47-0700" />
+<meta name="keywords" content="operator_precedence" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/operator_precedence?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/operator_precedence?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/operator_precedence" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/operator_precedence" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href=".//operator_precedence.html"  title="Backlinks">C++ Operator Precedence</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href=".//start.html"  title="start">C++ Reference</a> &raquo; <a href=".//operator_precedence.html"  title="operator_precedence">C++ Operator Precedence</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href=".//localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href=".//operator_precedence.html" class="wikilink1" title="operator_precedence">en</a></span></div></li>  <li><div class="li"><a href=".//br-pt/operator_precedence.html" class="wikilink2" title="br-pt:operator_precedence" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href=".//cn/operator_precedence.html" class="wikilink2" title="cn:operator_precedence" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href=".//fr/operator_precedence.html" class="wikilink1" title="fr:operator_precedence">fr</a></div></li>  <li><div class="li"><a href=".//it/operator_precedence.html" class="wikilink2" title="it:operator_precedence" rel="nofollow">it</a></div></li>  <li><div class="li"><a href=".//pl/operator_precedence.html" class="wikilink2" title="pl:operator_precedence" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href=".//ru/operator_precedence.html" class="wikilink2" title="ru:operator_precedence" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href=".//tr/operator_precedence.html" class="wikilink1" title="tr:operator_precedence">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#c_operator_precedence" class="toc">C++ Operator Precedence</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#order_of_evaluation_and_of_side_effects" class="toc">Order of Evaluation and of Side Effects</a></span></div></li>
+<li class="level2"><div class="li"><span class="li"><a href="#overloading_of_operators" class="toc">Overloading of Operators</a></span></div></li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+
+
+<h2><a name="c_operator_precedence" id="c_operator_precedence">C++ Operator Precedence</a></h2>
+<div class="level2">
+
+<p>
+
+The operators at the top of this list are evaluated first.  Operators within a group have the same precedence.  All operators have left-to-right associativity unless otherwise noted.
+</p>
+
+<p>
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+
+</p>
+<table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">  Precedence  </th><th class="col1 centeralign">  Operator  </th><th class="col2 centeralign">  Description  </th><th class="col3 centeralign">  Example  </th><th class="col4 centeralign">  Overloadable  </th><th class="col5 centeralign">  Associativity  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">1</td><td class="col1"><code>::</code></td><td class="col2">Scope resolution operator</td><td class="col3">Class::age = 2;</td><td class="col4">no</td><td class="col5">none</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">2</td><td class="col1"><code>()</code><br/>
+ <code>()</code><br/>
+ <code>[]</code><br/>
+ <code>-&gt;</code><br/>
+ <code>.</code><br/>
+ <code>++</code><br/>
+ <code>--</code><br/>
+ <code>const_cast</code><br/>
+ <code>dynamic_cast</code><br/>
+ <code>static_cast</code><br/>
+ <code>reinterpret_cast</code><br/>
+ <code>typeid</code></td><td class="col2">Function call<br/>
+ Member initalization <br/>
+ Array access<br/>
+ Member access from a pointer<br/>
+ Member access from an object<br/>
+ Post-increment<br/>
+ Post-decrement<br/>
+ Special cast<br/>
+ Special cast<br/>
+ Special cast<br/>
+ Special cast<br/>
+ Runtime type information</td><td class="col3">isdigit(&#039;1&#039;)<br/>
+  c_tor(int x, int y) : _x(x), _y(y*10){};<br/>
+ array[4] = 2;<br/>
+ ptr-&gt;age = 34;<br/>
+ obj.age = 34;<br/>
+ for( int i = 0; i &lt; 10; i++ ) cout &lt;&lt; i;<br/>
+ for( int i = 10; i &gt; 0; i-- ) cout &lt;&lt; i;<br/>
+ const_cast&lt;type_to&gt;(type_from);<br/>
+ dynamic_cast&lt;type_to&gt;(type_from);<br/>
+ static_cast&lt;type_to&gt;(type_from);<br/>
+ reinterpret_cast&lt;type_to&gt;(type_from);<br/>
+ cout « typeid(type).name();</td><td class="col4">yes<br/>
+ yes<br/>
+ yes<br/>
+ yes<br/>
+ no<br/>
+ yes<br/>
+ yes<br/>
+ no<br/>
+ no<br/>
+ no<br/>
+ no<br/>
+ no</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">3</td><td class="col1"><code>!</code><br/>
+ <code>not</code><br/>
+ <code>~</code><br/>
+ <code>compl</code><br/>
+ <code>++</code><br/>
+ <code>--</code><br/>
+ <code>-</code><br/>
+ <code>+</code><br/>
+ <code>*</code><br/>
+ <code>&amp;</code><br/>
+ <code>new</code><br/>
+ <code>new []</code><br/>
+ <code>delete</code><br/>
+ <code>delete []</code><br/>
+ <code>(type)</code><br/>
+ <code>sizeof</code></td><td class="col2">Logical negation<br/>
+ Alternate spelling for ! <br/>
+ Bitwise complement<br/>
+ Alternate spelling for ~ <br/>
+ Pre-increment<br/>
+ Pre-decrement<br/>
+ Unary minus<br/>
+ Unary plus<br/>
+ Dereference<br/>
+ Address of<br/>
+ Dynamic memory allocation<br/>
+ Dynamic memory allocation of array<br/>
+ Deallocating the memory<br/>
+ Deallocating the memory of array<br/>
+ Cast to a given type<br/>
+ Return size of an object or type</td><td class="col3">if( !done ) …<br/>
+ <br/>
+ flags = ~flags;<br/>
+ <br/>
+ for( i = 0; i &lt; 10; ++i ) cout &lt;&lt; i;<br/>
+ for( i = 10; i &gt; 0; --i ) cout &lt;&lt; i;<br/>
+ int i = -1;<br/>
+ int i = +1;<br/>
+ int data = *intPtr;<br/>
+ int *intPtr = &amp;data;<br/>
+ long *pVar = new long; <br/>
+ MyClass *ptr = new MyClass(args);<br/>
+  delete pVar;<br/>
+  delete [] array;<br/>
+ int i = (int) floatNum;\\int size = sizeof(float);</td><td class="col4">yes<br/>
+ <br/>
+ yes<br/>
+ <br/>
+ yes<br/>
+ yes<br/>
+ yes<br/>
+ yes<br/>
+ yes<br/>
+ yes<br/>
+ yes<br/>
+ yes<br/>
+ yes<br/>
+ yes<br/>
+ yes<br/>
+ no</td><td class="col5">right to left</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">4</td><td class="col1"><code>-&gt;*</code><br/>
+ <code>.*</code></td><td class="col2">Member pointer selector<br/>
+ Member object selector</td><td class="col3">ptr-&gt;*var = 24;<br/>
+ obj.*var = 24;</td><td class="col4">yes<br/>
+ no</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">5</td><td class="col1"><code>*</code><br/>
+ <code>/</code><br/>
+ <code>%</code></td><td class="col2">Multiplication<br/>
+ Division<br/>
+ Modulus</td><td class="col3">int i = 2 * 4;<br/>
+ float f = 10.0 / 3.0;<br/>
+ int rem = 4 % 3;</td><td class="col4">yes<br/>
+ yes<br/>
+ yes</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">6</td><td class="col1"><code>+</code><br/>
+ <code>-</code></td><td class="col2">Addition<br/>
+ Subtraction</td><td class="col3">int i = 2 + 3;<br/>
+ int i = 5 - 1;</td><td class="col4">yes<br/>
+ yes</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">7</td><td class="col1"><code>&lt;&lt;</code><br/>
+ <code>&gt;&gt;</code></td><td class="col2">Bitwise shift left<br/>
+ Bitwise shift right</td><td class="col3">int flags = 33 &lt;&lt; 1;<br/>
+ int flags = 33 &gt;&gt; 1;</td><td class="col4">yes<br/>
+ yes</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">8</td><td class="col1"><code>&lt;</code><br/>
+ <code>&lt;=</code><br/>
+ <code>&gt;</code><br/>
+ <code>&gt;=</code></td><td class="col2">Comparison less-than<br/>
+ Comparison less-than-or-equal-to<br/>
+ Comparison greater-than<br/>
+ Comparison greater-than-or-equal-to</td><td class="col3">if( i &lt; 42 ) …<br/>
+ if( i &lt;= 42 ) ...<br/>
+ if( i &gt; 42 ) …<br/>
+ if( i &gt;= 42 ) ...</td><td class="col4">yes<br/>
+ yes<br/>
+ yes<br/>
+ yes</td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">9</td><td class="col1"><code>==</code><br/>
+ <code>eq</code><br/>
+ <code>!=</code><br/>
+ <code>not_eq</code></td><td class="col2">Comparison equal-to<br/>
+ Alternate spelling for == <br/>
+ Comparison not-equal-to<br/>
+ Alternate spelling for != </td><td class="col3">if( i == 42 ) ...<br/>
+ <br/>
+ if( i != 42 ) …<br/>
+ </td><td class="col4">yes<br/>
+ -<br/>
+ yes<br/>
+ </td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">10</td><td class="col1"><code>&amp;</code><br/>
+ <code>bitand</code></td><td class="col2">Bitwise AND<br/>
+ Alternate spelling for &amp; </td><td class="col3">flags = flags &amp; 42;<br/>
+ </td><td class="col4">yes<br/>
+ </td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">11</td><td class="col1"><code>^</code><br/>
+ <code>xor</code></td><td class="col2">Bitwise exclusive OR (XOR)<br/>
+ Alternate spelling for ^ </td><td class="col3">flags = flags ^ 42;<br/>
+ </td><td class="col4">yes<br/>
+ </td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">12</td><td class="col1"><code>|</code><br/>
+ <code>bitor</code></td><td class="col2">Bitwise inclusive (normal) OR<br/>
+ Alternate spelling for |</td><td class="col3">flags = flags | 42;<br/>
+ </td><td class="col4">yes<br/>
+ </td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">13</td><td class="col1"><code>&amp;&amp;</code><br/>
+ <code>and</code></td><td class="col2">Logical AND<br/>
+ Alternate spelling for &amp;&amp; </td><td class="col3">if( conditionA &amp;&amp; conditionB ) …<br/>
+ </td><td class="col4">yes<br/>
+ </td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0">14</td><td class="col1"><code>||</code><br/>
+ <code>or</code></td><td class="col2">Logical OR<br/>
+ Alternate spelling for ||</td><td class="col3">if( conditionA || conditionB ) ...<br/>
+ </td><td class="col4">yes<br/>
+ </td><td class="col5">left to right</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0">15</td><td class="col1"><code>? :</code></td><td class="col2">Ternary conditional (if-then-else)</td><td class="col3">int i = (a &gt; b) ? a : b;</td><td class="col4">no</td><td class="col5">right to left</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0">16</td><td class="col1"><code>=</code><br/>
+ <code>+=</code><br/>
+ <code>-=</code><br/>
+ <code>*=</code><br/>
+ <code>/=</code><br/>
+ <code>%=</code><br/>
+ <code>&amp;=</code><br/>
+ <code>and_eq</code><br/>
+ <code>^=</code><br/>
+ <code>xor_eq</code><br/>
+ <code>|=</code><br/>
+ <code>or_eq</code><br/>
+ <code>&lt;&lt;=</code><br/>
+ <code>&gt;&gt;=</code></td><td class="col2">Assignment operator<br/>
+ Increment and assign<br/>
+ Decrement and assign<br/>
+ Multiply and assign<br/>
+ Divide and assign<br/>
+ Modulo and assign<br/>
+ Bitwise AND and assign<br/>
+ Alternate spelling for &amp;= <br/>
+ Bitwise exclusive or (XOR) and assign<br/>
+ Alternate spelling for ^= <br/>
+ Bitwise normal OR and assign<br/>
+ Alternate spelling for |=<br/>
+ Bitwise shift left and assign<br/>
+ Bitwise shift right and assign</td><td class="col3">int a = b;<br/>
+ a += 3;<br/>
+ b -= 4;<br/>
+ a *= 5;<br/>
+ a /= 2;<br/>
+ a %= 3;<br/>
+ flags &amp;= new_flags;<br/>
+ <br/>
+ flags ^= new_flags;<br/>
+ <br/>
+ flags |= new_flags;<br/>
+ <br/>
+ flags &lt;&lt;= 2;<br/>
+ flags &gt;&gt;= 2;</td><td class="col4">yes<br/>
+ yes<br/>
+ yes<br/>
+ yes<br/>
+ yes<br/>
+ yes<br/>
+ yes<br/>
+ <br/>
+ yes<br/>
+ <br/>
+ yes<br/>
+ <br/>
+ yes<br/>
+ yes</td><td class="col5">right to left</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0">17</td><td class="col1"><code>throw</code></td><td class="col2">throw exception</td><td class="col3">throw EClass(“Message”);</td><td class="col4" colspan="3">no</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0">18</td><td class="col1"><code>,</code></td><td class="col2">Sequential evaluation operator</td><td class="col3">for( i = 0, j = 0; i &lt; 10; i++, j++ ) …</td><td class="col4">yes</td><td class="col5">left to right</td>
+	</tr>
+</table>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/operator_precedence"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1-4970" /><input type="hidden" name="rev" value="1252781987" /><input type="submit" value="Edit" class="button" title="C++ Operator Precedence" /></div></form></div>
+<h2><a name="order_of_evaluation_and_of_side_effects" id="order_of_evaluation_and_of_side_effects">Order of Evaluation and of Side Effects</a></h2>
+<div class="level2">
+
+<p>
+
+One important aspect of C++ that is related to operator precedence is the order
+of evaluation and the order of side effects in expressions. In some
+circumstances, the order in which things happen is not defined. For example,
+consider the following code:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="kw4">float</span> x <span class="sy0">=</span> <span class="nu0">1</span>;
+    x <span class="sy0">=</span> x <span class="sy0">/</span> <span class="sy0">++</span>x;</pre>
+<p>
+The value of x is not guaranteed to be consistent across different compilers,
+because it is not clear whether the computer should evaluate the left or the
+right side of the division first. Depending on which side is evaluated first, x
+could take a different value.
+</p>
+
+<p>
+Furthermore, while ++x evaluates to x+1, the side effect of actually storing
+that new value in x could happen at different times, resulting in different
+values for x.
+</p>
+
+<p>
+The bottom line is that expressions like the one above are horribly ambiguous
+and should be avoided at all costs. When in doubt, break a single ambiguous
+expression into multiple expressions to ensure that the order of evaluation is
+correct.
+
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/operator_precedence"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="4971-6002" /><input type="hidden" name="rev" value="1252781987" /><input type="submit" value="Edit" class="button" title="Order of Evaluation and of Side Effects" /></div></form></div>
+<h2><a name="overloading_of_operators" id="overloading_of_operators">Overloading of Operators</a></h2>
+<div class="level2">
+
+<p>
+
+Overloading of operators can be very useful and very dangerous. On one hand
+overloading operators for a class you have created can help with logistics and
+readability of code. On the other you can overload an operator in such a way
+it can either obfuscate or just downright break your program. Use carefully.
+</p>
+
+<p>
+There are two ways to over load an operator: global function or class member.
+</p>
+
+<p>
+Example of overloading with a global function:
+
+</p>
+<pre class="c code c++" style="font-family:monospace;">     ostream <span class="sy0">&amp;</span> operator<span class="sy0">&lt;&lt;</span> <span class="br0">&#40;</span>ostream <span class="sy0">&amp;</span> os<span class="sy0">,</span> <span class="kw4">const</span> myClass <span class="sy0">&amp;</span> rhs<span class="br0">&#41;</span>;</pre>
+<p>
+But to be able to reach any private data within a user defined class you have to
+declare the global function as a friend within the definition of the class.
+</p>
+
+<p>
+Example:
+
+</p>
+<pre class="c code c++" style="font-family:monospace;">     class myClass <span class="br0">&#123;</span>
+&nbsp;
+       <span class="co1">// Gives the operator&lt;&lt; function access to 'myData'</span>
+       <span class="co1">// (this declaration should not go in public, private or protected)</span>
+       friend ostream <span class="sy0">&amp;</span> operator<span class="sy0">&lt;&lt;</span> <span class="br0">&#40;</span>ostream <span class="sy0">&amp;</span> lhs<span class="sy0">,</span> <span class="kw4">const</span> myClass <span class="sy0">&amp;</span> rhs<span class="br0">&#41;</span>;
+&nbsp;
+       private<span class="sy0">:</span>
+         <span class="kw4">int</span> myData;
+     <span class="br0">&#125;</span></pre>
+<p>
+Overloading with a class member can be done as follows:
+
+</p>
+<pre class="c code c++" style="font-family:monospace;">     class myClass <span class="br0">&#123;</span>
+&nbsp;
+       public<span class="sy0">:</span>
+         <span class="co1">// The left hand side of this operator is  a pointer to 'this'.</span>
+         <span class="kw4">int</span> operator<span class="sy0">+</span> <span class="br0">&#40;</span><span class="kw4">const</span> myClass <span class="sy0">&amp;</span> rhs<span class="br0">&#41;</span>;
+&nbsp;
+       private<span class="sy0">:</span>
+         <span class="kw4">int</span> myData;
+     <span class="br0">&#125;</span></pre>
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/operator_precedence"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="6003-" /><input type="hidden" name="rev" value="1252781987" /><input type="submit" value="Edit" class="button" title="Overloading of Operators" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        operator_precedence.txt &middot; Last modified: 09/12/2009 11:59 by 89.54.3.235      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href=".//operator_precedence.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href=".//operator_precedence.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href=".//operator_precedence.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href=".//operator_precedence.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href=".//operator_precedence.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href=".//feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=operator_precedence&amp;1254989992" width="1" height="1" alt=""  /></div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    resize    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2008-10-14T15:42:12-0700" />
+<meta name="keywords" content="string,resize" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/string/resize?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=string" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/string/resize?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/string/resize" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/string/resize" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="string/string/resize.html"  title="Backlinks">resize</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="string/start.html"  title="start">C++ Reference</a> &raquo; <a href="string/string/start.html"  title="string:start">C++ Strings</a> &raquo; <a href="string/string/resize.html"  title="string:resize">resize</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="string/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="string/string/resize.html" class="wikilink1" title="string:resize">en</a></span></div></li>  <li><div class="li"><a href="string/br-pt/string/resize.html" class="wikilink2" title="br-pt:string:resize" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="string/cn/string/resize.html" class="wikilink2" title="cn:string:resize" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="string/fr/string/resize.html" class="wikilink2" title="fr:string:resize" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="string/it/string/resize.html" class="wikilink2" title="it:string:resize" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="string/pl/string/resize.html" class="wikilink2" title="pl:string:resize" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="string/ru/string/resize.html" class="wikilink2" title="ru:string:resize" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="string/tr/string/resize.html" class="wikilink2" title="tr:string:resize" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="resize" id="resize">resize</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;string&gt;</span>
+    <span class="kw4">void</span> resize<span class="br0">&#40;</span> size_type size<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val <span class="sy0">=</span> TYPE<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>;</pre>
+<p>
+
+The function resize() changes the size of the string to size. If val is
+specified then any newly-created elements will be initialized to have a value
+of val.
+This function runs in <a href="string/complexity.html" class="wikilink1" title="complexity">linear time</a>.
+</p>
+
+<p>
+Related Topics: <a href="string/string/c_multimaps_multimap_constructors_destructors.html" class="wikilink2" title="string:c_multimaps_multimap_constructors_destructors" rel="nofollow">(C++ Multimaps) Multimap_constructors_&amp;_destructors</a>, <a href="string/string/capacity.html" class="wikilink1" title="string:capacity">capacity</a>, <a href="string/string/size.html" class="wikilink1" title="string:size">size</a>
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/string/resize"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1224024132" /><input type="submit" value="Edit" class="button" title="resize" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        string/resize.txt &middot; Last modified: 10/14/2008 15:42 (external edit)      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="string/string/resize.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="string/string/resize.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="string/string/resize.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="string/string/resize.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="string/string/resize.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="string/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=string%3Aresize&amp;1254990127" width="1" height="1" alt=""  /></div>
+</body>
+</html>

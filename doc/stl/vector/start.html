@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    C++ Vectors    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-08-06T01:49:33-0700" />
+<meta name="keywords" content="stl,vector,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/stl/vector/start?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=stl:vector" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/stl/vector/start?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/stl/vector/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/stl/vector/start" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="stl/vector/stl/vector/start.html"  title="Backlinks">C++ Vectors</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="stl/vector/start.html"  title="start">C++ Reference</a> &raquo; <a href="stl/vector/stl/start.html"  title="stl:start">C++ Standard Template Library</a> &raquo; <a href="stl/vector/stl/vector/start.html"  title="stl:vector:start">C++ Vectors</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="stl/vector/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="stl/vector/stl/vector/start.html" class="wikilink1" title="stl:vector:start">en</a></span></div></li>  <li><div class="li"><a href="stl/vector/br-pt/stl/vector/start.html" class="wikilink1" title="br-pt:stl:vector:start">br-pt</a></div></li>  <li><div class="li"><a href="stl/vector/cn/stl/vector/start.html" class="wikilink2" title="cn:stl:vector:start" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="stl/vector/fr/stl/vector/start.html" class="wikilink1" title="fr:stl:vector:start">fr</a></div></li>  <li><div class="li"><a href="stl/vector/it/stl/vector/start.html" class="wikilink1" title="it:stl:vector:start">it</a></div></li>  <li><div class="li"><a href="stl/vector/pl/stl/vector/start.html" class="wikilink2" title="pl:stl:vector:start" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="stl/vector/ru/stl/vector/start.html" class="wikilink1" title="ru:stl:vector:start">ru</a></div></li>  <li><div class="li"><a href="stl/vector/tr/stl/vector/start.html" class="wikilink2" title="tr:stl:vector:start" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="c_vectors" id="c_vectors">C++ Vectors</a></h2>
+<div class="level2">
+
+<p>
+
+Vectors contain contiguous elements stored as an array. 
+</p>
+
+<p>
+Accessing members of a vector can be done in <a href="stl/vector/complexity.html" class="wikilink1" title="complexity">constant time</a>, appending
+elements to a vector can be done in <a href="stl/vector/complexity.html" class="wikilink1" title="complexity">amortized constant time</a>, whereas locating a
+specific value or inserting elements into the vector takes <a href="stl/vector/complexity.html" class="wikilink1" title="complexity">linear time</a>.
+
+</p>
+<table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="stl/vector/stl/vector/vector_constructors.html" class="wikilink1" title="stl:vector:vector_constructors">Constructors</a></td><td class="col1">create vectors and initialize them with some data</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="stl/vector/stl/vector/vector_operators.html" class="wikilink1" title="stl:vector:vector_operators">Operators</a></td><td class="col1">compare, assign, and access elements of a vector</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="stl/vector/stl/vector/assign.html" class="wikilink1" title="stl:vector:assign">assign</a></td><td class="col1">assign elements to a vector</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="stl/vector/stl/vector/at.html" class="wikilink1" title="stl:vector:at">at</a></td><td class="col1">returns an element at a specific location</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="stl/vector/stl/vector/back.html" class="wikilink1" title="stl:vector:back">back</a></td><td class="col1">returns a reference to last element of a vector</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="stl/vector/stl/vector/begin.html" class="wikilink1" title="stl:vector:begin">begin</a></td><td class="col1">returns an iterator to the beginning of the vector</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="stl/vector/stl/vector/capacity.html" class="wikilink1" title="stl:vector:capacity">capacity</a></td><td class="col1">returns the number of elements that the vector can hold</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="stl/vector/stl/vector/clear.html" class="wikilink1" title="stl:vector:clear">clear</a></td><td class="col1">removes all elements from the vector</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0"><a href="stl/vector/stl/vector/empty.html" class="wikilink1" title="stl:vector:empty">empty</a></td><td class="col1">true if the vector has no elements</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0"><a href="stl/vector/stl/vector/end.html" class="wikilink1" title="stl:vector:end">end</a></td><td class="col1">returns an iterator just past the last element of a vector</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0"><a href="stl/vector/stl/vector/erase.html" class="wikilink1" title="stl:vector:erase">erase</a></td><td class="col1">removes elements from a vector</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0"><a href="stl/vector/stl/vector/front.html" class="wikilink1" title="stl:vector:front">front</a></td><td class="col1">returns a reference to the first element of a vector</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0"><a href="stl/vector/stl/vector/insert.html" class="wikilink1" title="stl:vector:insert">insert</a></td><td class="col1">inserts elements into the vector</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0"><a href="stl/vector/stl/vector/max_size.html" class="wikilink1" title="stl:vector:max_size">max_size</a></td><td class="col1">returns the maximum number of elements that the vector can hold</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0"><a href="stl/vector/stl/vector/pop_back.html" class="wikilink1" title="stl:vector:pop_back">pop_back</a></td><td class="col1">removes the last element of a vector</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0"><a href="stl/vector/stl/vector/push_back.html" class="wikilink1" title="stl:vector:push_back">push_back</a></td><td class="col1">add an element to the end of the vector</td>
+	</tr>
+	<tr class="row16">
+		<td class="col0"><a href="stl/vector/stl/vector/rbegin.html" class="wikilink1" title="stl:vector:rbegin">rbegin</a></td><td class="col1">returns a reverse_iterator to the end of the vector</td>
+	</tr>
+	<tr class="row17">
+		<td class="col0"><a href="stl/vector/stl/vector/rend.html" class="wikilink1" title="stl:vector:rend">rend</a></td><td class="col1">returns a reverse_iterator to the beginning of the vector</td>
+	</tr>
+	<tr class="row18">
+		<td class="col0"><a href="stl/vector/stl/vector/reserve.html" class="wikilink1" title="stl:vector:reserve">reserve</a></td><td class="col1">sets the minimum capacity of the vector</td>
+	</tr>
+	<tr class="row19">
+		<td class="col0"><a href="stl/vector/stl/vector/resize.html" class="wikilink1" title="stl:vector:resize">resize</a></td><td class="col1">change the size of the vector</td>
+	</tr>
+	<tr class="row20">
+		<td class="col0"><a href="stl/vector/stl/vector/size.html" class="wikilink1" title="stl:vector:size">size</a></td><td class="col1">returns the number of items in the vector</td>
+	</tr>
+	<tr class="row21">
+		<td class="col0"><a href="stl/vector/stl/vector/swap.html" class="wikilink1" title="stl:vector:swap">swap</a></td><td class="col1">swap the contents of this vector with another</td>
+	</tr>
+</table>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/vector/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1-1656" /><input type="hidden" name="rev" value="1249548573" /><input type="submit" value="Edit" class="button" title="C++ Vectors" /></div></form></div>
+<h3><a name="notes" id="notes">Notes:</a></h3>
+<div class="level3">
+
+<p>
+
+Note that a boolean vector (vector&lt;bool&gt;) is a specialization of the vector template that is designed to use less memory.  A normal boolean variable usually uses 1-4 bytes of memory, but a boolean vector should use only one bit per boolean value.
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/vector/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1657-" /><input type="hidden" name="rev" value="1249548573" /><input type="submit" value="Edit" class="button" title="Notes:" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        stl/vector/start.txt &middot; Last modified: 08/06/2009 01:49 by n-839      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="stl/vector/stl/vector/start.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="stl/vector/stl/vector/start.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="stl/vector/stl/vector/start.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="stl/vector/stl/vector/start.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="stl/vector/stl/vector/start.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="stl/vector/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Avector%3Astart&amp;1254990001" width="1" height="1" alt=""  /></div>
+</body>
+</html>

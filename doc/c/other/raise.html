@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    raise    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2008-11-29T14:09:33-0800" />
+<meta name="keywords" content="c,other,raise" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/c/other/raise?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=c:other" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/c/other/raise?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/c/other/raise" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/c/other/raise" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="c/other/c/other/raise.html"  title="Backlinks">raise</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="c/other/start.html"  title="start">C++ Reference</a> &raquo; <a href="c/other/c/start.html"  title="c:start">The Standard C Library</a> &raquo; <a href="c/other/c/other/start.html"  title="c:other:start">Other Standard C Functions</a> &raquo; <a href="c/other/c/other/raise.html"  title="c:other:raise">raise</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="c/other/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="c/other/c/other/raise.html" class="wikilink1" title="c:other:raise">en</a></span></div></li>  <li><div class="li"><a href="c/other/br-pt/c/other/raise.html" class="wikilink2" title="br-pt:c:other:raise" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="c/other/cn/c/other/raise.html" class="wikilink2" title="cn:c:other:raise" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="c/other/fr/c/other/raise.html" class="wikilink2" title="fr:c:other:raise" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="c/other/it/c/other/raise.html" class="wikilink2" title="it:c:other:raise" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="c/other/pl/c/other/raise.html" class="wikilink2" title="pl:c:other:raise" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="c/other/ru/c/other/raise.html" class="wikilink2" title="ru:c:other:raise" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="c/other/tr/c/other/raise.html" class="wikilink2" title="tr:c:other:raise" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="raise" id="raise">raise</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;csignal&gt;</span>
+    <span class="kw4">int</span> raise<span class="br0">&#40;</span> <span class="kw4">int</span> signal <span class="br0">&#41;</span>;</pre>
+<p>
+The raise() function sends the specified signal to the program. Some signals:
+
+</p>
+<table class="inline">
+	<tr class="row0">
+		<th class="col0">Signal</th><th class="col1">Meaning</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">SIGABRT </td><td class="col1">Termination error</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 leftalign">SIGFPE  </td><td class="col1">Floating pointer error</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 leftalign">SIGILL  </td><td class="col1">Bad instruction</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 leftalign">SIGINT  </td><td class="col1">User pressed CTRL-C</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">SIGSEGV </td><td class="col1">Illegal memory access</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">SIGTERM </td><td class="col1">Terminate program</td>
+	</tr>
+</table>
+
+<p>
+
+The return value is zero upon success, nonzero on failure.
+</p>
+
+<p>
+Related Topics: <a href="c/other/c/other/signal.html" class="wikilink1" title="c:other:signal">signal</a>
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/other/raise"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1227996573" /><input type="submit" value="Edit" class="button" title="raise" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        c/other/raise.txt &middot; Last modified: 11/29/2008 14:09 by 80.65.173.172      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="c/other/c/other/raise.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="c/other/c/other/raise.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="c/other/c/other/raise.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="c/other/c/other/raise.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="c/other/c/other/raise.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="c/other/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Aother%3Araise&amp;1254990111" width="1" height="1" alt=""  /></div>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    numeric_limits    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-07-29T07:19:23-0700" />
+<meta name="keywords" content="limits,numeric_limits" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/limits/numeric_limits?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=limits" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/limits/numeric_limits?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/limits/numeric_limits" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/limits/numeric_limits" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="limits/limits/numeric_limits.html"  title="Backlinks">numeric_limits</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="limits/start.html"  title="start">C++ Reference</a> &raquo; <a href="limits/limits/start.html"  title="limits:start">The &lt;limits&gt; header file</a> &raquo; <a href="limits/limits/numeric_limits.html"  title="limits:numeric_limits">numeric_limits</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="limits/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="limits/limits/numeric_limits.html" class="wikilink1" title="limits:numeric_limits">en</a></span></div></li>  <li><div class="li"><a href="limits/br-pt/limits/numeric_limits.html" class="wikilink2" title="br-pt:limits:numeric_limits" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="limits/cn/limits/numeric_limits.html" class="wikilink2" title="cn:limits:numeric_limits" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="limits/fr/limits/numeric_limits.html" class="wikilink2" title="fr:limits:numeric_limits" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="limits/it/limits/numeric_limits.html" class="wikilink2" title="it:limits:numeric_limits" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="limits/pl/limits/numeric_limits.html" class="wikilink2" title="pl:limits:numeric_limits" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="limits/ru/limits/numeric_limits.html" class="wikilink2" title="ru:limits:numeric_limits" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="limits/tr/limits/numeric_limits.html" class="wikilink2" title="tr:limits:numeric_limits" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="numeric_limits" id="numeric_limits">numeric_limits</a></h2>
+<div class="level2">
+
+<p>
+
+This templated class provides various information about the built-in types.
+</p>
+
+<p>
+Limits for numeric values are defined in the &lt;limits&gt; header. The templated values of numeric_limits provide system-dependent numerical representations of the C++ data types. Use the appropriate function given the data type as the template argument as shown in the table below. Note that numeric_limits can be overloaded for user-defined types as well.
+
+</p>
+<table class="inline">
+	<tr class="row0">
+		<th class="col0">Method or<br/>
+ constant</th><th class="col1">Return</th><th class="col2">Description</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">is_specialized</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">radix</td><td class="col1">int</td><td class="col2">base of exponent</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">digits</td><td class="col1">int</td><td class="col2">number of radix digits in mantissa</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">digits10</td><td class="col1">int</td><td class="col2">number of base 10 digits in mantissa</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">is_signed</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">is_integer</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">is_exact</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">min()</td><td class="col1">&lt;type&gt;</td><td class="col2">smallest number that can be respresented (not the most negative)</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">max()</td><td class="col1">&lt;type&gt;</td><td class="col2">largest number</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">epsilon()</td><td class="col1">&lt;type&gt;</td><td class="col2">inherent representation error value, so that 1 + epsilon &gt; 1 </td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">round_error()</td><td class="col1">&lt;type&gt;</td><td class="col2">maximum rounding adjustment possible</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">infinity()</td><td class="col1">&lt;type&gt;</td><td class="col2"> </td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">quiet_NaN()</td><td class="col1">&lt;type&gt;</td><td class="col2">invalid number that does not signal floating point error</td>
+	</tr>
+	<tr class="row14">
+		<td class="col0">signaling_NaN()</td><td class="col1">&lt;type&gt;</td><td class="col2">invalid number that signals floating point error</td>
+	</tr>
+	<tr class="row15">
+		<td class="col0">denorm_min()</td><td class="col1">&lt;type&gt;</td><td class="col2"> </td>
+	</tr>
+	<tr class="row16">
+		<td class="col0">min_exponent</td><td class="col1">int</td><td class="col2"> </td>
+	</tr>
+	<tr class="row17">
+		<td class="col0">min_exponent10</td><td class="col1">int</td><td class="col2"> </td>
+	</tr>
+	<tr class="row18">
+		<td class="col0">max_exponent</td><td class="col1">int</td><td class="col2"> </td>
+	</tr>
+	<tr class="row19">
+		<td class="col0">max_exponent10</td><td class="col1">int</td><td class="col2"> </td>
+	</tr>
+	<tr class="row20">
+		<td class="col0">has_infinity</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row21">
+		<td class="col0">has_quiet_NaN</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row22">
+		<td class="col0">has_signaling_NaN</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row23">
+		<td class="col0">has_denorm</td><td class="col1">&lt;type&gt;_denorm_style</td><td class="col2"> </td>
+	</tr>
+	<tr class="row24">
+		<td class="col0">has_denorm_loss</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row25">
+		<td class="col0">is_iec559</td><td class="col1">bool</td><td class="col2">conforms to IEC-559</td>
+	</tr>
+	<tr class="row26">
+		<td class="col0">is_bounded</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row27">
+		<td class="col0">is_modulo</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row28">
+		<td class="col0">traps</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row29">
+		<td class="col0">tinyness_before</td><td class="col1">bool</td><td class="col2"> </td>
+	</tr>
+	<tr class="row30">
+		<td class="col0">round_style</td><td class="col1">float_round_style { round_to_nearest, … }</td><td class="col2"> </td>
+	</tr>
+</table>
+
+<p>
+
+The most common usage is in bounds checking, to determine the minimum and maximum values a data type can hold. The following code prints out the minimum and maximum values for a short on the system it is run.
+
+</p>
+<pre class="c code c++" style="font-family:monospace;">  <span class="co2">#include &lt;limits&gt;</span>
+  std<span class="sy0">::</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Maximum short value: &quot;</span> <span class="sy0">&lt;&lt;</span> std<span class="sy0">::</span><span class="me2">numeric_limits</span><span class="sy0">&lt;</span>short<span class="sy0">&gt;::</span><span class="me2">max</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">&lt;&lt;</span> std<span class="sy0">::</span><span class="me2">endl</span>;
+  std<span class="sy0">::</span><a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Minimum short value: &quot;</span> <span class="sy0">&lt;&lt;</span> std<span class="sy0">::</span><span class="me2">numeric_limits</span><span class="sy0">&lt;</span>short<span class="sy0">&gt;::</span><span class="me2">min</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="sy0">&lt;&lt;</span> std<span class="sy0">::</span><span class="me2">endl</span>;</pre>
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        limits/numeric_limits.txt &middot; Last modified: 07/29/2009 07:19 by 89.178.13.79      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="limits/limits/numeric_limits.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="limits/limits/numeric_limits.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="limits/limits/numeric_limits.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="limits/limits/numeric_limits.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="limits/limits/numeric_limits.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="limits/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=limits%3Anumeric_limits&amp;1254990013" width="1" height="1" alt=""  /></div>
+</body>
+</html>

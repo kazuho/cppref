@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    I/O Constructors    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2008-10-14T15:42:03-0700" />
+<meta name="keywords" content="io,constructors" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/io/constructors?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=io" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/io/constructors?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/io/constructors" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/io/constructors" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="io/io/constructors.html"  title="Backlinks">I/O Constructors</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="io/start.html"  title="start">C++ Reference</a> &raquo; <a href="io/io/start.html"  title="io:start">C++ I/O</a> &raquo; <a href="io/io/constructors.html"  title="io:constructors">I/O Constructors</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="io/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="io/io/constructors.html" class="wikilink1" title="io:constructors">en</a></span></div></li>  <li><div class="li"><a href="io/br-pt/io/constructors.html" class="wikilink2" title="br-pt:io:constructors" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="io/cn/io/constructors.html" class="wikilink2" title="cn:io:constructors" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="io/fr/io/constructors.html" class="wikilink2" title="fr:io:constructors" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="io/it/io/constructors.html" class="wikilink2" title="it:io:constructors" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="io/pl/io/constructors.html" class="wikilink2" title="pl:io:constructors" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="io/ru/io/constructors.html" class="wikilink1" title="ru:io:constructors">ru</a></div></li>  <li><div class="li"><a href="io/tr/io/constructors.html" class="wikilink2" title="tr:io:constructors" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="io_constructors" id="io_constructors">I/O Constructors</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;fstream&gt;</span>
+    fstream<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>filename<span class="sy0">,</span> openmode mode <span class="br0">&#41;</span>;
+    ifstream<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>filename<span class="sy0">,</span> openmode mode <span class="br0">&#41;</span>;
+    ofstream<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>filename<span class="sy0">,</span> openmode mode <span class="br0">&#41;</span>;</pre>
+<p>
+The fstream, ifstream, and ofstream objects are used to do file I/O. The
+optional mode defines how the file is to be opened, according to the <a href="io/io/io_flags#mode_flags.html" class="wikilink1" title="io:io_flags">IO stream
+mode flags</a>. The optional filename specifies the file to be opened and
+associated with the stream.
+</p>
+
+<p>
+Input and output file streams can be used in a similar manner to C++ predefined
+I/O streams, cin and cout.
+</p>
+
+<p>
+For example, the following code reads input data and appends the result to an output file.
+</p>
+<pre class="c code c++" style="font-family:monospace;">    ifstream fin<span class="br0">&#40;</span> <span class="st0">&quot;/tmp/data.txt&quot;</span> <span class="br0">&#41;</span>;
+    ofstream fout<span class="br0">&#40;</span> <span class="st0">&quot;/tmp/results.txt&quot;</span><span class="sy0">,</span> ios<span class="sy0">::</span><span class="me2">app</span> <span class="br0">&#41;</span>;
+    <span class="kw1">while</span><span class="br0">&#40;</span> fin <span class="sy0">&gt;&gt;</span> temp <span class="br0">&#41;</span>
+      fout <span class="sy0">&lt;&lt;</span> temp <span class="sy0">+</span> <span class="nu0">2</span> <span class="sy0">&lt;&lt;</span> endl;
+    <span class="co1">// Files are closed automatically when the variables fin and fout fall out of scope.</span></pre>
+<p>
+Related Topics: <a href="io/io/close.html" class="wikilink1" title="io:close">close</a>, <a href="io/io/open.html" class="wikilink1" title="io:open">open</a>
+</p>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        io/constructors.txt &middot; Last modified: 10/14/2008 15:42 (external edit)      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="io/io/constructors.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="io/io/constructors.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="io/io/constructors.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="io/io/constructors.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="io/io/constructors.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="io/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=io%3Aconstructors&amp;1254990130" width="1" height="1" alt=""  /></div>
+</body>
+</html>

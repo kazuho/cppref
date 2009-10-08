@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    tanh    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-03-19T23:44:35-0700" />
+<meta name="keywords" content="c,math,tanh" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/c/math/tanh?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=c:math" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/c/math/tanh?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/c/math/tanh" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/c/math/tanh" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="c/math/c/math/tanh.html"  title="Backlinks">tanh</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="c/math/start.html"  title="start">C++ Reference</a> &raquo; <a href="c/math/c/start.html"  title="c:start">The Standard C Library</a> &raquo; <a href="c/math/c/math/start.html"  title="c:math:start">Standard C Math</a> &raquo; <a href="c/math/c/math/tanh.html"  title="c:math:tanh">tanh</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="c/math/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="c/math/c/math/tanh.html" class="wikilink1" title="c:math:tanh">en</a></span></div></li>  <li><div class="li"><a href="c/math/br-pt/c/math/tanh.html" class="wikilink2" title="br-pt:c:math:tanh" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="c/math/cn/c/math/tanh.html" class="wikilink2" title="cn:c:math:tanh" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="c/math/fr/c/math/tanh.html" class="wikilink2" title="fr:c:math:tanh" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="c/math/it/c/math/tanh.html" class="wikilink2" title="it:c:math:tanh" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="c/math/pl/c/math/tanh.html" class="wikilink2" title="pl:c:math:tanh" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="c/math/ru/c/math/tanh.html" class="wikilink2" title="ru:c:math:tanh" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="c/math/tr/c/math/tanh.html" class="wikilink2" title="tr:c:math:tanh" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="tanh" id="tanh">tanh</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cmath&gt;</span>
+    <span class="kw4">double</span> tanh<span class="br0">&#40;</span> <span class="kw4">double</span> arg <span class="br0">&#41;</span>;</pre>
+<p>
+
+The function tanh() returns the hyperbolic tangent of arg.
+</p>
+
+<p>
+C++ also provides the following overloaded forms:
+
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cmath&gt;</span>
+    <span class="kw4">float</span> tanh<span class="br0">&#40;</span> <span class="kw4">float</span> arg <span class="br0">&#41;</span>; <span class="co1">// same as tanhf() in C99</span>
+    <span class="kw4">long</span> <span class="kw4">double</span> tanh<span class="br0">&#40;</span> <span class="kw4">long</span> <span class="kw4">double</span> arg <span class="br0">&#41;</span>; <span class="co1">// same as tanhl() in C99</span></pre>
+<p>
+Related Topics: <a href="c/math/c/math/acos.html" class="wikilink1" title="c:math:acos">acos</a>, <a href="c/math/c/math/asin.html" class="wikilink1" title="c:math:asin">asin</a>, <a href="c/math/c/math/atan.html" class="wikilink1" title="c:math:atan">atan</a>, <a href="c/math/c/math/atan2.html" class="wikilink1" title="c:math:atan2">atan2</a>, <a href="c/math/c/math/cos.html" class="wikilink1" title="c:math:cos">cos</a>, <a href="c/math/c/math/cosh.html" class="wikilink1" title="c:math:cosh">cosh</a>, <a href="c/math/c/math/sin.html" class="wikilink1" title="c:math:sin">sin</a>, <a href="c/math/c/math/sinh.html" class="wikilink1" title="c:math:sinh">sinh</a>, <a href="c/math/c/math/tan.html" class="wikilink1" title="c:math:tan">tan</a>
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/math/tanh"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1237531475" /><input type="submit" value="Edit" class="button" title="tanh" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        c/math/tanh.txt &middot; Last modified: 03/19/2009 23:44 by spoon      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="c/math/c/math/tanh.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="c/math/c/math/tanh.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="c/math/c/math/tanh.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="c/math/c/math/tanh.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="c/math/c/math/tanh.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="c/math/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Amath%3Atanh&amp;1254990098" width="1" height="1" alt=""  /></div>
+</body>
+</html>

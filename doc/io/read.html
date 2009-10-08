@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    read    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-03-09T12:21:43-0700" />
+<meta name="keywords" content="io,read" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/io/read?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=io" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/io/read?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/io/read" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/io/read" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="io/io/read.html"  title="Backlinks">read</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="io/start.html"  title="start">C++ Reference</a> &raquo; <a href="io/io/start.html"  title="io:start">C++ I/O</a> &raquo; <a href="io/io/read.html"  title="io:read">read</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="io/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="io/io/read.html" class="wikilink1" title="io:read">en</a></span></div></li>  <li><div class="li"><a href="io/br-pt/io/read.html" class="wikilink2" title="br-pt:io:read" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="io/cn/io/read.html" class="wikilink2" title="cn:io:read" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="io/fr/io/read.html" class="wikilink2" title="fr:io:read" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="io/it/io/read.html" class="wikilink2" title="it:io:read" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="io/pl/io/read.html" class="wikilink2" title="pl:io:read" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="io/ru/io/read.html" class="wikilink2" title="ru:io:read" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="io/tr/io/read.html" class="wikilink2" title="tr:io:read" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="read" id="read">read</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    istream<span class="sy0">&amp;</span> istream<span class="sy0">::</span><span class="me2">read</span><span class="br0">&#40;</span> <span class="kw4">char</span><span class="sy0">*</span> buffer<span class="sy0">,</span> streamsize num <span class="br0">&#41;</span>;</pre>
+<p>
+
+The function read() is used with input streams, and reads num bytes from the
+stream before placing them in buffer. If <acronym title="End of file">EOF</acronym> is encountered, read() stops,
+leaving however many bytes it put into buffer as they are.
+For example:
+</p>
+<pre class="c code c++" style="font-family:monospace;">     <span class="kw4">struct</span> <span class="br0">&#123;</span>
+       <span class="kw4">int</span> height;
+       <span class="kw4">int</span> width;
+     <span class="br0">&#125;</span> rectangle;
+&nbsp;
+     input_file.<span class="me1">read</span><span class="br0">&#40;</span> <span class="br0">&#40;</span><span class="kw4">char</span> <span class="sy0">*</span><span class="br0">&#41;</span><span class="br0">&#40;</span><span class="sy0">&amp;</span>rectangle<span class="br0">&#41;</span><span class="sy0">,</span> <span class="kw4">sizeof</span><span class="br0">&#40;</span>rectangle<span class="br0">&#41;</span> <span class="br0">&#41;</span>;
+     <span class="kw1">if</span><span class="br0">&#40;</span> input_file.<span class="me1">bad</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       cerr <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Error reading data&quot;</span> <span class="sy0">&lt;&lt;</span> endl;
+       exit<span class="br0">&#40;</span> <span class="nu19">0</span> <span class="br0">&#41;</span>;
+     <span class="br0">&#125;</span></pre>
+<p>
+Related Topics: <a href="io/io/gcount.html" class="wikilink1" title="io:gcount">gcount</a>, <a href="io/io/get.html" class="wikilink1" title="io:get">get</a>, <a href="io/io/getline.html" class="wikilink1" title="io:getline">getline</a>, <a href="io/io/write.html" class="wikilink1" title="io:write">write</a>
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/io/read"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1236626503" /><input type="submit" value="Edit" class="button" title="read" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        io/read.txt &middot; Last modified: 03/09/2009 12:21 by 164.76.9.87      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="io/io/read.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="io/io/read.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="io/io/read.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="io/io/read.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="io/io/read.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="io/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=io%3Aread&amp;1254990140" width="1" height="1" alt=""  /></div>
+</body>
+</html>

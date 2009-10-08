@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    The Standard C Library    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2008-11-19T04:20:44-0800" />
+<meta name="keywords" content="c,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/c/start?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=c" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/c/start?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/c/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/c/start" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="c/c/start.html"  title="Backlinks">The Standard C Library</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="c/start.html"  title="start">C++ Reference</a> &raquo; <a href="c/c/start.html"  title="c:start">The Standard C Library</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="c/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="c/c/start.html" class="wikilink1" title="c:start">en</a></span></div></li>  <li><div class="li"><a href="c/br-pt/c/start.html" class="wikilink1" title="br-pt:c:start">br-pt</a></div></li>  <li><div class="li"><a href="c/cn/c/start.html" class="wikilink2" title="cn:c:start" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="c/fr/c/start.html" class="wikilink1" title="fr:c:start">fr</a></div></li>  <li><div class="li"><a href="c/it/c/start.html" class="wikilink2" title="it:c:start" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="c/pl/c/start.html" class="wikilink2" title="pl:c:start" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="c/ru/c/start.html" class="wikilink2" title="ru:c:start" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="c/tr/c/start.html" class="wikilink2" title="tr:c:start" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#the_standard_c_library" class="toc">The Standard C Library</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#c_library_functions" class="toc">C Library Functions</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#standard_c_header_files" class="toc">Standard C Header Files</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+
+
+<h2><a name="the_standard_c_library" id="the_standard_c_library">The Standard C Library</a></h2>
+<div class="level2">
+
+<p>
+
+C++ programmers have access to a variety of functions from the standard C libraries, as defined in <a href="http://www.open-std.org/jtc1/sc22/wg14/" class="urlextern" title="http://www.open-std.org/jtc1/sc22/wg14/"  rel="nofollow">ISO/IEC 9899:1990</a> (known as <a href="http://en.wikipedia.org/wiki/ANSI_C" class="urlextern" title="http://en.wikipedia.org/wiki/ANSI_C"  rel="nofollow">C90</a>).  All of the functions in these libraries are defined in the <strong>std</strong> <a href="c/keywords/namespace.html" class="wikilink1" title="keywords:namespace">namespace</a>.
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1-344" /><input type="hidden" name="rev" value="1227097244" /><input type="submit" value="Edit" class="button" title="The Standard C Library" /></div></form></div>
+<h3><a name="c_library_functions" id="c_library_functions">C Library Functions</a></h3>
+<div class="level3">
+
+<p>
+
+The following is a list of standard C library functions, grouped roughly by functionality:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <a href="c/c/io/start.html" class="wikilink1" title="c:io:start">Standard C I/O</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="c/c/string/start.html" class="wikilink1" title="c:string:start">Standard C String &amp; Character</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="c/c/math/start.html" class="wikilink1" title="c:math:start">Standard C Math</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="c/c/date/start.html" class="wikilink1" title="c:date:start">Standard C Date &amp; Time</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="c/c/mem/start.html" class="wikilink1" title="c:mem:start">Standard C Memory</a></div>
+</li>
+<li class="level1"><div class="li"> <a href="c/c/other/start.html" class="wikilink1" title="c:other:start">Other standard C functions</a></div>
+</li>
+</ul>
+
+<p>
+
+Alternatively, there is a list of <a href="c/c/all.html" class="wikilink1" title="c:all">all standard C library functions</a>.
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="345-768" /><input type="hidden" name="rev" value="1227097244" /><input type="submit" value="Edit" class="button" title="C Library Functions" /></div></form></div>
+<h3><a name="standard_c_header_files" id="standard_c_header_files">Standard C Header Files</a></h3>
+<div class="level3">
+
+<p>
+
+The functions above are defined in the following 18 header files:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> &lt;cassert&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;ciso646&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;csetjmp&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdio&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;ctime&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cctype&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;climits&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;csignal&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdlib&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cwchar&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cerrno&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;clocale&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdarg&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstring&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cwctype&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cfloat&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cmath&gt; </div>
+</li>
+<li class="level1"><div class="li"> &lt;cstddef&gt;</div>
+</li>
+</ul>
+
+<p>
+
+When including header files for the standard C libraries, it is preferable to use the <code>cfile</code> notation instead of the <code>file.h</code> notation.  For example, the <code>stdio.h</code> header file should be included using this command:
+</p>
+<pre class="c code c++" style="font-family:monospace;">  <span class="co2">#include &lt;cstdio&gt;</span></pre>
+<p>
+The <code>file.h</code> notation works, but it is mainly meant for backwards compatibility.   The difference between the <code>cfile</code> and <code>file.h</code> notation is that functions included via the <code>file.h</code> notation will appear in the global namespace instead of the <strong>std</strong> namespace.
+</p>
+
+<p>
+See also: <a href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf" class="urlextern" title="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf"  rel="nofollow">The 2005 C99 working paper</a> from the <a href="http://www.open-std.org/jtc1/sc22/wg14/www/standards.html" class="urlextern" title="http://www.open-std.org/jtc1/sc22/wg14/www/standards.html"  rel="nofollow">Approved Standards of working group 14</a>.
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="769-" /><input type="hidden" name="rev" value="1227097244" /><input type="submit" value="Edit" class="button" title="Standard C Header Files" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        c/start.txt &middot; Last modified: 11/19/2008 04:20 by 85.16.204.100      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="c/c/start.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="c/c/start.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="c/c/start.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="c/c/start.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="c/c/start.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="c/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Astart&amp;1254989995" width="1" height="1" alt=""  /></div>
+</body>
+</html>

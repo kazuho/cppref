@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    C++ String Streams    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-04-15T08:41:10-0700" />
+<meta name="keywords" content="io,sstream,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/io/sstream/start?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=io:sstream" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/io/sstream/start?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/io/sstream/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/io/sstream/start" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="io/sstream/io/sstream/start.html"  title="Backlinks">C++ String Streams</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="io/sstream/start.html"  title="start">C++ Reference</a> &raquo; <a href="io/sstream/io/start.html"  title="io:start">C++ I/O</a> &raquo; <a href="io/sstream/io/sstream/start.html"  title="io:sstream:start">C++ String Streams</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="io/sstream/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="io/sstream/io/sstream/start.html" class="wikilink1" title="io:sstream:start">en</a></span></div></li>  <li><div class="li"><a href="io/sstream/br-pt/io/sstream/start.html" class="wikilink2" title="br-pt:io:sstream:start" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="io/sstream/cn/io/sstream/start.html" class="wikilink2" title="cn:io:sstream:start" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="io/sstream/fr/io/sstream/start.html" class="wikilink2" title="fr:io:sstream:start" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="io/sstream/it/io/sstream/start.html" class="wikilink2" title="it:io:sstream:start" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="io/sstream/pl/io/sstream/start.html" class="wikilink2" title="pl:io:sstream:start" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="io/sstream/ru/io/sstream/start.html" class="wikilink2" title="ru:io:sstream:start" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="io/sstream/tr/io/sstream/start.html" class="wikilink2" title="tr:io:sstream:start" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h1><a name="c_string_streams" id="c_string_streams">C++ String Streams</a></h1>
+<div class="level1">
+
+<p>
+
+String streams are similar to the &lt;iostream&gt; and &lt;fstream&gt; libraries,
+except that string streams allow you to perform I/O on strings instead
+of streams. The &lt;sstream&gt; library provides functionality similar to
+<a href="io/sstream/c/io/sscanf.html" class="wikilink1" title="c:io:sscanf">sscanf</a> and <a href="io/sstream/c/io/sprintf.html" class="wikilink1" title="c:io:sprintf">sprintf</a> in the standard C library.
+</p>
+
+<p>
+Three main classes are available in &lt;sstream&gt;:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> stringstream - allows input and output</div>
+</li>
+<li class="level1"><div class="li"> istringstream - allows input only</div>
+</li>
+<li class="level1"><div class="li"> ostringstream - allows output only</div>
+</li>
+</ul>
+
+<p>
+
+String streams are actually subclasses of iostreams, so all of the
+functions available for iostreams are also available for
+stringstream. See the <a href="io/sstream/io/start.html" class="wikilink1" title="io:start">C++ I/O functions</a> for more information.
+</p>
+
+<p>
+In addition, string streams also supply the following functions:
+
+</p>
+<table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="io/sstream/io/sstream/constructors.html" class="wikilink1" title="io:sstream:constructors">Constructors</a></td><td class="col1">create new string streams</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="io/sstream/io/sstream/operators.html" class="wikilink1" title="io:sstream:operators">Operators</a></td><td class="col1">read from and write to string streams</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="io/sstream/io/sstream/rdbuf.html" class="wikilink1" title="io:sstream:rdbuf">rdbuf</a></td><td class="col1">get the buffer for a string stream</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="io/sstream/io/sstream/str.html" class="wikilink1" title="io:sstream:str">str</a></td><td class="col1">get or set the stream&#039;s string</td>
+	</tr>
+</table>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        io/sstream/start.txt &middot; Last modified: 04/15/2009 08:41 by 89.155.39.234      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="io/sstream/io/sstream/start.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="io/sstream/io/sstream/start.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="io/sstream/io/sstream/start.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="io/sstream/io/sstream/start.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="io/sstream/io/sstream/start.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="io/sstream/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=io%3Asstream%3Astart&amp;1254989998" width="1" height="1" alt=""  /></div>
+</body>
+</html>

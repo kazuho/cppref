@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    exceptions    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2008-10-14T15:42:04-0700" />
+<meta name="keywords" content="io,exceptions" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/io/exceptions?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=io" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/io/exceptions?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/io/exceptions" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/io/exceptions" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="io/io/exceptions.html"  title="Backlinks">exceptions</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="io/start.html"  title="start">C++ Reference</a> &raquo; <a href="io/io/start.html"  title="io:start">C++ I/O</a> &raquo; <a href="io/io/exceptions.html"  title="io:exceptions">exceptions</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="io/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="io/io/exceptions.html" class="wikilink1" title="io:exceptions">en</a></span></div></li>  <li><div class="li"><a href="io/br-pt/io/exceptions.html" class="wikilink2" title="br-pt:io:exceptions" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="io/cn/io/exceptions.html" class="wikilink2" title="cn:io:exceptions" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="io/fr/io/exceptions.html" class="wikilink2" title="fr:io:exceptions" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="io/it/io/exceptions.html" class="wikilink2" title="it:io:exceptions" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="io/pl/io/exceptions.html" class="wikilink2" title="pl:io:exceptions" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="io/ru/io/exceptions.html" class="wikilink2" title="ru:io:exceptions" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="io/tr/io/exceptions.html" class="wikilink2" title="tr:io:exceptions" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="exceptions" id="exceptions">exceptions</a></h2>
+<div class="level2">
+
+<p>
+Sets the stream to throw exceptions instead of silently ignoring the error conditions specified. Without parameters returns the current setting.
+</p>
+
+<p>
+The setting is composed by ORing together bits for the conditions to throw on. The following code enables all exceptions on stream s.
+</p>
+<pre class="c code c++" style="font-family:monospace;">   s.<span class="me1">exceptions</span><span class="br0">&#40;</span>std<span class="sy0">::</span><span class="me2">ios</span><span class="sy0">::</span><span class="me2">badbit</span> | std<span class="sy0">::</span><span class="me2">ios</span><span class="sy0">::</span><span class="me2">failbit</span> | std<span class="sy0">::</span><span class="me2">ios</span><span class="sy0">::</span><span class="me2">eofbit</span><span class="br0">&#41;</span>;</pre>
+<p>
+Related Topics: <a href="io/io/bad.html" class="wikilink1" title="io:bad">bad</a>, <a href="io/io/clear.html" class="wikilink1" title="io:clear">clear</a>, <a href="io/io/eof.html" class="wikilink1" title="io:eof">eof</a>, <a href="io/io/fail.html" class="wikilink1" title="io:fail">fail</a>, <a href="io/io/good.html" class="wikilink1" title="io:good">good</a>, <a href="io/io/rdstate.html" class="wikilink1" title="io:rdstate">rdstate</a> 
+</p>
+
+<p>
+Stream states:
+</p>
+<ul>
+<li class="level1"><div class="li">if (s): The previous operation was successful (a shorthand for !s.fail()).</div>
+</li>
+<li class="level1"><div class="li">if (s.fail()): The previous operation failed.</div>
+</li>
+<li class="level1"><div class="li">if (s.eof()): Reading past the end has been attempted.</div>
+</li>
+<li class="level1"><div class="li">if (s.bad()): Stream state is undefined; the stream can no longer be used.</div>
+</li>
+<li class="level1"><div class="li">if (s.good()): None of bad/eof/fail are set.</div>
+</li>
+</ul>
+
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        io/exceptions.txt &middot; Last modified: 10/14/2008 15:42 (external edit)      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="io/io/exceptions.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="io/io/exceptions.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="io/io/exceptions.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="io/io/exceptions.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="io/io/exceptions.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="io/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=io%3Aexceptions&amp;1254990133" width="1" height="1" alt=""  /></div>
+</body>
+</html>

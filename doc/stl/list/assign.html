@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    assign    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-07-27T23:46:32-0700" />
+<meta name="keywords" content="stl,list,assign" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/stl/list/assign?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=stl:list" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/stl/list/assign?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/stl/list/assign" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/stl/list/assign" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="stl/list/stl/list/assign.html"  title="Backlinks">assign</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="stl/list/start.html"  title="start">C++ Reference</a> &raquo; <a href="stl/list/stl/start.html"  title="stl:start">C++ Standard Template Library</a> &raquo; <a href="stl/list/stl/list/start.html"  title="stl:list:start">C++ Lists</a> &raquo; <a href="stl/list/stl/list/assign.html"  title="stl:list:assign">assign</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="stl/list/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="stl/list/stl/list/assign.html" class="wikilink1" title="stl:list:assign">en</a></span></div></li>  <li><div class="li"><a href="stl/list/br-pt/stl/list/assign.html" class="wikilink1" title="br-pt:stl:list:assign">br-pt</a></div></li>  <li><div class="li"><a href="stl/list/cn/stl/list/assign.html" class="wikilink2" title="cn:stl:list:assign" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="stl/list/fr/stl/list/assign.html" class="wikilink2" title="fr:stl:list:assign" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="stl/list/it/stl/list/assign.html" class="wikilink2" title="it:stl:list:assign" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="stl/list/pl/stl/list/assign.html" class="wikilink2" title="pl:stl:list:assign" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="stl/list/ru/stl/list/assign.html" class="wikilink1" title="ru:stl:list:assign">ru</a></div></li>  <li><div class="li"><a href="stl/list/tr/stl/list/assign.html" class="wikilink2" title="tr:stl:list:assign" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="assign" id="assign">assign</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;list&gt;</span>
+    <span class="kw4">void</span> assign<span class="br0">&#40;</span> size_type num<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val <span class="br0">&#41;</span>;
+    <span class="kw4">void</span> assign<span class="br0">&#40;</span> input_iterator start<span class="sy0">,</span> input_iterator end <span class="br0">&#41;</span>;</pre>
+<p>
+The assign() function either gives the current list the values from start to
+end, or gives it num copies of val.
+</p>
+
+<p>
+This function will destroy the previous contents of the list.
+</p>
+
+<p>
+For example, the following code uses assign() to put 10 copies of the integer
+42 into a list:
+</p>
+<pre class="c code c++" style="font-family:monospace;">   list<span class="sy0">&lt;</span>int<span class="sy0">&gt;</span> l;
+   l.<span class="me1">assign</span><span class="br0">&#40;</span> <span class="nu0">10</span><span class="sy0">,</span> <span class="nu0">42</span> <span class="br0">&#41;</span>;
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> l.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> l<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; &quot;</span>;
+   <span class="br0">&#125;</span>
+   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;</pre>
+<p>
+The above code displays the following output:
+</p>
+<pre class="code">
+   42 42 42 42 42 42 42 42 42 42</pre>
+<p>
+The next example shows how assign() can be used to copy one list to another:
+</p>
+<pre class="c code c++" style="font-family:monospace;">   list<span class="sy0">&lt;</span>int<span class="sy0">&gt;</span> l1;
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> <span class="nu0">10</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     l1.<span class="me1">push_back</span><span class="br0">&#40;</span> i <span class="br0">&#41;</span>;
+   <span class="br0">&#125;</span>
+&nbsp;
+   list<span class="sy0">&lt;</span>int<span class="sy0">&gt;</span> l2;
+   l2.<span class="me1">assign</span><span class="br0">&#40;</span> l1.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span> l1.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#41;</span>;
+&nbsp;
+   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> l2.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> l2<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; &quot;</span>;
+   <span class="br0">&#125;</span>
+   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;</pre>
+<p>
+When run, the above code displays the following output:
+</p>
+<pre class="c code c++" style="font-family:monospace;">   <span class="nu19">0</span> <span class="nu0">1</span> <span class="nu0">2</span> <span class="nu0">3</span> <span class="nu0">4</span> <span class="nu0">5</span> <span class="nu0">6</span> <span class="nu0">7</span> <span class="nu0">8</span> <span class="nu0">9</span></pre>
+<p>
+
+Related Topics: <a href="stl/list/stl/list/insert.html" class="wikilink1" title="stl:list:insert">insert</a>, <a href="stl/list/stl/list/push_back.html" class="wikilink1" title="stl:list:push_back">push_back</a>, <a href="stl/list/stl/list/push_front.html" class="wikilink1" title="stl:list:push_front">push_front</a>
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/list/assign"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1248763592" /><input type="submit" value="Edit" class="button" title="assign" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        stl/list/assign.txt &middot; Last modified: 07/27/2009 23:46 by n-839      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="stl/list/stl/list/assign.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="stl/list/stl/list/assign.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="stl/list/stl/list/assign.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="stl/list/stl/list/assign.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="stl/list/stl/list/assign.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="stl/list/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Alist%3Aassign&amp;1254990218" width="1" height="1" alt=""  /></div>
+</body>
+</html>

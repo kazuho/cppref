@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    isdigit    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2008-10-14T15:42:02-0700" />
+<meta name="keywords" content="c,string,isdigit" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/c/string/isdigit?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=c:string" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/c/string/isdigit?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/c/string/isdigit" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/c/string/isdigit" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="c/string/c/string/isdigit.html"  title="Backlinks">isdigit</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="c/string/start.html"  title="start">C++ Reference</a> &raquo; <a href="c/string/c/start.html"  title="c:start">The Standard C Library</a> &raquo; <a href="c/string/c/string/start.html"  title="c:string:start">Standard C String and Character</a> &raquo; <a href="c/string/c/string/isdigit.html"  title="c:string:isdigit">isdigit</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="c/string/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="c/string/c/string/isdigit.html" class="wikilink1" title="c:string:isdigit">en</a></span></div></li>  <li><div class="li"><a href="c/string/br-pt/c/string/isdigit.html" class="wikilink2" title="br-pt:c:string:isdigit" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="c/string/cn/c/string/isdigit.html" class="wikilink2" title="cn:c:string:isdigit" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="c/string/fr/c/string/isdigit.html" class="wikilink2" title="fr:c:string:isdigit" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="c/string/it/c/string/isdigit.html" class="wikilink2" title="it:c:string:isdigit" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="c/string/pl/c/string/isdigit.html" class="wikilink1" title="pl:c:string:isdigit">pl</a></div></li>  <li><div class="li"><a href="c/string/ru/c/string/isdigit.html" class="wikilink1" title="ru:c:string:isdigit">ru</a></div></li>  <li><div class="li"><a href="c/string/tr/c/string/isdigit.html" class="wikilink2" title="tr:c:string:isdigit" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="isdigit" id="isdigit">isdigit</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cctype&gt;</span>
+    <span class="kw4">int</span> isdigit<span class="br0">&#40;</span> <span class="kw4">int</span> ch <span class="br0">&#41;</span>;</pre>
+<p>
+
+The function isdigit() returns non-zero if its argument is a digit between 0
+and 9. Otherwise, zero is returned.
+</p>
+<pre class="c code c++" style="font-family:monospace;">     <span class="kw4">char</span> c;
+     scanf<span class="br0">&#40;</span> <span class="st0">&quot;%c&quot;</span><span class="sy0">,</span> <span class="sy0">&amp;</span>c <span class="br0">&#41;</span>;
+     <span class="kw1">if</span><span class="br0">&#40;</span> isdigit<span class="br0">&#40;</span>c<span class="br0">&#41;</span> <span class="br0">&#41;</span>
+       <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span class="kw3">printf</span></a><span class="br0">&#40;</span> <span class="st0">&quot;You entered the digit %c<span class="es0">\n</span>&quot;</span><span class="sy0">,</span> c <span class="br0">&#41;</span>;</pre>
+<p>
+Related Topics: <a href="c/string/c/string/isalnum.html" class="wikilink1" title="c:string:isalnum">isalnum</a>, <a href="c/string/c/string/isalpha.html" class="wikilink1" title="c:string:isalpha">isalpha</a>, <a href="c/string/c/string/iscntrl.html" class="wikilink1" title="c:string:iscntrl">iscntrl</a>, <a href="c/string/c/string/isgraph.html" class="wikilink1" title="c:string:isgraph">isgraph</a>, <a href="c/string/c/string/isprint.html" class="wikilink1" title="c:string:isprint">isprint</a>, <a href="c/string/c/string/ispunct.html" class="wikilink1" title="c:string:ispunct">ispunct</a>, <a href="c/string/c/string/isspace.html" class="wikilink1" title="c:string:isspace">isspace</a>, <a href="c/string/c/string/isxdigit.html" class="wikilink1" title="c:string:isxdigit">isxdigit</a>
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/string/isdigit"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1224024122" /><input type="submit" value="Edit" class="button" title="isdigit" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        c/string/isdigit.txt &middot; Last modified: 10/14/2008 15:42 (external edit)      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="c/string/c/string/isdigit.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="c/string/c/string/isdigit.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="c/string/c/string/isdigit.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="c/string/c/string/isdigit.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="c/string/c/string/isdigit.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="c/string/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Astring%3Aisdigit&amp;1254990068" width="1" height="1" alt=""  /></div>
+</body>
+</html>

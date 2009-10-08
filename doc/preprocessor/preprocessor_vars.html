@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    Predefined preprocessor variables    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-01-08T11:25:50-0800" />
+<meta name="keywords" content="preprocessor,preprocessor_vars" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/preprocessor/preprocessor_vars?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=preprocessor" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/preprocessor/preprocessor_vars?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/preprocessor/preprocessor_vars" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/preprocessor/preprocessor_vars" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="preprocessor/preprocessor/preprocessor_vars.html"  title="Backlinks">Predefined preprocessor variables</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="preprocessor/start.html"  title="start">C++ Reference</a> &raquo; <a href="preprocessor/preprocessor/start.html"  title="preprocessor:start">Preprocessor Commands</a> &raquo; <a href="preprocessor/preprocessor/preprocessor_vars.html"  title="preprocessor:preprocessor_vars">Predefined preprocessor variables</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="preprocessor/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="preprocessor/preprocessor/preprocessor_vars.html" class="wikilink1" title="preprocessor:preprocessor_vars">en</a></span></div></li>  <li><div class="li"><a href="preprocessor/br-pt/preprocessor/preprocessor_vars.html" class="wikilink2" title="br-pt:preprocessor:preprocessor_vars" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="preprocessor/cn/preprocessor/preprocessor_vars.html" class="wikilink1" title="cn:preprocessor:preprocessor_vars">cn</a></div></li>  <li><div class="li"><a href="preprocessor/fr/preprocessor/preprocessor_vars.html" class="wikilink2" title="fr:preprocessor:preprocessor_vars" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="preprocessor/it/preprocessor/preprocessor_vars.html" class="wikilink2" title="it:preprocessor:preprocessor_vars" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="preprocessor/pl/preprocessor/preprocessor_vars.html" class="wikilink2" title="pl:preprocessor:preprocessor_vars" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="preprocessor/ru/preprocessor/preprocessor_vars.html" class="wikilink2" title="ru:preprocessor:preprocessor_vars" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="preprocessor/tr/preprocessor/preprocessor_vars.html" class="wikilink2" title="tr:preprocessor:preprocessor_vars" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="predefined_preprocessor_variables" id="predefined_preprocessor_variables">Predefined preprocessor variables</a></h2>
+<div class="level2">
+
+<p>
+
+Syntax:
+
+</p>
+<pre class="c code c++" style="font-family:monospace;">    __LINE__
+    __FILE__
+    __DATE__
+    __TIME__
+    __cplusplus
+    __STDC__</pre>
+<p>
+The following variables can vary by compiler, but generally work:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> The <code>__LINE__</code> and <code>__FILE__</code> variables represent the current line and current file being processed.</div>
+</li>
+<li class="level1"><div class="li"> The <code>__DATE__</code> variable contains the current date, in the form month/day/year. This is the date that the file was compiled, not necessarily the current date.</div>
+</li>
+<li class="level1"><div class="li"> The <code>__TIME__</code> variable represents the current time, in the form hour:minute:second. This is the time that the file was compiled, not necessarily the current time.</div>
+</li>
+<li class="level1"><div class="li"> The <code>__cplusplus</code> variable is only defined when compiling a C++ program. In some older compilers, this is also called <code>c_plusplus</code>.</div>
+</li>
+<li class="level1"><div class="li"> The <code>__STDC__</code> variable is defined when compiling a C program, and may also be defined when compiling C++.</div>
+</li>
+</ul>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/preprocessor/preprocessor_vars"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1-938" /><input type="hidden" name="rev" value="1231442750" /><input type="submit" value="Edit" class="button" title="Predefined preprocessor variables" /></div></form></div>
+<h3><a name="gcc-specific_variables" id="gcc-specific_variables">GCC-specific variables</a></h3>
+<div class="level3">
+
+<p>
+
+The following are GCC-specific variables.  While they are not specifically preprocessor macros they are <a href="http://gcc.gnu.org/onlinedocs/gcc/Function-Names.html" class="urlextern" title="http://gcc.gnu.org/onlinedocs/gcc/Function-Names.html"  rel="nofollow">magic</a> and can be used the same way:
+
+</p>
+<ul>
+<li class="level1"><div class="li"> <code>__func__</code> contains the bare name of the function</div>
+</li>
+<li class="level1"><div class="li"> <code>__FUNCTION__</code> is another name for <code>__func__</code></div>
+</li>
+<li class="level1"><div class="li"> The <code>__PRETTY_FUNCTION__</code> contains the type signature of the function as well as its bare name. </div>
+</li>
+</ul>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/preprocessor/preprocessor_vars"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="939-" /><input type="hidden" name="rev" value="1231442750" /><input type="submit" value="Edit" class="button" title="GCC-specific variables" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        preprocessor/preprocessor_vars.txt &middot; Last modified: 01/08/2009 11:25 by nate      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="preprocessor/preprocessor/preprocessor_vars.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="preprocessor/preprocessor/preprocessor_vars.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="preprocessor/preprocessor/preprocessor_vars.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="preprocessor/preprocessor/preprocessor_vars.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="preprocessor/preprocessor/preprocessor_vars.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="preprocessor/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=preprocessor%3Apreprocessor_vars&amp;1254990012" width="1" height="1" alt=""  /></div>
+</body>
+</html>

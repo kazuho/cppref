@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    setlocale    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2008-12-19T10:55:17-0800" />
+<meta name="keywords" content="c,date,setlocale" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/c/date/setlocale?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=c:date" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/c/date/setlocale?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/c/date/setlocale" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/c/date/setlocale" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="c/date/c/date/setlocale.html"  title="Backlinks">setlocale</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="c/date/start.html"  title="start">C++ Reference</a> &raquo; <a href="c/date/c/start.html"  title="c:start">The Standard C Library</a> &raquo; <a href="c/date/c/date/start.html"  title="c:date:start">Standard C Date &amp; Time</a> &raquo; <a href="c/date/c/date/setlocale.html"  title="c:date:setlocale">setlocale</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="c/date/localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="c/date/c/date/setlocale.html" class="wikilink1" title="c:date:setlocale">en</a></span></div></li>  <li><div class="li"><a href="c/date/br-pt/c/date/setlocale.html" class="wikilink2" title="br-pt:c:date:setlocale" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="c/date/cn/c/date/setlocale.html" class="wikilink2" title="cn:c:date:setlocale" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="c/date/fr/c/date/setlocale.html" class="wikilink2" title="fr:c:date:setlocale" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="c/date/it/c/date/setlocale.html" class="wikilink2" title="it:c:date:setlocale" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="c/date/pl/c/date/setlocale.html" class="wikilink2" title="pl:c:date:setlocale" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="c/date/ru/c/date/setlocale.html" class="wikilink2" title="ru:c:date:setlocale" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="c/date/tr/c/date/setlocale.html" class="wikilink2" title="tr:c:date:setlocale" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="setlocale" id="setlocale">setlocale</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;clocale&gt;</span>
+    <span class="kw4">char</span> <span class="sy0">*</span>setlocale<span class="br0">&#40;</span> <span class="kw4">int</span> category<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span> locale <span class="br0">&#41;</span>;</pre>
+<p>
+The setlocale function is used to set and retrieve the current locale. If
+<code>locale</code> is NULL, the current locale is returned. Otherwise, <code>locale</code> is used to
+set the locale for the given category.
+</p>
+
+<p>
+The argument <code>category</code> can have the following values:
+
+</p>
+<table class="inline">
+	<tr class="row0">
+		<th class="col0">Value</th><th class="col1">Description</th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">LC_ALL</td><td class="col1">All of the locale</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">LC_TIME</td><td class="col1">Date and time formatting</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">LC_NUMERIC</td><td class="col1">Number formatting</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">LC_COLLATE</td><td class="col1">String collation and regular expression matching</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">LC_CTYPE</td><td class="col1">Regular expression matching, conversion, case-sensitive comparison, wide character functions, and character classification.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">LC_MESSAGES</td><td class="col1">For natural language messages</td>
+	</tr>
+</table>
+
+<p>
+
+Related Topics: <a href="c/date/c/string/strcoll.html" class="wikilink1" title="c:string:strcoll">strcoll</a>
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/date/setlocale"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1229712917" /><input type="submit" value="Edit" class="button" title="setlocale" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        c/date/setlocale.txt &middot; Last modified: 12/19/2008 10:55 by nate      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="c/date/c/date/setlocale.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="c/date/c/date/setlocale.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="c/date/c/date/setlocale.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="c/date/c/date/setlocale.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="c/date/c/date/setlocale.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="c/date/feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Adate%3Asetlocale&amp;1254990102" width="1" height="1" alt=""  /></div>
+</body>
+</html>

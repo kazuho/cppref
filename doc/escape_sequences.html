@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    Constant Escape Sequences    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-07-19T12:21:51-0700" />
+<meta name="keywords" content="escape_sequences" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/escape_sequences?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/escape_sequences?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/escape_sequences" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/escape_sequences" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href=".//escape_sequences.html"  title="Backlinks">Constant Escape Sequences</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href=".//start.html"  title="start">C++ Reference</a> &raquo; <a href=".//escape_sequences.html"  title="escape_sequences">Constant Escape Sequences</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href=".//localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href=".//escape_sequences.html" class="wikilink1" title="escape_sequences">en</a></span></div></li>  <li><div class="li"><a href=".//br-pt/escape_sequences.html" class="wikilink2" title="br-pt:escape_sequences" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href=".//cn/escape_sequences.html" class="wikilink2" title="cn:escape_sequences" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href=".//fr/escape_sequences.html" class="wikilink1" title="fr:escape_sequences">fr</a></div></li>  <li><div class="li"><a href=".//it/escape_sequences.html" class="wikilink2" title="it:escape_sequences" rel="nofollow">it</a></div></li>  <li><div class="li"><a href=".//pl/escape_sequences.html" class="wikilink2" title="pl:escape_sequences" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href=".//ru/escape_sequences.html" class="wikilink2" title="ru:escape_sequences" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href=".//tr/escape_sequences.html" class="wikilink2" title="tr:escape_sequences" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="constant_escape_sequences" id="constant_escape_sequences">Constant Escape Sequences</a></h2>
+<div class="level2">
+
+<p>
+
+The following escape sequences can be used to define certain special characters
+within strings:
+
+</p>
+<table class="inline">
+	<tr class="row0">
+		<th class="col0 centeralign">  Escape Sequence  </th><th class="col1 centeralign">  Description  </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0">\&#039;</td><td class="col1">Single quote</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0">\”</td><td class="col1">Double quote</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">\\</td><td class="col1">Backslash</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0">\nnn</td><td class="col1">Octal number (nnn)</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0">\0</td><td class="col1">Null character (really just the octal number zero)</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0">\a</td><td class="col1">Audible bell</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0">\b</td><td class="col1">Backspace</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">\f</td><td class="col1">Formfeed</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0">\n</td><td class="col1">Newline</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0">\r</td><td class="col1">Carriage return</td>
+	</tr>
+	<tr class="row11">
+		<td class="col0">\t</td><td class="col1">Horizontal tab</td>
+	</tr>
+	<tr class="row12">
+		<td class="col0">\v</td><td class="col1">Vertical tab</td>
+	</tr>
+	<tr class="row13">
+		<td class="col0">\xnnn</td><td class="col1">Hexadecimal number (nnn)</td>
+	</tr>
+</table>
+
+<p>
+
+An example of this is contained in the following code (which assumes that the
+newline character generates complete newlines, i.e. on Unix systems):
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span class="kw3">printf</span></a><span class="br0">&#40;</span> <span class="st0">&quot;This<span class="es0">\n</span>is<span class="es0">\n</span>a<span class="es0">\n</span>test<span class="es0">\n</span><span class="es0">\n</span>She said, <span class="es0">\&quot;</span>How are you?<span class="es0">\&quot;</span><span class="es0">\n</span>&quot;</span> <span class="br0">&#41;</span>;</pre>
+<p>
+which would display
+</p>
+<pre class="code">
+    This
+    is
+    a
+    test
+
+    She said, "How are you?"</pre>
+</div>
+
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        escape_sequences.txt &middot; Last modified: 07/19/2009 12:21 by nate      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href=".//escape_sequences.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href=".//escape_sequences.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href=".//escape_sequences.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href=".//escape_sequences.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href=".//escape_sequences.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href=".//feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=escape_sequences&amp;1254989992" width="1" height="1" alt=""  /></div>
+</body>
+</html>
