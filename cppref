@@ -9,12 +9,11 @@ eval {
     $doc_dir = File::ShareDir::dist_dir('cppref') . "/doc";
 };
 
-my $name = shift @ARGV or do {
-    print "Usage: cppref (module|function)\n";
-    exit 0;
-};
+my $name = shift @ARGV || 'start';
 
 $name =~ s{::}{/}g;
+$name .= '/start'
+    if -d "$doc_dir/$name";
 
 # try by name
 if (-e "$doc_dir/$name.html") {
