@@ -42,7 +42,7 @@ if (@cand == 0) {
     open_file($cand[0]);
 } else {
     print STDERR "multiple choices:\n";
-    print map { s{(/start|)\.html$}{}; "  $_\n" } @cand;
+    print map { s{$doc_dir/}{}; s{(/start|)\.html$}{}; "  $_\n" } @cand;
     exit 2;
 }
 
