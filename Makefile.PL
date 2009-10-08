@@ -6,6 +6,7 @@ readme_from 'cppref';
 
 no_index 'orig';
 
+requires_external_bin 'w3m';
 configure_requires 'Module::Install::ReadmeFromPod';
 configure_requires 'File::Slurp';
 requires 'File::ShareDir';
