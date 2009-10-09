@@ -1,5 +1,9 @@
 Revision history for cppref.
 
+0.05  Fri Oct 09 19:55:00 2009
+	- rewrite constructor and operator filenames (now can be specified like string::string or vector::operator)
+	- accept $ENV{CPPREF_DOCROOT} as document directory
+
 0.04  Fri Oct 09 14:48:00 2009
 	- added support for lynx (through $ENV{BROWSER}, thanks to yappo)
 
