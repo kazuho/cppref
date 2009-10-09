@@ -1,6 +1,9 @@
 Revision history for cppref.
 
-0.03  Fri oct 09 13:20:00 2009
+0.04  Fri Oct 09 14:48:00 2009
+	- added support for lynx (through $ENV{BROWSER}, thanks to yappo)
+
+0.03  Fri Oct 09 13:20:00 2009
 	- fix release error in 0.02
 
 0.02  Fri Oct 09 12:57:00 2009
