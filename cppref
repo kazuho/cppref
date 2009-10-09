@@ -8,6 +8,8 @@ use File::ShareDir ();
 
 our $VERSION = '0.02';
 
+my $BROWSER = $ENV{BROWSER} || 'w3m';
+
 my $doc_dir = "doc";
 eval {
     $doc_dir = File::ShareDir::dist_dir('cppref');
@@ -20,7 +22,7 @@ $name .= '/start'
     if -d "$doc_dir/$name";
 
 # try by name
-open_w3m("$doc_dir/$name.html")
+open_browser("$doc_dir/$name.html")
     if -e "$doc_dir/$name.html";
 
 my @cand;
@@ -41,7 +43,7 @@ if (@cand == 0) {
     print STDERR "no document found for: $name\n";
     exit 1;
 } elsif (@cand == 1) {
-    open_w3m($cand[0]);
+    open_browser($cand[0]);
 } else {
     pipe my $rfh, my $wfh
         or die "failed to create pipe:$!";
@@ -71,12 +73,12 @@ EOT
     open STDIN, '<&', $rfh
         or die "cannot dup STDIN:$!";
     close $rfh;
-    open_w3m(qw(-T text/html));
+    open_browser(qw(-T text/html));
 }
 
-sub open_w3m {
-    exec 'w3m', @_;
-    die "failed to exec w3m:$!";
+sub open_browser {
+    exec $BROWSER, @_;
+    die "failed to exec browser ($BROWSER):$!";
 }
 
 __END__
