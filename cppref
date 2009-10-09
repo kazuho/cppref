@@ -6,7 +6,7 @@ use File::Basename;
 use File::Find ();
 use File::ShareDir ();
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 my $doc_dir = "doc";
 eval {
