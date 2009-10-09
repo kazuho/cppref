@@ -60,7 +60,7 @@ EOT
             my $name = $cand;
             $name =~ s{$doc_dir/}{};
             $name =~ s{(/start|)\.html$}{};
-            $name =~ s{/}{::}g;
+            $name =~ s{/}{ &raquo; }g;
             printf $wfh qq{<li><a href="%s">%s</a></li>\n}, $cand, $name;
         }
         print $wfh <<"EOT";
