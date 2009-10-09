@@ -1,10 +1,17 @@
 use inc::Module::Install;
 
 name 'cppref';
-all_from 'cppref';
-readme_from 'cppref';
 
-no_index 'orig';
+abstract_from 'cppref';
+author_from 'cppref';
+license_from 'cppref';
+perl_version_from 'cppref';
+version_from 'cppref';
+
+readme_from 'cppref';
+distribution_type 'script';
+
+no_index directory => 'orig';
 
 requires_external_bin 'w3m';
 configure_requires 'Module::Install::ReadmeFromPod';
