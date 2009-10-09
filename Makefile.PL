@@ -11,7 +11,7 @@ version_from 'cppref';
 readme_from 'cppref';
 distribution_type 'script';
 
-no_index 'orig';
+no_index directory => 'orig';
 
 requires_external_bin 'w3m';
 configure_requires 'Module::Install::ReadmeFromPod';
