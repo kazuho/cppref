@@ -1,8 +1,15 @@
 use inc::Module::Install;
 
 name 'cppref';
-all_from 'cppref';
+
+abstract_from 'cppref';
+author_from 'cppref';
+license_from 'cppref';
+perl_version_from 'cppref';
+version_from 'cppref';
+
 readme_from 'cppref';
+distribution_type 'script';
 
 no_index 'orig';
 

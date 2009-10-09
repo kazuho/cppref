@@ -1,5 +1,8 @@
 Revision history for cppref.
 
+0.03  Fri oct 09 13:20:00 2009
+	- fix release error in 0.02
+
 0.02  Fri Oct 09 12:57:00 2009
 	- when having multiple choices, let the user select in w3m
 	- use $ENV{BROWSER} if exists (thanks to yappo)
