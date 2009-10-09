@@ -9,8 +9,8 @@
   </title>
 
   <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2009-10-02T12:41:16-0700" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2009-10-09T00:50:15-0700" />
 <meta name="keywords" content="stl,algorithm,find_first_of" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
@@ -51,7 +51,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/find_first_of.html" class="wikilink1" title="stl:algorithm:find_first_of">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/find_first_of.html" class="wikilink2" title="br-pt:stl:algorithm:find_first_of" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/find_first_of.html" class="wikilink2" title="cn:stl:algorithm:find_first_of" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/find_first_of.html" class="wikilink2" title="fr:stl:algorithm:find_first_of" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/find_first_of.html" class="wikilink2" title="it:stl:algorithm:find_first_of" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/find_first_of.html" class="wikilink2" title="pl:stl:algorithm:find_first_of" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/find_first_of.html" class="wikilink2" title="ru:stl:algorithm:find_first_of" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/find_first_of.html" class="wikilink2" title="tr:stl:algorithm:find_first_of" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/find_first_of.html" class="wikilink1" title="stl:algorithm:find_first_of">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/find_first_of.html" class="wikilink2" title="br-pt:stl:algorithm:find_first_of" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/find_first_of.html" class="wikilink2" title="cn:stl:algorithm:find_first_of" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/find_first_of.html" class="wikilink2" title="fr:stl:algorithm:find_first_of" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/find_first_of.html" class="wikilink2" title="it:stl:algorithm:find_first_of" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/algorithm/find_first_of.html" class="wikilink2" title="jp:stl:algorithm:find_first_of" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/find_first_of.html" class="wikilink2" title="pl:stl:algorithm:find_first_of" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/find_first_of.html" class="wikilink2" title="ru:stl:algorithm:find_first_of" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/find_first_of.html" class="wikilink2" title="tr:stl:algorithm:find_first_of" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,8 +73,8 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    iterator find_first_of<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> iterator find_start<span class="sy0">,</span> iterator find_end <span class="br0">&#41;</span>;
-    iterator find_first_of<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> iterator find_start<span class="sy0">,</span> iterator find_end<span class="sy0">,</span> BinPred bp <span class="br0">&#41;</span>;</pre>
+    forward_iterator find_first_of<span class="br0">&#40;</span> forward_iterator start<span class="sy0">,</span> forward_iterator end<span class="sy0">,</span> forward_iterator2 find_start<span class="sy0">,</span> forward_iterator2 find_end <span class="br0">&#41;</span>;
+    forward_iterator find_first_of<span class="br0">&#40;</span> forward_iterator start<span class="sy0">,</span> forward_iterator end<span class="sy0">,</span> forward_iterator2 find_start<span class="sy0">,</span> forward_iterator2 find_end<span class="sy0">,</span> BinPred bp <span class="br0">&#41;</span>;</pre>
 <p>
 The find_first_of() function searches for the first occurence of any element
 between find_start and find_end. The data that are searched are those between
@@ -122,7 +122,7 @@ Related Topics: <a href="../../stl/algorithm/adjacent_find.html" class="wikilink
               </div>
       <!--
       <div class="doc">
-        stl/algorithm/find_first_of.txt &middot; Last modified: 10/02/2009 12:41 by 207.107.180.1      </div>
+        stl/algorithm/find_first_of.txt &middot; Last modified: 10/09/2009 00:50 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -149,6 +149,6 @@ Related Topics: <a href="../../stl/algorithm/adjacent_find.html" class="wikilink
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Afind_first_of&amp;1254996362" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Afind_first_of&amp;1255084843" width="1" height="1" alt=""  /></div>
 </body>
 </html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    Bitset Operators    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-06-10T10:54:54-0700" />
+<meta name="keywords" content="stl,bitset,bitset_operators" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/stl/bitset/bitset_operators?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=stl:bitset" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/stl/bitset/bitset_operators?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/stl/bitset/bitset_operators" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/stl/bitset/bitset_operators" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="../../stl/bitset/operator.html"  title="Backlinks">Bitset Operators</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="../../start.html"  title="start">C++ Reference</a> &raquo; <a href="../../stl/start.html"  title="stl:start">C++ Standard Template Library</a> &raquo; <a href="../../stl/bitset/start.html"  title="stl:bitset:start">C++ Bitsets</a> &raquo; <a href="../../stl/bitset/operator.html"  title="stl:bitset:bitset_operators">Bitset Operators</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/bitset/operator.html" class="wikilink1" title="stl:bitset:bitset_operators">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/bitset/operator.html" class="wikilink2" title="br-pt:stl:bitset:bitset_operators" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/bitset/operator.html" class="wikilink2" title="cn:stl:bitset:bitset_operators" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/bitset/operator.html" class="wikilink2" title="fr:stl:bitset:bitset_operators" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/bitset/operator.html" class="wikilink1" title="it:stl:bitset:bitset_operators">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/bitset/operator.html" class="wikilink2" title="jp:stl:bitset:bitset_operators" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/bitset/operator.html" class="wikilink2" title="pl:stl:bitset:bitset_operators" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/bitset/operator.html" class="wikilink2" title="ru:stl:bitset:bitset_operators" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/bitset/operator.html" class="wikilink2" title="tr:stl:bitset:bitset_operators" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="bitset_operators" id="bitset_operators">Bitset Operators</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;bitset&gt;</span>
+    <span class="sy0">!=,</span> <span class="sy0">==,</span> <span class="sy0">&amp;=,</span> <span class="sy0">^=,</span> |=, ~<span class="sy0">,</span> <span class="sy0">&lt;&lt;=,</span> <span class="sy0">&gt;&gt;=,</span> <span class="br0">&#91;</span><span class="br0">&#93;</span><span class="sy0">,</span> <span class="sy0">=</span></pre>
+<p>
+These operators all work with bitsets. They can be described as follows:
+
+</p>
+<table class="inline">
+	<tr class="row0">
+		<th class="col0"> Operator </th><th class="col1"> Description </th>
+	</tr>
+	<tr class="row1">
+		<td class="col0 centeralign">  <code>!=</code>  </td><td class="col1">returns true if the two bitsets are not equal</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0 centeralign">  <code>==</code>  </td><td class="col1">returns true if the two bitsets are equal</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0 centeralign">  <code>&amp;=</code>  </td><td class="col1">performs the AND operation on the two bitsets</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0 centeralign">  <code>^=</code>  </td><td class="col1">performs the XOR operation on the two bitsets</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0 centeralign">  <code>|=</code>  </td><td class="col1">performs the OR operation on the two bitsets</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0 centeralign">  <code>~</code>  </td><td class="col1">reverses the bitset (same as calling flip())</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0 centeralign">  <code>&lt;&lt;=</code>  </td><td class="col1">shifts the bitset to the left</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0 centeralign">  <code>&gt;&gt;=</code>  </td><td class="col1">shifts the bitset to the right</td>
+	</tr>
+	<tr class="row9">
+		<td class="col0 centeralign">  <code>b[x]</code>  </td><td class="col1">returns a reference to the xth bit in the bitset</td>
+	</tr>
+	<tr class="row10">
+		<td class="col0 centeralign">  <code>=</code>  </td><td class="col1">take an unsigned long and put the corresponding bits in the bitset</td>
+	</tr>
+</table>
+
+<p>
+
+For example, the following code creates a bitset and shifts it to the left 4
+places:
+</p>
+<pre class="c code c++" style="font-family:monospace;">   <span class="co1">// create a bitset out of a number</span>
+   bitset<span class="sy0">&lt;</span><span class="nu0">8</span><span class="sy0">&gt;</span> bs2<span class="br0">&#40;</span> <span class="br0">&#40;</span><span class="kw4">long</span><span class="br0">&#41;</span> <span class="nu0">131</span> <span class="br0">&#41;</span>;
+   <span class="co1">// you can do bitset&lt;8&gt; bs2; bs2 = (long) 131;</span>
+&nbsp;
+   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;bs2 is &quot;</span> <span class="sy0">&lt;&lt;</span> bs2 <span class="sy0">&lt;&lt;</span> endl;
+   <span class="co1">// shift the bitset to the left by 4 digits</span>
+   bs2 <span class="sy0">&lt;&lt;=</span> <span class="nu0">4</span>;
+   <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;now bs2 is &quot;</span> <span class="sy0">&lt;&lt;</span> bs2 <span class="sy0">&lt;&lt;</span> endl;</pre>
+<p>
+When the above code is run, it displays:
+</p>
+<pre class="code">
+ bs2 is 10000011
+ now bs2 is 00110000</pre>
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/bitset/bitset_operators"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="4-" /><input type="hidden" name="rev" value="1244656494" /><input type="submit" value="Edit" class="button" title="Bitset Operators" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        stl/bitset/bitset_operators.txt &middot; Last modified: 06/10/2009 10:54 by nate      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="../../stl/bitset/operator.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="../../stl/bitset/operator.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="../../stl/bitset/operator.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="../../stl/bitset/operator.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="../../stl/bitset/operator.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="../../feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Abitset%3Abitset_operators&amp;1255084950" width="1" height="1" alt=""  /></div>
+</body>
+</html>

@@ -9,8 +9,8 @@
   </title>
 
   <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:05-0700" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2009-10-09T00:55:51-0700" />
 <meta name="keywords" content="stl,algorithm,count" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
@@ -51,7 +51,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/count.html" class="wikilink1" title="stl:algorithm:count">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/count.html" class="wikilink2" title="br-pt:stl:algorithm:count" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/count.html" class="wikilink2" title="cn:stl:algorithm:count" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/count.html" class="wikilink1" title="fr:stl:algorithm:count">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/count.html" class="wikilink2" title="it:stl:algorithm:count" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/count.html" class="wikilink2" title="pl:stl:algorithm:count" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/count.html" class="wikilink1" title="ru:stl:algorithm:count">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/count.html" class="wikilink2" title="tr:stl:algorithm:count" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/count.html" class="wikilink1" title="stl:algorithm:count">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/count.html" class="wikilink2" title="br-pt:stl:algorithm:count" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/count.html" class="wikilink2" title="cn:stl:algorithm:count" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/count.html" class="wikilink1" title="fr:stl:algorithm:count">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/count.html" class="wikilink2" title="it:stl:algorithm:count" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/algorithm/count.html" class="wikilink2" title="jp:stl:algorithm:count" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/count.html" class="wikilink2" title="pl:stl:algorithm:count" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/count.html" class="wikilink1" title="ru:stl:algorithm:count">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/count.html" class="wikilink2" title="tr:stl:algorithm:count" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,7 +73,8 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    size_t count<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val <span class="br0">&#41;</span>;</pre>
+    typename iterator_traits<span class="sy0">&lt;</span>input_iterator<span class="sy0">&gt;::</span><span class="me2">difference_type</span>
+    count<span class="br0">&#40;</span> input_iterator start<span class="sy0">,</span> input_iterator end<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val <span class="br0">&#41;</span>;</pre>
 <p>
 The count() function returns the number of elements between start and end that
 match val.
@@ -103,7 +104,7 @@ Related Topics: <a href="../../stl/algorithm/accumulate.html" class="wikilink1" 
 </p>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/algorithm/count"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1224024125" /><input type="submit" value="Edit" class="button" title="count" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/algorithm/count"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1255074951" /><input type="submit" value="Edit" class="button" title="count" /></div></form></div>
     <!-- wikipage stop -->
   </div>
 
@@ -117,7 +118,7 @@ Related Topics: <a href="../../stl/algorithm/accumulate.html" class="wikilink1" 
               </div>
       <!--
       <div class="doc">
-        stl/algorithm/count.txt &middot; Last modified: 10/14/2008 15:42 (external edit)      </div>
+        stl/algorithm/count.txt &middot; Last modified: 10/09/2009 00:55 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -144,6 +145,6 @@ Related Topics: <a href="../../stl/algorithm/accumulate.html" class="wikilink1" 
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Acount&amp;1254996358" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Acount&amp;1255084839" width="1" height="1" alt=""  /></div>
 </body>
 </html>

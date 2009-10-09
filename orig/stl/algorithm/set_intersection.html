@@ -9,8 +9,8 @@
   </title>
 
   <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2009-07-14T07:07:30-0700" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2009-10-09T02:04:02-0700" />
 <meta name="keywords" content="stl,algorithm,set_intersection" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
@@ -51,7 +51,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/set_intersection.html" class="wikilink1" title="stl:algorithm:set_intersection">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/set_intersection.html" class="wikilink2" title="br-pt:stl:algorithm:set_intersection" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/set_intersection.html" class="wikilink2" title="cn:stl:algorithm:set_intersection" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/set_intersection.html" class="wikilink2" title="fr:stl:algorithm:set_intersection" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/set_intersection.html" class="wikilink2" title="it:stl:algorithm:set_intersection" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/set_intersection.html" class="wikilink2" title="pl:stl:algorithm:set_intersection" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/set_intersection.html" class="wikilink2" title="ru:stl:algorithm:set_intersection" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/set_intersection.html" class="wikilink2" title="tr:stl:algorithm:set_intersection" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/set_intersection.html" class="wikilink1" title="stl:algorithm:set_intersection">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/set_intersection.html" class="wikilink2" title="br-pt:stl:algorithm:set_intersection" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/set_intersection.html" class="wikilink2" title="cn:stl:algorithm:set_intersection" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/set_intersection.html" class="wikilink2" title="fr:stl:algorithm:set_intersection" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/set_intersection.html" class="wikilink2" title="it:stl:algorithm:set_intersection" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/algorithm/set_intersection.html" class="wikilink2" title="jp:stl:algorithm:set_intersection" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/set_intersection.html" class="wikilink2" title="pl:stl:algorithm:set_intersection" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/set_intersection.html" class="wikilink2" title="ru:stl:algorithm:set_intersection" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/set_intersection.html" class="wikilink2" title="tr:stl:algorithm:set_intersection" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -74,9 +74,9 @@ Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
     template<span class="sy0">&lt;</span> typename InIterA<span class="sy0">,</span> typename InIterB<span class="sy0">,</span> typename OutIter <span class="sy0">&gt;</span>
-    iterator set_intersection<span class="br0">&#40;</span> InIterA start1<span class="sy0">,</span> InIterA end1<span class="sy0">,</span> InIterB start2<span class="sy0">,</span> InIterB end2<span class="sy0">,</span> OutIter result <span class="br0">&#41;</span>;
+    OutIter set_intersection<span class="br0">&#40;</span> InIterA start1<span class="sy0">,</span> InIterA end1<span class="sy0">,</span> InIterB start2<span class="sy0">,</span> InIterB end2<span class="sy0">,</span> OutIter result <span class="br0">&#41;</span>;
     template<span class="sy0">&lt;</span> typename InIterA<span class="sy0">,</span> typename InIterB<span class="sy0">,</span> typename OutIter<span class="sy0">,</span> typename StrictWeakOrdering <span class="sy0">&gt;</span>
-    iterator set_intersection<span class="br0">&#40;</span> InIterA start1<span class="sy0">,</span> InIterA end1<span class="sy0">,</span> InIterB start2<span class="sy0">,</span> InIterB end2<span class="sy0">,</span> OutIter result<span class="sy0">,</span> StrictWeakOrdering cmp <span class="br0">&#41;</span>;</pre>
+    OutIter set_intersection<span class="br0">&#40;</span> InIterA start1<span class="sy0">,</span> InIterA end1<span class="sy0">,</span> InIterB start2<span class="sy0">,</span> InIterB end2<span class="sy0">,</span> OutIter result<span class="sy0">,</span> StrictWeakOrdering cmp <span class="br0">&#41;</span>;</pre>
 <p>
 The set_intersection() algorithm computes the intersection of the two sets
 defined by [start1,end1) and [start2,end2) and stores the intersection starting
@@ -106,7 +106,7 @@ Related Topics: <a href="../../stl/algorithm/includes.html" class="wikilink1" ti
 </p>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/algorithm/set_intersection"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1247580450" /><input type="submit" value="Edit" class="button" title="set_intersection" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/algorithm/set_intersection"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1255079042" /><input type="submit" value="Edit" class="button" title="set_intersection" /></div></form></div>
     <!-- wikipage stop -->
   </div>
 
@@ -120,7 +120,7 @@ Related Topics: <a href="../../stl/algorithm/includes.html" class="wikilink1" ti
               </div>
       <!--
       <div class="doc">
-        stl/algorithm/set_intersection.txt &middot; Last modified: 07/14/2009 07:07 by kniht      </div>
+        stl/algorithm/set_intersection.txt &middot; Last modified: 10/09/2009 02:04 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -147,6 +147,6 @@ Related Topics: <a href="../../stl/algorithm/includes.html" class="wikilink1" ti
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Aset_intersection&amp;1254996382" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Aset_intersection&amp;1255084864" width="1" height="1" alt=""  /></div>
 </body>
 </html>

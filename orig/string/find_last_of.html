@@ -9,8 +9,8 @@
   </title>
 
   <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:11-0700" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2009-10-08T21:44:30-0700" />
 <meta name="keywords" content="string,find_last_of" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
@@ -51,7 +51,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../string/find_last_of.html" class="wikilink1" title="string:find_last_of">en</a></span></div></li>  <li><div class="li"><a href="../br-pt/string/find_last_of.html" class="wikilink2" title="br-pt:string:find_last_of" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../cn/string/find_last_of.html" class="wikilink2" title="cn:string:find_last_of" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../fr/string/find_last_of.html" class="wikilink2" title="fr:string:find_last_of" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../it/string/find_last_of.html" class="wikilink2" title="it:string:find_last_of" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../pl/string/find_last_of.html" class="wikilink2" title="pl:string:find_last_of" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../ru/string/find_last_of.html" class="wikilink2" title="ru:string:find_last_of" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../tr/string/find_last_of.html" class="wikilink2" title="tr:string:find_last_of" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../string/find_last_of.html" class="wikilink1" title="string:find_last_of">en</a></span></div></li>  <li><div class="li"><a href="../br-pt/string/find_last_of.html" class="wikilink2" title="br-pt:string:find_last_of" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../cn/string/find_last_of.html" class="wikilink2" title="cn:string:find_last_of" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../fr/string/find_last_of.html" class="wikilink2" title="fr:string:find_last_of" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../it/string/find_last_of.html" class="wikilink2" title="it:string:find_last_of" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../jp/string/find_last_of.html" class="wikilink2" title="jp:string:find_last_of" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../pl/string/find_last_of.html" class="wikilink2" title="pl:string:find_last_of" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../ru/string/find_last_of.html" class="wikilink2" title="ru:string:find_last_of" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../tr/string/find_last_of.html" class="wikilink2" title="tr:string:find_last_of" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,10 +73,10 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;string&gt;</span>
-    size_type find_last_of<span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy0">&amp;</span> str<span class="sy0">,</span> size_type index <span class="sy0">=</span> npos <span class="br0">&#41;</span>;
-    size_type find_last_of<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> str<span class="sy0">,</span> size_type index <span class="sy0">=</span> npos <span class="br0">&#41;</span>;
-    size_type find_last_of<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> str<span class="sy0">,</span> size_type index<span class="sy0">,</span> size_type num <span class="br0">&#41;</span>;
-    size_type find_last_of<span class="br0">&#40;</span> <span class="kw4">char</span> ch<span class="sy0">,</span> size_type index <span class="sy0">=</span> npos <span class="br0">&#41;</span>;</pre>
+    size_type find_last_of<span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy0">&amp;</span> str<span class="sy0">,</span> size_type index <span class="sy0">=</span> npos <span class="br0">&#41;</span> <span class="kw4">const</span>;
+    size_type find_last_of<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> str<span class="sy0">,</span> size_type index <span class="sy0">=</span> npos <span class="br0">&#41;</span> <span class="kw4">const</span>;
+    size_type find_last_of<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> str<span class="sy0">,</span> size_type index<span class="sy0">,</span> size_type num <span class="br0">&#41;</span> <span class="kw4">const</span>;
+    size_type find_last_of<span class="br0">&#40;</span> <span class="kw4">char</span> ch<span class="sy0">,</span> size_type index <span class="sy0">=</span> npos <span class="br0">&#41;</span> <span class="kw4">const</span>;</pre>
 <p>
 
 The find_last_of() function either:
@@ -96,7 +96,7 @@ Related Topics: <a href="../string/find.html" class="wikilink1" title="string:fi
 </p>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/string/find_last_of"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1224024131" /><input type="submit" value="Edit" class="button" title="find_last_of" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/string/find_last_of"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1255063470" /><input type="submit" value="Edit" class="button" title="find_last_of" /></div></form></div>
     <!-- wikipage stop -->
   </div>
 
@@ -110,7 +110,7 @@ Related Topics: <a href="../string/find.html" class="wikilink1" title="string:fi
               </div>
       <!--
       <div class="doc">
-        string/find_last_of.txt &middot; Last modified: 10/14/2008 15:42 (external edit)      </div>
+        string/find_last_of.txt &middot; Last modified: 10/08/2009 21:44 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -137,6 +137,6 @@ Related Topics: <a href="../string/find.html" class="wikilink1" title="string:fi
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=string%3Afind_last_of&amp;1254996328" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=string%3Afind_last_of&amp;1255084808" width="1" height="1" alt=""  /></div>
 </body>
 </html>

@@ -9,8 +9,8 @@
   </title>
 
   <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2009-08-23T20:13:16-0700" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2009-10-08T21:39:51-0700" />
 <meta name="keywords" content="string,compare" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
@@ -51,7 +51,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../string/compare.html" class="wikilink1" title="string:compare">en</a></span></div></li>  <li><div class="li"><a href="../br-pt/string/compare.html" class="wikilink2" title="br-pt:string:compare" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../cn/string/compare.html" class="wikilink2" title="cn:string:compare" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../fr/string/compare.html" class="wikilink2" title="fr:string:compare" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../it/string/compare.html" class="wikilink2" title="it:string:compare" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../pl/string/compare.html" class="wikilink2" title="pl:string:compare" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../ru/string/compare.html" class="wikilink2" title="ru:string:compare" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../tr/string/compare.html" class="wikilink2" title="tr:string:compare" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../string/compare.html" class="wikilink1" title="string:compare">en</a></span></div></li>  <li><div class="li"><a href="../br-pt/string/compare.html" class="wikilink2" title="br-pt:string:compare" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../cn/string/compare.html" class="wikilink2" title="cn:string:compare" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../fr/string/compare.html" class="wikilink2" title="fr:string:compare" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../it/string/compare.html" class="wikilink2" title="it:string:compare" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../jp/string/compare.html" class="wikilink2" title="jp:string:compare" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../pl/string/compare.html" class="wikilink2" title="pl:string:compare" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../ru/string/compare.html" class="wikilink2" title="ru:string:compare" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../tr/string/compare.html" class="wikilink2" title="tr:string:compare" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,11 +73,11 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;string&gt;</span>
-    <span class="kw4">int</span> compare<span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy0">&amp;</span> str <span class="br0">&#41;</span>;
-    <span class="kw4">int</span> compare<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> str <span class="br0">&#41;</span>;
-    <span class="kw4">int</span> compare<span class="br0">&#40;</span> size_type index<span class="sy0">,</span> size_type length<span class="sy0">,</span> <span class="kw4">const</span> string<span class="sy0">&amp;</span> str <span class="br0">&#41;</span>;
-    <span class="kw4">int</span> compare<span class="br0">&#40;</span> size_type index<span class="sy0">,</span> size_type length<span class="sy0">,</span> <span class="kw4">const</span> string<span class="sy0">&amp;</span> str<span class="sy0">,</span> size_type index2<span class="sy0">,</span> size_type length2 <span class="br0">&#41;</span>;
-    <span class="kw4">int</span> compare<span class="br0">&#40;</span> size_type index<span class="sy0">,</span> size_type length<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> str<span class="sy0">,</span> size_type length2 <span class="sy0">=</span> npos <span class="br0">&#41;</span>;</pre>
+    <span class="kw4">int</span> compare<span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy0">&amp;</span> str <span class="br0">&#41;</span> <span class="kw4">const</span>;
+    <span class="kw4">int</span> compare<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> str <span class="br0">&#41;</span> <span class="kw4">const</span>;
+    <span class="kw4">int</span> compare<span class="br0">&#40;</span> size_type index<span class="sy0">,</span> size_type length<span class="sy0">,</span> <span class="kw4">const</span> string<span class="sy0">&amp;</span> str <span class="br0">&#41;</span> <span class="kw4">const</span>;
+    <span class="kw4">int</span> compare<span class="br0">&#40;</span> size_type index<span class="sy0">,</span> size_type length<span class="sy0">,</span> <span class="kw4">const</span> string<span class="sy0">&amp;</span> str<span class="sy0">,</span> size_type index2<span class="sy0">,</span> size_type length2 <span class="br0">&#41;</span> <span class="kw4">const</span>;
+    <span class="kw4">int</span> compare<span class="br0">&#40;</span> size_type index<span class="sy0">,</span> size_type length<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> str<span class="sy0">,</span> size_type length2 <span class="sy0">=</span> npos <span class="br0">&#41;</span> <span class="kw4">const</span>;</pre>
 <p>
 The compare() function either compares str to the current string in a variety
 of ways, returning
@@ -151,7 +151,7 @@ various strings compare to eachother:
 
 <p>
 
-Related Topics: <a href="../string/string_operators.html" class="wikilink1" title="string:string_operators">String operators</a>
+Related Topics: <a href="../string/operator.html" class="wikilink1" title="string:string_operators">String operators</a>
 </p>
 
 </div>
@@ -169,7 +169,7 @@ Related Topics: <a href="../string/string_operators.html" class="wikilink1" titl
               </div>
       <!--
       <div class="doc">
-        string/compare.txt &middot; Last modified: 08/23/2009 20:13 by 200.88.202.30      </div>
+        string/compare.txt &middot; Last modified: 10/08/2009 21:39 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -196,6 +196,6 @@ Related Topics: <a href="../string/string_operators.html" class="wikilink1" titl
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=string%3Acompare&amp;1254996323" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=string%3Acompare&amp;1255084803" width="1" height="1" alt=""  /></div>
 </body>
 </html>

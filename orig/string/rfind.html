@@ -9,8 +9,8 @@
   </title>
 
   <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:12-0700" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2009-10-08T22:07:33-0700" />
 <meta name="keywords" content="string,rfind" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
@@ -51,7 +51,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../string/rfind.html" class="wikilink1" title="string:rfind">en</a></span></div></li>  <li><div class="li"><a href="../br-pt/string/rfind.html" class="wikilink2" title="br-pt:string:rfind" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../cn/string/rfind.html" class="wikilink2" title="cn:string:rfind" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../fr/string/rfind.html" class="wikilink2" title="fr:string:rfind" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../it/string/rfind.html" class="wikilink2" title="it:string:rfind" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../pl/string/rfind.html" class="wikilink2" title="pl:string:rfind" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../ru/string/rfind.html" class="wikilink2" title="ru:string:rfind" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../tr/string/rfind.html" class="wikilink2" title="tr:string:rfind" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../string/rfind.html" class="wikilink1" title="string:rfind">en</a></span></div></li>  <li><div class="li"><a href="../br-pt/string/rfind.html" class="wikilink2" title="br-pt:string:rfind" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../cn/string/rfind.html" class="wikilink2" title="cn:string:rfind" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../fr/string/rfind.html" class="wikilink2" title="fr:string:rfind" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../it/string/rfind.html" class="wikilink2" title="it:string:rfind" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../jp/string/rfind.html" class="wikilink2" title="jp:string:rfind" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../pl/string/rfind.html" class="wikilink2" title="pl:string:rfind" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../ru/string/rfind.html" class="wikilink2" title="ru:string:rfind" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../tr/string/rfind.html" class="wikilink2" title="tr:string:rfind" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,10 +73,10 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;string&gt;</span>
-    size_type rfind<span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy0">&amp;</span> str<span class="sy0">,</span> size_type index <span class="br0">&#41;</span>;
-    size_type rfind<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> str<span class="sy0">,</span> size_type index <span class="br0">&#41;</span>;
-    size_type rfind<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> str<span class="sy0">,</span> size_type index<span class="sy0">,</span> size_type num <span class="br0">&#41;</span>;
-    size_type rfind<span class="br0">&#40;</span> <span class="kw4">char</span> ch<span class="sy0">,</span> size_type index <span class="br0">&#41;</span>;</pre>
+    size_type rfind<span class="br0">&#40;</span> <span class="kw4">const</span> string<span class="sy0">&amp;</span> str<span class="sy0">,</span> size_type index <span class="br0">&#41;</span> <span class="kw4">const</span>;
+    size_type rfind<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> str<span class="sy0">,</span> size_type index <span class="br0">&#41;</span> <span class="kw4">const</span>;
+    size_type rfind<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> str<span class="sy0">,</span> size_type index<span class="sy0">,</span> size_type num <span class="br0">&#41;</span> <span class="kw4">const</span>;
+    size_type rfind<span class="br0">&#40;</span> <span class="kw4">char</span> ch<span class="sy0">,</span> size_type index <span class="br0">&#41;</span> <span class="kw4">const</span>;</pre>
 <p>
 
 The rfind() function either:
@@ -110,7 +110,7 @@ Related Topics: <a href="../string/find.html" class="wikilink1" title="string:fi
 </p>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/string/rfind"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1224024132" /><input type="submit" value="Edit" class="button" title="rfind" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/string/rfind"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1255064853" /><input type="submit" value="Edit" class="button" title="rfind" /></div></form></div>
     <!-- wikipage stop -->
   </div>
 
@@ -124,7 +124,7 @@ Related Topics: <a href="../string/find.html" class="wikilink1" title="string:fi
               </div>
       <!--
       <div class="doc">
-        string/rfind.txt &middot; Last modified: 10/14/2008 15:42 (external edit)      </div>
+        string/rfind.txt &middot; Last modified: 10/08/2009 22:07 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -151,6 +151,6 @@ Related Topics: <a href="../string/find.html" class="wikilink1" title="string:fi
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=string%3Arfind&amp;1254996334" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=string%3Arfind&amp;1255084813" width="1" height="1" alt=""  /></div>
 </body>
 </html>

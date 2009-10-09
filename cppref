@@ -15,10 +15,12 @@ my %BROWSER_OPTION_MAP = (
     lynx => ['-stdin'],
 );
 
-my $doc_dir = "doc";
-eval {
-    $doc_dir = File::ShareDir::dist_dir('cppref');
-};
+my $doc_dir = $ENV{CPPREF_DOCROOT} || '';
+if (! $doc_dir) {
+    eval {
+	$doc_dir = File::ShareDir::dist_dir('cppref');
+    };
+}
 
 my $name = shift @ARGV || 'start';
 

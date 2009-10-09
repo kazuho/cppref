@@ -9,8 +9,8 @@
   </title>
 
   <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2009-05-07T11:39:29-0700" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2009-10-09T01:22:10-0700" />
 <meta name="keywords" content="stl,algorithm,remove_if" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
@@ -51,7 +51,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/remove_if.html" class="wikilink1" title="stl:algorithm:remove_if">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/remove_if.html" class="wikilink2" title="br-pt:stl:algorithm:remove_if" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/remove_if.html" class="wikilink2" title="cn:stl:algorithm:remove_if" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/remove_if.html" class="wikilink2" title="fr:stl:algorithm:remove_if" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/remove_if.html" class="wikilink2" title="it:stl:algorithm:remove_if" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/remove_if.html" class="wikilink2" title="pl:stl:algorithm:remove_if" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/remove_if.html" class="wikilink2" title="ru:stl:algorithm:remove_if" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/remove_if.html" class="wikilink2" title="tr:stl:algorithm:remove_if" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/remove_if.html" class="wikilink1" title="stl:algorithm:remove_if">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/remove_if.html" class="wikilink2" title="br-pt:stl:algorithm:remove_if" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/remove_if.html" class="wikilink2" title="cn:stl:algorithm:remove_if" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/remove_if.html" class="wikilink2" title="fr:stl:algorithm:remove_if" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/remove_if.html" class="wikilink2" title="it:stl:algorithm:remove_if" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/algorithm/remove_if.html" class="wikilink2" title="jp:stl:algorithm:remove_if" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/remove_if.html" class="wikilink2" title="pl:stl:algorithm:remove_if" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/remove_if.html" class="wikilink2" title="ru:stl:algorithm:remove_if" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/remove_if.html" class="wikilink2" title="tr:stl:algorithm:remove_if" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,7 +73,7 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    iterator remove_if<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> Predicate p <span class="br0">&#41;</span>;</pre>
+    forward_iterator remove_if<span class="br0">&#40;</span> forward_iterator start<span class="sy0">,</span> forward_iterator end<span class="sy0">,</span> Predicate p <span class="br0">&#41;</span>;</pre>
 <p>
 The remove_if() function removes all elements in the range [start,end) for
 which the predicate p returns true.
@@ -113,7 +113,7 @@ Related Topics: <a href="../../stl/algorithm/remove.html" class="wikilink1" titl
 </p>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/algorithm/remove_if"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1241721569" /><input type="submit" value="Edit" class="button" title="remove_if" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/algorithm/remove_if"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1255076530" /><input type="submit" value="Edit" class="button" title="remove_if" /></div></form></div>
     <!-- wikipage stop -->
   </div>
 
@@ -127,7 +127,7 @@ Related Topics: <a href="../../stl/algorithm/remove.html" class="wikilink1" titl
               </div>
       <!--
       <div class="doc">
-        stl/algorithm/remove_if.txt &middot; Last modified: 05/07/2009 11:39 by spoon      </div>
+        stl/algorithm/remove_if.txt &middot; Last modified: 10/09/2009 01:22 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -154,6 +154,6 @@ Related Topics: <a href="../../stl/algorithm/remove.html" class="wikilink1" titl
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Aremove_if&amp;1254996377" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Aremove_if&amp;1255084858" width="1" height="1" alt=""  /></div>
 </body>
 </html>

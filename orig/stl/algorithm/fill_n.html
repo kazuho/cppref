@@ -9,8 +9,8 @@
   </title>
 
   <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2009-04-11T01:08:52-0700" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2009-10-09T01:29:36-0700" />
 <meta name="keywords" content="stl,algorithm,fill_n" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
@@ -51,7 +51,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/fill_n.html" class="wikilink1" title="stl:algorithm:fill_n">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/fill_n.html" class="wikilink2" title="br-pt:stl:algorithm:fill_n" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/fill_n.html" class="wikilink2" title="cn:stl:algorithm:fill_n" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/fill_n.html" class="wikilink2" title="fr:stl:algorithm:fill_n" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/fill_n.html" class="wikilink2" title="it:stl:algorithm:fill_n" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/fill_n.html" class="wikilink2" title="pl:stl:algorithm:fill_n" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/fill_n.html" class="wikilink2" title="ru:stl:algorithm:fill_n" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/fill_n.html" class="wikilink2" title="tr:stl:algorithm:fill_n" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/fill_n.html" class="wikilink1" title="stl:algorithm:fill_n">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/fill_n.html" class="wikilink2" title="br-pt:stl:algorithm:fill_n" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/fill_n.html" class="wikilink2" title="cn:stl:algorithm:fill_n" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/fill_n.html" class="wikilink2" title="fr:stl:algorithm:fill_n" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/fill_n.html" class="wikilink2" title="it:stl:algorithm:fill_n" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/algorithm/fill_n.html" class="wikilink2" title="jp:stl:algorithm:fill_n" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/fill_n.html" class="wikilink2" title="pl:stl:algorithm:fill_n" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/fill_n.html" class="wikilink2" title="ru:stl:algorithm:fill_n" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/fill_n.html" class="wikilink2" title="tr:stl:algorithm:fill_n" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,7 +73,7 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    iterator fill_n<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> size_t n<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val <span class="br0">&#41;</span>;</pre>
+    <span class="kw4">void</span> fill_n<span class="br0">&#40;</span> output_iterator start<span class="sy0">,</span> SIZE n<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val <span class="br0">&#41;</span>;</pre>
 <p>
 The fill_n() function is similar to <a href="../../stl/algorithm/fill.html" class="wikilink1" title="stl:algorithm:fill">fill</a>. Instead of assigning val
 to a range of elements, however, fill_n() assigns val to the first n elements
@@ -90,7 +90,7 @@ a vector of integers:
    <span class="br0">&#125;</span>
 &nbsp;
    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Before, v1 is: &quot;</span>;
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> v1.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> vector<span class="sy0">&lt;</span>int<span class="sy0">&gt;::</span><span class="me2">size_type</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> v1.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
      <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> v1<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; &quot;</span>;
    <span class="br0">&#125;</span>
    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;
@@ -98,7 +98,7 @@ a vector of integers:
    fill_n<span class="br0">&#40;</span> v1.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span> v1.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">/</span><span class="nu0">2</span><span class="sy0">,</span> <span class="sy0">-</span><span class="nu0">1</span> <span class="br0">&#41;</span>;
 &nbsp;
    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;After, v1 is: &quot;</span>;
-   <span class="kw1">for</span><span class="br0">&#40;</span> <span class="kw4">unsigned</span> <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> v1.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+   <span class="kw1">for</span><span class="br0">&#40;</span> vector<span class="sy0">&lt;</span>int<span class="sy0">&gt;::</span><span class="me2">size_type</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> v1.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; i<span class="sy0">++</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
      <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> v1<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; &quot;</span>;
    <span class="br0">&#125;</span>
    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;</pre>
@@ -113,7 +113,7 @@ Related Topics: <a href="../../stl/algorithm/fill.html" class="wikilink1" title=
 </p>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/algorithm/fill_n"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1239437332" /><input type="submit" value="Edit" class="button" title="fill_n" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/algorithm/fill_n"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1255076976" /><input type="submit" value="Edit" class="button" title="fill_n" /></div></form></div>
     <!-- wikipage stop -->
   </div>
 
@@ -127,7 +127,7 @@ Related Topics: <a href="../../stl/algorithm/fill.html" class="wikilink1" title=
               </div>
       <!--
       <div class="doc">
-        stl/algorithm/fill_n.txt &middot; Last modified: 04/11/2009 01:08 by 219.143.205.147      </div>
+        stl/algorithm/fill_n.txt &middot; Last modified: 10/09/2009 01:29 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -154,6 +154,6 @@ Related Topics: <a href="../../stl/algorithm/fill.html" class="wikilink1" title=
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Afill_n&amp;1254996361" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Afill_n&amp;1255084842" width="1" height="1" alt=""  /></div>
 </body>
 </html>

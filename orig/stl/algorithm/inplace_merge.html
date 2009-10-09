@@ -9,8 +9,8 @@
   </title>
 
   <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:05-0700" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2009-10-09T01:56:40-0700" />
 <meta name="keywords" content="stl,algorithm,inplace_merge" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
@@ -51,7 +51,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/inplace_merge.html" class="wikilink1" title="stl:algorithm:inplace_merge">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/inplace_merge.html" class="wikilink2" title="br-pt:stl:algorithm:inplace_merge" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/inplace_merge.html" class="wikilink2" title="cn:stl:algorithm:inplace_merge" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/inplace_merge.html" class="wikilink2" title="fr:stl:algorithm:inplace_merge" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/inplace_merge.html" class="wikilink2" title="it:stl:algorithm:inplace_merge" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/inplace_merge.html" class="wikilink2" title="pl:stl:algorithm:inplace_merge" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/inplace_merge.html" class="wikilink2" title="ru:stl:algorithm:inplace_merge" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/inplace_merge.html" class="wikilink2" title="tr:stl:algorithm:inplace_merge" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/inplace_merge.html" class="wikilink1" title="stl:algorithm:inplace_merge">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/inplace_merge.html" class="wikilink2" title="br-pt:stl:algorithm:inplace_merge" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/inplace_merge.html" class="wikilink2" title="cn:stl:algorithm:inplace_merge" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/inplace_merge.html" class="wikilink2" title="fr:stl:algorithm:inplace_merge" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/inplace_merge.html" class="wikilink2" title="it:stl:algorithm:inplace_merge" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/algorithm/inplace_merge.html" class="wikilink2" title="jp:stl:algorithm:inplace_merge" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/inplace_merge.html" class="wikilink2" title="pl:stl:algorithm:inplace_merge" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/inplace_merge.html" class="wikilink2" title="ru:stl:algorithm:inplace_merge" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/inplace_merge.html" class="wikilink2" title="tr:stl:algorithm:inplace_merge" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,8 +73,8 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    <span class="kw2">inline</span> <span class="kw4">void</span> inplace_merge<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator middle<span class="sy0">,</span> iterator end <span class="br0">&#41;</span>;
-    <span class="kw2">inline</span> <span class="kw4">void</span> inplace_merge<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator middle<span class="sy0">,</span> iterator end<span class="sy0">,</span> StrictWeakOrdering cmp <span class="br0">&#41;</span>;</pre>
+    <span class="kw4">void</span> inplace_merge<span class="br0">&#40;</span> bidirectional_iterator start<span class="sy0">,</span> bidirectional_iterator middle<span class="sy0">,</span> bidirectional_iterator end <span class="br0">&#41;</span>;
+    <span class="kw4">void</span> inplace_merge<span class="br0">&#40;</span> bidirectional_iterator start<span class="sy0">,</span> bidirectional_iterator middle<span class="sy0">,</span> bidirectional_iterator end<span class="sy0">,</span> StrictWeakOrdering cmp <span class="br0">&#41;</span>;</pre>
 <p>
 The inplace_merge() function is similar to the merge() function, but instead of
 creating a new sorted range of elements, inplace_merge() alters the existing
@@ -86,7 +86,7 @@ Related Topics: <a href="../../stl/algorithm/merge.html" class="wikilink1" title
 </p>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/algorithm/inplace_merge"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1224024125" /><input type="submit" value="Edit" class="button" title="inplace_merge" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/algorithm/inplace_merge"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1255078600" /><input type="submit" value="Edit" class="button" title="inplace_merge" /></div></form></div>
     <!-- wikipage stop -->
   </div>
 
@@ -100,7 +100,7 @@ Related Topics: <a href="../../stl/algorithm/merge.html" class="wikilink1" title
               </div>
       <!--
       <div class="doc">
-        stl/algorithm/inplace_merge.txt &middot; Last modified: 10/14/2008 15:42 (external edit)      </div>
+        stl/algorithm/inplace_merge.txt &middot; Last modified: 10/09/2009 01:56 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -127,6 +127,6 @@ Related Topics: <a href="../../stl/algorithm/merge.html" class="wikilink1" title
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Ainplace_merge&amp;1254996364" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Ainplace_merge&amp;1255084846" width="1" height="1" alt=""  /></div>
 </body>
 </html>

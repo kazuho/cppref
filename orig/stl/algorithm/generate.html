@@ -9,8 +9,8 @@
   </title>
 
   <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2009-01-12T05:42:29-0800" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2009-10-09T01:31:18-0700" />
 <meta name="keywords" content="stl,algorithm,generate" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
@@ -51,7 +51,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/generate.html" class="wikilink1" title="stl:algorithm:generate">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/generate.html" class="wikilink2" title="br-pt:stl:algorithm:generate" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/generate.html" class="wikilink2" title="cn:stl:algorithm:generate" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/generate.html" class="wikilink2" title="fr:stl:algorithm:generate" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/generate.html" class="wikilink2" title="it:stl:algorithm:generate" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/generate.html" class="wikilink2" title="pl:stl:algorithm:generate" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/generate.html" class="wikilink2" title="ru:stl:algorithm:generate" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/generate.html" class="wikilink2" title="tr:stl:algorithm:generate" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/generate.html" class="wikilink1" title="stl:algorithm:generate">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/generate.html" class="wikilink2" title="br-pt:stl:algorithm:generate" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/generate.html" class="wikilink2" title="cn:stl:algorithm:generate" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/generate.html" class="wikilink2" title="fr:stl:algorithm:generate" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/generate.html" class="wikilink2" title="it:stl:algorithm:generate" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/algorithm/generate.html" class="wikilink2" title="jp:stl:algorithm:generate" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/generate.html" class="wikilink2" title="pl:stl:algorithm:generate" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/generate.html" class="wikilink2" title="ru:stl:algorithm:generate" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/generate.html" class="wikilink2" title="tr:stl:algorithm:generate" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,7 +73,7 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    <span class="kw4">void</span> generate<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> Generator g <span class="br0">&#41;</span>;</pre>
+    <span class="kw4">void</span> generate<span class="br0">&#40;</span> forward_iterator start<span class="sy0">,</span> forward_iterator end<span class="sy0">,</span> Generator g <span class="br0">&#41;</span>;</pre>
 <p>
 The generate() function runs the Generator function object g a number of times,
 saving the result of each execution in the range [start,end).
@@ -87,7 +87,7 @@ For example, the following code uses generate() to fill a vector with random num
     <span class="co1">// Depending on the compiler you may need to put &amp;rand instead</span>
 &nbsp;
     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;v: &quot;</span>;
-    <span class="kw1">for</span> <span class="br0">&#40;</span>size_t i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> v.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; <span class="sy0">++</span>i<span class="br0">&#41;</span>
+    <span class="kw1">for</span> <span class="br0">&#40;</span>vector<span class="sy0">&lt;</span>int<span class="sy0">&gt;::</span><span class="me2">size_type</span> i <span class="sy0">=</span> <span class="nu19">0</span>; i <span class="sy0">&lt;</span> v.<span class="me1">size</span><span class="br0">&#40;</span><span class="br0">&#41;</span>; <span class="sy0">++</span>i<span class="br0">&#41;</span>
         <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> v<span class="br0">&#91;</span>i<span class="br0">&#93;</span> <span class="sy0">&lt;&lt;</span> <span class="st0">' '</span>;
     <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl;</pre>
 <p>
@@ -109,7 +109,7 @@ Related Topics: <a href="../../stl/algorithm/copy.html" class="wikilink1" title=
               </div>
       <!--
       <div class="doc">
-        stl/algorithm/generate.txt &middot; Last modified: 01/12/2009 05:42 by nate      </div>
+        stl/algorithm/generate.txt &middot; Last modified: 10/09/2009 01:31 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -136,6 +136,6 @@ Related Topics: <a href="../../stl/algorithm/copy.html" class="wikilink1" title=
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Agenerate&amp;1254996363" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Agenerate&amp;1255084844" width="1" height="1" alt=""  /></div>
 </body>
 </html>

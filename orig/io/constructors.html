@@ -9,8 +9,8 @@
   </title>
 
   <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:03-0700" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2009-10-08T22:21:58-0700" />
 <meta name="keywords" content="io,constructors" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
@@ -51,7 +51,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../io/constructors.html" class="wikilink1" title="io:constructors">en</a></span></div></li>  <li><div class="li"><a href="../br-pt/io/constructors.html" class="wikilink2" title="br-pt:io:constructors" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../cn/io/constructors.html" class="wikilink2" title="cn:io:constructors" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../fr/io/constructors.html" class="wikilink2" title="fr:io:constructors" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../it/io/constructors.html" class="wikilink2" title="it:io:constructors" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../pl/io/constructors.html" class="wikilink2" title="pl:io:constructors" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../ru/io/constructors.html" class="wikilink1" title="ru:io:constructors">ru</a></div></li>  <li><div class="li"><a href="../tr/io/constructors.html" class="wikilink2" title="tr:io:constructors" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../io/constructors.html" class="wikilink1" title="io:constructors">en</a></span></div></li>  <li><div class="li"><a href="../br-pt/io/constructors.html" class="wikilink2" title="br-pt:io:constructors" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../cn/io/constructors.html" class="wikilink2" title="cn:io:constructors" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../fr/io/constructors.html" class="wikilink2" title="fr:io:constructors" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../it/io/constructors.html" class="wikilink2" title="it:io:constructors" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../jp/io/constructors.html" class="wikilink2" title="jp:io:constructors" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../pl/io/constructors.html" class="wikilink2" title="pl:io:constructors" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../ru/io/constructors.html" class="wikilink1" title="ru:io:constructors">ru</a></div></li>  <li><div class="li"><a href="../tr/io/constructors.html" class="wikilink2" title="tr:io:constructors" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,9 +73,9 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;fstream&gt;</span>
-    fstream<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>filename<span class="sy0">,</span> openmode mode <span class="br0">&#41;</span>;
-    ifstream<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>filename<span class="sy0">,</span> openmode mode <span class="br0">&#41;</span>;
-    ofstream<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>filename<span class="sy0">,</span> openmode mode <span class="br0">&#41;</span>;</pre>
+    fstream<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>filename<span class="sy0">,</span> ios_base<span class="sy0">::</span><span class="me2">openmode</span> mode <span class="br0">&#41;</span>;
+    ifstream<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>filename<span class="sy0">,</span> ios_base<span class="sy0">::</span><span class="me2">openmode</span> mode <span class="br0">&#41;</span>;
+    ofstream<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>filename<span class="sy0">,</span> ios_base<span class="sy0">::</span><span class="me2">openmode</span> mode <span class="br0">&#41;</span>;</pre>
 <p>
 The fstream, ifstream, and ofstream objects are used to do file I/O. The
 optional mode defines how the file is to be opened, according to the <a href="../io/io_flags#mode_flags.html" class="wikilink1" title="io:io_flags">IO stream
@@ -92,7 +92,7 @@ I/O streams, cin and cout.
 For example, the following code reads input data and appends the result to an output file.
 </p>
 <pre class="c code c++" style="font-family:monospace;">    ifstream fin<span class="br0">&#40;</span> <span class="st0">&quot;/tmp/data.txt&quot;</span> <span class="br0">&#41;</span>;
-    ofstream fout<span class="br0">&#40;</span> <span class="st0">&quot;/tmp/results.txt&quot;</span><span class="sy0">,</span> ios<span class="sy0">::</span><span class="me2">app</span> <span class="br0">&#41;</span>;
+    ofstream fout<span class="br0">&#40;</span> <span class="st0">&quot;/tmp/results.txt&quot;</span><span class="sy0">,</span> ios_base<span class="sy0">::</span><span class="me2">app</span> <span class="br0">&#41;</span>;
     <span class="kw1">while</span><span class="br0">&#40;</span> fin <span class="sy0">&gt;&gt;</span> temp <span class="br0">&#41;</span>
       fout <span class="sy0">&lt;&lt;</span> temp <span class="sy0">+</span> <span class="nu0">2</span> <span class="sy0">&lt;&lt;</span> endl;
     <span class="co1">// Files are closed automatically when the variables fin and fout fall out of scope.</span></pre>
@@ -115,7 +115,7 @@ Related Topics: <a href="../io/close.html" class="wikilink1" title="io:close">cl
               </div>
       <!--
       <div class="doc">
-        io/constructors.txt &middot; Last modified: 10/14/2008 15:42 (external edit)      </div>
+        io/constructors.txt &middot; Last modified: 10/08/2009 22:21 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -142,6 +142,6 @@ Related Topics: <a href="../io/close.html" class="wikilink1" title="io:close">cl
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=io%3Aconstructors&amp;1254996336" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=io%3Aconstructors&amp;1255084815" width="1" height="1" alt=""  /></div>
 </body>
 </html>

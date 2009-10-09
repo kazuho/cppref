@@ -9,8 +9,8 @@
   </title>
 
   <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2008-11-15T10:53:42-0800" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2009-10-09T01:11:55-0700" />
 <meta name="keywords" content="stl,algorithm,transform" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
@@ -51,7 +51,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/transform.html" class="wikilink1" title="stl:algorithm:transform">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/transform.html" class="wikilink2" title="br-pt:stl:algorithm:transform" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/transform.html" class="wikilink2" title="cn:stl:algorithm:transform" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/transform.html" class="wikilink2" title="fr:stl:algorithm:transform" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/transform.html" class="wikilink2" title="it:stl:algorithm:transform" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/transform.html" class="wikilink2" title="pl:stl:algorithm:transform" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/transform.html" class="wikilink2" title="ru:stl:algorithm:transform" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/transform.html" class="wikilink2" title="tr:stl:algorithm:transform" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/transform.html" class="wikilink1" title="stl:algorithm:transform">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/transform.html" class="wikilink2" title="br-pt:stl:algorithm:transform" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/transform.html" class="wikilink2" title="cn:stl:algorithm:transform" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/transform.html" class="wikilink2" title="fr:stl:algorithm:transform" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/transform.html" class="wikilink2" title="it:stl:algorithm:transform" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/algorithm/transform.html" class="wikilink2" title="jp:stl:algorithm:transform" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/transform.html" class="wikilink2" title="pl:stl:algorithm:transform" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/transform.html" class="wikilink2" title="ru:stl:algorithm:transform" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/transform.html" class="wikilink2" title="tr:stl:algorithm:transform" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,8 +73,8 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    iterator transform<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> iterator result<span class="sy0">,</span> UnaryFunction f <span class="br0">&#41;</span>;
-    iterator transform<span class="br0">&#40;</span> iterator start1<span class="sy0">,</span> iterator end1<span class="sy0">,</span> iterator start2<span class="sy0">,</span> iterator result<span class="sy0">,</span> BinaryFunction f <span class="br0">&#41;</span>;</pre>
+    output_iterator transform<span class="br0">&#40;</span> input_iterator start<span class="sy0">,</span> input_iterator end<span class="sy0">,</span> output_iterator result<span class="sy0">,</span> UnaryFunction f <span class="br0">&#41;</span>;
+    output_iterator transform<span class="br0">&#40;</span> input_iterator start1<span class="sy0">,</span> input_iterator end1<span class="sy0">,</span> input_iterator2 start2<span class="sy0">,</span> output_iterator result<span class="sy0">,</span> BinaryFunction f <span class="br0">&#41;</span>;</pre>
 <p>
 The transform() algorithm applies the function f to some range of elements,
 storing the result of each application of the function in result.
@@ -122,7 +122,7 @@ Related Topics: <a href="../../stl/algorithm/copy.html" class="wikilink1" title=
               </div>
       <!--
       <div class="doc">
-        stl/algorithm/transform.txt &middot; Last modified: 11/15/2008 10:53 by 81.21.242.130      </div>
+        stl/algorithm/transform.txt &middot; Last modified: 10/09/2009 01:11 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -149,6 +149,6 @@ Related Topics: <a href="../../stl/algorithm/copy.html" class="wikilink1" title=
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Atransform&amp;1254996386" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Atransform&amp;1255084867" width="1" height="1" alt=""  /></div>
 </body>
 </html>

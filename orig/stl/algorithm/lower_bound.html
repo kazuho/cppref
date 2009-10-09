@@ -9,8 +9,8 @@
   </title>
 
   <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2009-03-20T15:35:08-0700" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2009-10-09T01:50:53-0700" />
 <meta name="keywords" content="stl,algorithm,lower_bound" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
@@ -51,7 +51,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/lower_bound.html" class="wikilink1" title="stl:algorithm:lower_bound">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/lower_bound.html" class="wikilink2" title="br-pt:stl:algorithm:lower_bound" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/lower_bound.html" class="wikilink2" title="cn:stl:algorithm:lower_bound" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/lower_bound.html" class="wikilink2" title="fr:stl:algorithm:lower_bound" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/lower_bound.html" class="wikilink2" title="it:stl:algorithm:lower_bound" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/lower_bound.html" class="wikilink2" title="pl:stl:algorithm:lower_bound" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/lower_bound.html" class="wikilink2" title="ru:stl:algorithm:lower_bound" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/lower_bound.html" class="wikilink2" title="tr:stl:algorithm:lower_bound" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/lower_bound.html" class="wikilink1" title="stl:algorithm:lower_bound">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/lower_bound.html" class="wikilink2" title="br-pt:stl:algorithm:lower_bound" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/lower_bound.html" class="wikilink2" title="cn:stl:algorithm:lower_bound" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/lower_bound.html" class="wikilink2" title="fr:stl:algorithm:lower_bound" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/lower_bound.html" class="wikilink2" title="it:stl:algorithm:lower_bound" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/algorithm/lower_bound.html" class="wikilink2" title="jp:stl:algorithm:lower_bound" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/lower_bound.html" class="wikilink2" title="pl:stl:algorithm:lower_bound" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/lower_bound.html" class="wikilink2" title="ru:stl:algorithm:lower_bound" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/lower_bound.html" class="wikilink2" title="tr:stl:algorithm:lower_bound" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,8 +73,8 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    iterator lower_bound<span class="br0">&#40;</span> iterator first<span class="sy0">,</span> iterator last<span class="sy0">,</span>  <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val <span class="br0">&#41;</span>;
-    iterator lower_bound<span class="br0">&#40;</span> iterator first<span class="sy0">,</span> iterator last<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val<span class="sy0">,</span> CompFn f <span class="br0">&#41;</span>;</pre>
+    forward_iterator lower_bound<span class="br0">&#40;</span> forward_iterator first<span class="sy0">,</span> forward_iterator last<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val <span class="br0">&#41;</span>;
+    forward_iterator lower_bound<span class="br0">&#40;</span> forward_iterator first<span class="sy0">,</span> forward_iterator last<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val<span class="sy0">,</span> CompFn f <span class="br0">&#41;</span>;</pre>
 <p>
 The lower_bound() function is a type of binary_search(). This function searches
 for the first place that val can be inserted into the ordered range defined by
@@ -136,7 +136,7 @@ Related Topics: <a href="../../stl/algorithm/binary_search.html" class="wikilink
 </p>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/algorithm/lower_bound"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1237588508" /><input type="submit" value="Edit" class="button" title="lower_bound" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/algorithm/lower_bound"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1255078253" /><input type="submit" value="Edit" class="button" title="lower_bound" /></div></form></div>
     <!-- wikipage stop -->
   </div>
 
@@ -150,7 +150,7 @@ Related Topics: <a href="../../stl/algorithm/binary_search.html" class="wikilink
               </div>
       <!--
       <div class="doc">
-        stl/algorithm/lower_bound.txt &middot; Last modified: 03/20/2009 15:35 by spoon      </div>
+        stl/algorithm/lower_bound.txt &middot; Last modified: 10/09/2009 01:50 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -177,6 +177,6 @@ Related Topics: <a href="../../stl/algorithm/binary_search.html" class="wikilink
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Alower_bound&amp;1254996367" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Alower_bound&amp;1255084848" width="1" height="1" alt=""  /></div>
 </body>
 </html>

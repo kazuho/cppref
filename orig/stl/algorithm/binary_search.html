@@ -9,8 +9,8 @@
   </title>
 
   <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2009-03-31T13:54:52-0700" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2009-10-09T01:48:42-0700" />
 <meta name="keywords" content="stl,algorithm,binary_search" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
@@ -51,7 +51,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/binary_search.html" class="wikilink1" title="stl:algorithm:binary_search">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/binary_search.html" class="wikilink2" title="br-pt:stl:algorithm:binary_search" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/binary_search.html" class="wikilink2" title="cn:stl:algorithm:binary_search" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/binary_search.html" class="wikilink2" title="fr:stl:algorithm:binary_search" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/binary_search.html" class="wikilink2" title="it:stl:algorithm:binary_search" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/binary_search.html" class="wikilink2" title="pl:stl:algorithm:binary_search" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/binary_search.html" class="wikilink2" title="ru:stl:algorithm:binary_search" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/binary_search.html" class="wikilink2" title="tr:stl:algorithm:binary_search" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/binary_search.html" class="wikilink1" title="stl:algorithm:binary_search">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/binary_search.html" class="wikilink2" title="br-pt:stl:algorithm:binary_search" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/binary_search.html" class="wikilink2" title="cn:stl:algorithm:binary_search" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/binary_search.html" class="wikilink2" title="fr:stl:algorithm:binary_search" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/binary_search.html" class="wikilink2" title="it:stl:algorithm:binary_search" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/algorithm/binary_search.html" class="wikilink2" title="jp:stl:algorithm:binary_search" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/binary_search.html" class="wikilink2" title="pl:stl:algorithm:binary_search" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/binary_search.html" class="wikilink2" title="ru:stl:algorithm:binary_search" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/binary_search.html" class="wikilink2" title="tr:stl:algorithm:binary_search" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,8 +73,8 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    bool binary_search<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val <span class="br0">&#41;</span>;
-    bool binary_search<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val<span class="sy0">,</span> Comp f <span class="br0">&#41;</span>;</pre>
+    bool binary_search<span class="br0">&#40;</span> forward_iterator start<span class="sy0">,</span> forward_iterator end<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val <span class="br0">&#41;</span>;
+    bool binary_search<span class="br0">&#40;</span> forward_iterator start<span class="sy0">,</span> forward_iterator end<span class="sy0">,</span> <span class="kw4">const</span> TYPE<span class="sy0">&amp;</span> val<span class="sy0">,</span> Comp f <span class="br0">&#41;</span>;</pre>
 <p>
 The binary_search() function searches from <code>start</code> to <code>end</code> for <code>val</code>. The elements
 between <code>start</code> and <code>end</code> that are searched should be in ascending order as defined
@@ -139,7 +139,7 @@ Related Topics: <a href="../../stl/algorithm/equal_range.html" class="wikilink1"
               </div>
       <!--
       <div class="doc">
-        stl/algorithm/binary_search.txt &middot; Last modified: 03/31/2009 13:54 by 128.83.120.138      </div>
+        stl/algorithm/binary_search.txt &middot; Last modified: 10/09/2009 01:48 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -166,6 +166,6 @@ Related Topics: <a href="../../stl/algorithm/equal_range.html" class="wikilink1"
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Abinary_search&amp;1254996352" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Abinary_search&amp;1255084833" width="1" height="1" alt=""  /></div>
 </body>
 </html>

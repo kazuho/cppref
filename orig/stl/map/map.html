@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    Map Constructors &amp; Destructors    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-07-16T23:36:30-0700" />
+<meta name="keywords" content="stl,map,map_constructors" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/stl/map/map_constructors?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=stl:map" />
+<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/stl/map/map_constructors?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/stl/map/map_constructors" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/stl/map/map_constructors" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="../../stl/map/map.html"  title="Backlinks">Map Constructors &amp; Destructors</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="../../start.html"  title="start">C++ Reference</a> &raquo; <a href="../../stl/start.html"  title="stl:start">C++ Standard Template Library</a> &raquo; <a href="../../stl/map/start.html"  title="stl:map:start">C++ Maps</a> &raquo; <a href="../../stl/map/map.html"  title="stl:map:map_constructors">Map Constructors &amp; Destructors</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/map/map.html" class="wikilink1" title="stl:map:map_constructors">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/map/map.html" class="wikilink2" title="br-pt:stl:map:map_constructors" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/map/map.html" class="wikilink2" title="cn:stl:map:map_constructors" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/map/map.html" class="wikilink2" title="fr:stl:map:map_constructors" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/map/map.html" class="wikilink2" title="it:stl:map:map_constructors" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/map/map.html" class="wikilink2" title="jp:stl:map:map_constructors" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/map/map.html" class="wikilink2" title="pl:stl:map:map_constructors" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/map/map.html" class="wikilink2" title="ru:stl:map:map_constructors" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/map/map.html" class="wikilink2" title="tr:stl:map:map_constructors" rel="nofollow">tr</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="map_constructors_destructors" id="map_constructors_destructors">Map Constructors &amp; Destructors</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;map&gt;</span>
+    map<span class="br0">&#40;</span><span class="br0">&#41;</span>;
+    map<span class="br0">&#40;</span> <span class="kw4">const</span> map<span class="sy0">&amp;</span> m <span class="br0">&#41;</span>;
+    map<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end <span class="br0">&#41;</span>;
+    map<span class="br0">&#40;</span> iterator start<span class="sy0">,</span> iterator end<span class="sy0">,</span> <span class="kw4">const</span> key_compare<span class="sy0">&amp;</span> cmp <span class="br0">&#41;</span>;
+    map<span class="br0">&#40;</span> <span class="kw4">const</span> key_compare<span class="sy0">&amp;</span> cmp <span class="br0">&#41;</span>;
+    ~map<span class="br0">&#40;</span><span class="br0">&#41;</span>;</pre>
+<p>
+The default constructor takes no arguments, creates a new instance of that map,
+and runs in <a href="../../complexity.html" class="wikilink1" title="complexity">constant time</a>. The default copy constructor runs in <a href="../../complexity.html" class="wikilink1" title="complexity">linear time</a> and
+can be used to create a new map that is a copy of the given map m.
+</p>
+
+<p>
+You can also create a map that will contain a copy of the elements between
+start and end, or specify a comparison function cmp.
+</p>
+
+<p>
+The default destructor is called when the map should be destroyed.
+</p>
+
+<p>
+For example, the following code creates a map that associates a string with an
+integer:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="kw4">struct</span> strCmp <span class="br0">&#123;</span>
+      bool operator<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> s1<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> s2 <span class="br0">&#41;</span> <span class="kw4">const</span> <span class="br0">&#123;</span>
+        <span class="kw1">return</span> strcmp<span class="br0">&#40;</span> s1<span class="sy0">,</span> s2 <span class="br0">&#41;</span> <span class="sy0">&lt;</span> <span class="nu19">0</span>;
+      <span class="br0">&#125;</span>
+    <span class="br0">&#125;</span>;
+&nbsp;
+    ...
+&nbsp;
+    <span class="me1">map</span><span class="sy0">&lt;</span>const <span class="kw4">char</span><span class="sy0">*,</span> <span class="kw4">int</span><span class="sy0">,</span> strCmp<span class="sy0">&gt;</span> ages;
+    ages<span class="br0">&#91;</span><span class="st0">&quot;Homer&quot;</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="nu0">38</span>;
+    ages<span class="br0">&#91;</span><span class="st0">&quot;Marge&quot;</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="nu0">37</span>;
+    ages<span class="br0">&#91;</span><span class="st0">&quot;Lisa&quot;</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="nu0">8</span>;
+    ages<span class="br0">&#91;</span><span class="st0">&quot;Maggie&quot;</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="nu0">1</span>;
+    ages<span class="br0">&#91;</span><span class="st0">&quot;Bart&quot;</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="nu0">11</span>;
+&nbsp;
+    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;Bart is &quot;</span> <span class="sy0">&lt;&lt;</span> ages<span class="br0">&#91;</span><span class="st0">&quot;Bart&quot;</span><span class="br0">&#93;</span> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; years old&quot;</span> <span class="sy0">&lt;&lt;</span> endl;</pre>
+<p>
+
+Related Topics: <a href="../../stl/map/operator.html" class="wikilink1" title="stl:map:map_operators">Map operators</a>
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/map/map_constructors"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1247812590" /><input type="submit" value="Edit" class="button" title="Map Constructors &amp; Destructors" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        stl/map/map_constructors.txt &middot; Last modified: 07/16/2009 23:36 by 219.232.55.248      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="../../stl/map/map.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="../../stl/map/map.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="../../stl/map/map.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="../../stl/map/map.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="../../stl/map/map.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="../../feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Amap%3Amap_constructors&amp;1255084929" width="1" height="1" alt=""  /></div>
+</body>
+</html>

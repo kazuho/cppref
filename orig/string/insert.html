@@ -9,8 +9,8 @@
   </title>
 
   <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2009-08-18T04:09:06-0700" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2009-10-08T21:47:48-0700" />
 <meta name="keywords" content="string,insert" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
@@ -51,7 +51,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../string/insert.html" class="wikilink1" title="string:insert">en</a></span></div></li>  <li><div class="li"><a href="../br-pt/string/insert.html" class="wikilink2" title="br-pt:string:insert" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../cn/string/insert.html" class="wikilink2" title="cn:string:insert" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../fr/string/insert.html" class="wikilink2" title="fr:string:insert" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../it/string/insert.html" class="wikilink2" title="it:string:insert" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../pl/string/insert.html" class="wikilink2" title="pl:string:insert" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../ru/string/insert.html" class="wikilink2" title="ru:string:insert" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../tr/string/insert.html" class="wikilink2" title="tr:string:insert" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../string/insert.html" class="wikilink1" title="string:insert">en</a></span></div></li>  <li><div class="li"><a href="../br-pt/string/insert.html" class="wikilink2" title="br-pt:string:insert" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../cn/string/insert.html" class="wikilink2" title="cn:string:insert" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../fr/string/insert.html" class="wikilink2" title="fr:string:insert" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../it/string/insert.html" class="wikilink2" title="it:string:insert" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../jp/string/insert.html" class="wikilink2" title="jp:string:insert" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../pl/string/insert.html" class="wikilink2" title="pl:string:insert" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../ru/string/insert.html" class="wikilink2" title="ru:string:insert" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../tr/string/insert.html" class="wikilink2" title="tr:string:insert" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,13 +73,13 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;string&gt;</span>
-    iterator insert<span class="br0">&#40;</span> iterator i<span class="sy0">,</span> <span class="kw4">const</span> char<span class="sy0">&amp;</span> ch <span class="br0">&#41;</span>;
+    iterator insert<span class="br0">&#40;</span> iterator i<span class="sy0">,</span> <span class="kw4">char</span> ch <span class="br0">&#41;</span>;
     string<span class="sy0">&amp;</span> insert<span class="br0">&#40;</span> size_type index<span class="sy0">,</span> <span class="kw4">const</span> string<span class="sy0">&amp;</span> str <span class="br0">&#41;</span>;
     string<span class="sy0">&amp;</span> insert<span class="br0">&#40;</span> size_type index<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> str <span class="br0">&#41;</span>;
     string<span class="sy0">&amp;</span> insert<span class="br0">&#40;</span> size_type index1<span class="sy0">,</span> <span class="kw4">const</span> string<span class="sy0">&amp;</span> str<span class="sy0">,</span> size_type index2<span class="sy0">,</span> size_type num <span class="br0">&#41;</span>;
     string<span class="sy0">&amp;</span> insert<span class="br0">&#40;</span> size_type index<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy0">*</span> str<span class="sy0">,</span> size_type num <span class="br0">&#41;</span>;
     string<span class="sy0">&amp;</span> insert<span class="br0">&#40;</span> size_type index<span class="sy0">,</span> size_type num<span class="sy0">,</span> <span class="kw4">char</span> ch <span class="br0">&#41;</span>;
-    <span class="kw4">void</span> insert<span class="br0">&#40;</span> iterator i<span class="sy0">,</span> size_type num<span class="sy0">,</span> <span class="kw4">const</span> char<span class="sy0">&amp;</span> ch <span class="br0">&#41;</span>;
+    <span class="kw4">void</span> insert<span class="br0">&#40;</span> iterator i<span class="sy0">,</span> size_type num<span class="sy0">,</span> <span class="kw4">char</span> ch <span class="br0">&#41;</span>;
     <span class="kw4">void</span> insert<span class="br0">&#40;</span> iterator i<span class="sy0">,</span> input_iterator start<span class="sy0">,</span> input_iterator end <span class="br0">&#41;</span>;</pre>
 <p>
 The very multi-purpose insert() function either:
@@ -107,7 +107,7 @@ Related Topics: <a href="../string/erase.html" class="wikilink1" title="string:e
 </p>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/string/insert"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1250593746" /><input type="submit" value="Edit" class="button" title="insert" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/string/insert"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1255063668" /><input type="submit" value="Edit" class="button" title="insert" /></div></form></div>
     <!-- wikipage stop -->
   </div>
 
@@ -121,7 +121,7 @@ Related Topics: <a href="../string/erase.html" class="wikilink1" title="string:e
               </div>
       <!--
       <div class="doc">
-        string/insert.txt &middot; Last modified: 08/18/2009 04:09 by nate      </div>
+        string/insert.txt &middot; Last modified: 10/08/2009 21:47 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -148,6 +148,6 @@ Related Topics: <a href="../string/erase.html" class="wikilink1" title="string:e
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=string%3Ainsert&amp;1254996329" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=string%3Ainsert&amp;1255084809" width="1" height="1" alt=""  /></div>
 </body>
 </html>

@@ -9,8 +9,8 @@
   </title>
 
   <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="index,follow" />
-<meta name="date" content="2009-04-21T16:51:06-0700" />
+<meta name="robots" content="noindex,nofollow" />
+<meta name="date" content="2009-10-09T01:00:54-0700" />
 <meta name="keywords" content="stl,algorithm,mismatch" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
@@ -51,7 +51,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/mismatch.html" class="wikilink1" title="stl:algorithm:mismatch">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/mismatch.html" class="wikilink2" title="br-pt:stl:algorithm:mismatch" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/mismatch.html" class="wikilink2" title="cn:stl:algorithm:mismatch" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/mismatch.html" class="wikilink2" title="fr:stl:algorithm:mismatch" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/mismatch.html" class="wikilink2" title="it:stl:algorithm:mismatch" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/mismatch.html" class="wikilink2" title="pl:stl:algorithm:mismatch" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/mismatch.html" class="wikilink2" title="ru:stl:algorithm:mismatch" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/mismatch.html" class="wikilink2" title="tr:stl:algorithm:mismatch" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/mismatch.html" class="wikilink1" title="stl:algorithm:mismatch">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/mismatch.html" class="wikilink2" title="br-pt:stl:algorithm:mismatch" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/mismatch.html" class="wikilink2" title="cn:stl:algorithm:mismatch" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/mismatch.html" class="wikilink2" title="fr:stl:algorithm:mismatch" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/mismatch.html" class="wikilink2" title="it:stl:algorithm:mismatch" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/algorithm/mismatch.html" class="wikilink2" title="jp:stl:algorithm:mismatch" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/mismatch.html" class="wikilink2" title="pl:stl:algorithm:mismatch" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/mismatch.html" class="wikilink2" title="ru:stl:algorithm:mismatch" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/mismatch.html" class="wikilink2" title="tr:stl:algorithm:mismatch" rel="nofollow">tr</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,8 +73,8 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    pair <span class="sy0">&lt;</span>iterator1<span class="sy0">,</span>iterator2<span class="sy0">&gt;</span> mismatch<span class="br0">&#40;</span> iterator start1<span class="sy0">,</span> iterator end1<span class="sy0">,</span> iterator start2 <span class="br0">&#41;</span>;
-    pair <span class="sy0">&lt;</span>iterator1<span class="sy0">,</span>iterator2<span class="sy0">&gt;</span> mismatch<span class="br0">&#40;</span> iterator start1<span class="sy0">,</span> iterator end1<span class="sy0">,</span> iterator start2<span class="sy0">,</span> BinPred p <span class="br0">&#41;</span>;</pre>
+    pair <span class="sy0">&lt;</span>input_iterator1<span class="sy0">,</span>input_iterator2<span class="sy0">&gt;</span> mismatch<span class="br0">&#40;</span> input_iterator1 start1<span class="sy0">,</span> input_iterator1 end1<span class="sy0">,</span> input_iterator2 start2 <span class="br0">&#41;</span>;
+    pair <span class="sy0">&lt;</span>input_iterator1<span class="sy0">,</span>input_iterator2<span class="sy0">&gt;</span> mismatch<span class="br0">&#40;</span> input_iterator1 start1<span class="sy0">,</span> input_iterator1 end1<span class="sy0">,</span> input_iterator2 start2<span class="sy0">,</span> BinPred p <span class="br0">&#41;</span>;</pre>
 <p>
 The mismatch() function compares the elements in the range defined by
 [start1,end1) to the elements in a range of the same size starting at start2.
@@ -105,7 +105,7 @@ Related Topics: <a href="../../stl/algorithm/equal.html" class="wikilink1" title
 </p>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/algorithm/mismatch"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1240357866" /><input type="submit" value="Edit" class="button" title="mismatch" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/algorithm/mismatch"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1255075254" /><input type="submit" value="Edit" class="button" title="mismatch" /></div></form></div>
     <!-- wikipage stop -->
   </div>
 
@@ -119,7 +119,7 @@ Related Topics: <a href="../../stl/algorithm/equal.html" class="wikilink1" title
               </div>
       <!--
       <div class="doc">
-        stl/algorithm/mismatch.txt &middot; Last modified: 04/21/2009 16:51 by caspin      </div>
+        stl/algorithm/mismatch.txt &middot; Last modified: 10/09/2009 01:00 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -146,6 +146,6 @@ Related Topics: <a href="../../stl/algorithm/equal.html" class="wikilink1" title
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Amismatch&amp;1254996371" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Amismatch&amp;1255084852" width="1" height="1" alt=""  /></div>
 </body>
 </html>
