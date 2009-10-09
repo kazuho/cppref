@@ -20,7 +20,7 @@ $name .= '/start'
     if -d "$doc_dir/$name";
 
 # try by name
-open_file("$doc_dir/$name.html")
+open_w3m("$doc_dir/$name.html")
     if -e "$doc_dir/$name.html";
 
 my @cand;
@@ -41,16 +41,41 @@ if (@cand == 0) {
     print STDERR "no document found for: $name\n";
     exit 1;
 } elsif (@cand == 1) {
-    open_file($cand[0]);
+    open_w3m($cand[0]);
 } else {
-    print STDERR "multiple choices:\n";
-    print map { s{$doc_dir/}{}; s{(/start|)\.html$}{}; s{/}{::}g; "  $_\n" } @cand;
-    exit 2;
+    pipe my $rfh, my $wfh
+        or die "failed to create pipe:$!";
+    my $pid = fork;
+    die "fork failed:$!"
+        unless defined $pid;
+    unless ($pid) {
+        print $wfh <<"EOT";
+<title>Search results    [C++ Reference]</title>
+<div class="breadcrumbs">
+<span class="bchead">You are here: </span><a href="$doc_dir/start.html"  title="start">C++ Reference</a> &raquo; Search results
+</div>
+<ul>
+EOT
+        for my $cand (@cand) {
+            my $name = $cand;
+            $name =~ s{$doc_dir/}{};
+            $name =~ s{(/start|)\.html$}{};
+            $name =~ s{/}{::}g;
+            printf $wfh qq{<li><a href="%s">%s</a></li>\n}, $cand, $name;
+        }
+        print $wfh <<"EOT";
+</ul>
+EOT
+        exit 0;
+    }
+    open STDIN, '<&', $rfh
+        or die "cannot dup STDIN:$!";
+    close $rfh;
+    open_w3m(qw(-T text/html));
 }
 
-sub open_file {
-    my $fn = shift;
-    exec 'w3m', $fn;
+sub open_w3m {
+    exec 'w3m', @_;
     die "failed to exec w3m:$!";
 }
 
