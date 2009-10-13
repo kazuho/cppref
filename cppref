@@ -7,7 +7,7 @@ use File::Basename;
 use File::Find ();
 use File::ShareDir ();
 
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 my $BROWSER = $ENV{BROWSER} || 'w3m';
 my %BROWSER_OPTION_MAP = (
@@ -101,7 +101,7 @@ cppref - man-style access to cppreference.com documents (using w3m)
 
 =head1 AUTHOR
 
-Copyright (c) 2009 Kazuho Oku  All rights reserved
+Kazuho Oku
 
 =head1 LICENSE
 

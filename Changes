@@ -1,5 +1,8 @@
 Revision history for cppref.
 
+0.06  Tue Oct 13 18:20:00 2009
+	- add lib/App/Cppref.pm so that cppref can be installed using CPAN.pm
+
 0.05  Fri Oct 09 19:55:00 2009
 	- rewrite constructor and operator filenames (now can be specified like string::string or vector::operator)
 	- accept $ENV{CPPREF_DOCROOT} as document directory
