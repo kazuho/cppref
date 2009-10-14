@@ -40,7 +40,12 @@ File::Find::find(
             my $fn = $_;
             return if $cand_dir{dirname($fn)};
             return unless $fn =~ m{/$name(?:\.|$)}i;
-            push @cand, -d $fn ? "$fn/start.html" : $fn;
+	    if (-d $fn) {
+		push @cand, "$fn/start.html";
+		$cand_dir{$fn} = 1;
+	    } else {
+		push @cand, $fn;
+	    }
         },
         no_chdir => 1,
     },
