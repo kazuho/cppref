@@ -1,5 +1,8 @@
 Revision history for cppref.
 
+0.07  Wed Oct 21 10:24:00 2009
+	- change distribution_type to 'module' so that cppref will (hopefully) be indexed
+
 0.06  Tue Oct 13 18:20:00 2009
 	- add lib/App/Cppref.pm so that cppref can be installed using CPAN.pm
 

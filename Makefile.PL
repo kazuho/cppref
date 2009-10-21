@@ -9,7 +9,7 @@ perl_version_from 'cppref';
 version_from 'cppref';
 
 readme_from 'cppref';
-distribution_type 'script';
+# distribution_type 'script';
 
 no_index directory => 'orig';
 
