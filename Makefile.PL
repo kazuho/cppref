@@ -27,4 +27,4 @@ auto_install;
 
 WriteAll;
 
-do 'tidy.pl';
+do 'tools/tidy.pl';
