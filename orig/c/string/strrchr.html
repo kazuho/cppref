@@ -8,7 +8,7 @@
     strrchr    [C++ Reference]
   </title>
 
-  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <meta name="generator" content="DokuWiki Release 2009-12-25c &quot;Lemming&quot;" />
 <meta name="robots" content="index,follow" />
 <meta name="date" content="2008-10-14T15:42:03-0700" />
 <meta name="keywords" content="c,string,strrchr" />
@@ -17,13 +17,17 @@
 <link rel="contents" href="/wiki/c/string/strrchr?do=index" title="Index" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=c:string" />
-<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/c/string/strrchr?do=edit" />
+<link rel="edit" title="Edit this page" href="/wiki/c/string/strrchr?do=edit" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/c/string/strrchr" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/c/string/strrchr" />
-<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+<link rel="canonical" href="http://www.cppreference.com/wiki/c/string/strrchr" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1&amp;tseed=1272971091" />
+<script type="text/javascript" charset="utf-8" ><!--//--><![CDATA[//><!--
+var NS='c:string';var JSINFO = {"id":"c:string:strrchr","namespace":"c:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?tseed=1272971091" ></script>
 
   <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
 
@@ -51,7 +55,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../c/string/strrchr.html" class="wikilink1" title="c:string:strrchr">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/c/string/strrchr.html" class="wikilink2" title="br-pt:c:string:strrchr" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/c/string/strrchr.html" class="wikilink2" title="cn:c:string:strrchr" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/c/string/strrchr.html" class="wikilink2" title="fr:c:string:strrchr" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/c/string/strrchr.html" class="wikilink2" title="it:c:string:strrchr" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/c/string/strrchr.html" class="wikilink2" title="jp:c:string:strrchr" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/c/string/strrchr.html" class="wikilink2" title="pl:c:string:strrchr" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/c/string/strrchr.html" class="wikilink2" title="ru:c:string:strrchr" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/c/string/strrchr.html" class="wikilink2" title="tr:c:string:strrchr" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../c/string/strrchr.html" class="wikilink1" title="c:string:strrchr">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/c/string/strrchr.html" class="wikilink2" title="br-pt:c:string:strrchr" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/c/string/strrchr.html" class="wikilink2" title="cn:c:string:strrchr" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../cz/c/string/strrchr.html" class="wikilink2" title="cz:c:string:strrchr" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="../../de/c/string/strrchr.html" class="wikilink2" title="de:c:string:strrchr" rel="nofollow">de</a></div></li>  <li><div class="li"><a href="../../es/c/string/strrchr.html" class="wikilink2" title="es:c:string:strrchr" rel="nofollow">es</a></div></li>  <li><div class="li"><a href="../../fr/c/string/strrchr.html" class="wikilink2" title="fr:c:string:strrchr" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/c/string/strrchr.html" class="wikilink2" title="it:c:string:strrchr" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/c/string/strrchr.html" class="wikilink1" title="jp:c:string:strrchr">jp</a></div></li>  <li><div class="li"><a href="../../nl/c/string/strrchr.html" class="wikilink2" title="nl:c:string:strrchr" rel="nofollow">nl</a></div></li>  <li><div class="li"><a href="../../pl/c/string/strrchr.html" class="wikilink2" title="pl:c:string:strrchr" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ro/c/string/strrchr.html" class="wikilink2" title="ro:c:string:strrchr" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="../../ru/c/string/strrchr.html" class="wikilink2" title="ru:c:string:strrchr" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../sk/c/string/strrchr.html" class="wikilink2" title="sk:c:string:strrchr" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="../../tr/c/string/strrchr.html" class="wikilink2" title="tr:c:string:strrchr" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="../../tw/c/string/strrchr.html" class="wikilink2" title="tw:c:string:strrchr" rel="nofollow">tw</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,7 +77,7 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cstring&gt;</span>
-    <span class="kw4">char</span> <span class="sy0">*</span>strrchr<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>str<span class="sy0">,</span> <span class="kw4">int</span> ch <span class="br0">&#41;</span>;</pre>
+    <span class="kw4">char</span> <span class="sy0">*</span>strrchr<span class="br0">&#40;</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>str<span class="sy0">,</span> <span class="kw4">int</span> ch <span class="br0">&#41;</span><span class="sy0">;</span></pre>
 <p>
 
 The function strrchr() returns a pointer to the last occurrence of ch in str,
@@ -126,6 +130,6 @@ Related Topics: <a href="../../c/string/strcspn.html" class="wikilink1" title="c
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Astring%3Astrrchr&amp;1255084768" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Astring%3Astrrchr&amp;1273194219" width="1" height="1" alt=""  /></div>
 </body>
 </html>

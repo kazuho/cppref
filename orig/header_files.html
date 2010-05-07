@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    C++ Header Files    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-12-25c &quot;Lemming&quot;" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-04-26T09:05:31-0700" />
+<meta name="keywords" content="header_files" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/header_files?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=" />
+<link rel="edit" title="Edit this page" href="/wiki/header_files?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/header_files" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/header_files" />
+<link rel="canonical" href="http://www.cppreference.com/wiki/header_files" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1&amp;tseed=1272971091" />
+<script type="text/javascript" charset="utf-8" ><!--//--><![CDATA[//><!--
+var NS='';var JSINFO = {"id":"header_files","namespace":""};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?tseed=1272971091" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="header_files.html"  title="Backlinks">C++ Header Files</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="start.html"  title="start">C++ Reference</a> &raquo; <a href="header_files.html"  title="header_files">C++ Header Files</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="header_files.html" class="wikilink1" title="header_files">en</a></span></div></li>  <li><div class="li"><a href="br-pt/header_files.html" class="wikilink2" title="br-pt:header_files" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="cn/header_files.html" class="wikilink2" title="cn:header_files" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="cz/header_files.html" class="wikilink2" title="cz:header_files" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="de/header_files.html" class="wikilink2" title="de:header_files" rel="nofollow">de</a></div></li>  <li><div class="li"><a href="es/header_files.html" class="wikilink1" title="es:header_files">es</a></div></li>  <li><div class="li"><a href="fr/header_files.html" class="wikilink2" title="fr:header_files" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="it/header_files.html" class="wikilink2" title="it:header_files" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="jp/header_files.html" class="wikilink1" title="jp:header_files">jp</a></div></li>  <li><div class="li"><a href="nl/header_files.html" class="wikilink2" title="nl:header_files" rel="nofollow">nl</a></div></li>  <li><div class="li"><a href="pl/header_files.html" class="wikilink2" title="pl:header_files" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="ro/header_files.html" class="wikilink2" title="ro:header_files" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="ru/header_files.html" class="wikilink2" title="ru:header_files" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="sk/header_files.html" class="wikilink2" title="sk:header_files" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="tr/header_files.html" class="wikilink2" title="tr:header_files" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="tw/header_files.html" class="wikilink2" title="tw:header_files" rel="nofollow">tw</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#c_header_files" class="toc">C++ Header Files</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#containers" class="toc">Containers</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#general" class="toc">General</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#c_strings" class="toc">C++ Strings</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#c_streams_and_inputoutput" class="toc">C++ Streams and Input/Output</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#numerics" class="toc">Numerics</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#language_support" class="toc">Language Support</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#c_standard_library" class="toc">C Standard Library</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+
+
+<h2><a name="c_header_files" id="c_header_files">C++ Header Files</a></h2>
+<div class="level2">
+
+<p>
+
+This page lists the various header files that are available in standard C++, grouped by topic.
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/header_files"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1-124" /><input type="hidden" name="rev" value="1272297931" /><input type="submit" value="Edit" class="button" title="C++ Header Files" /></div></form></div>
+<h3><a name="containers" id="containers">Containers</a></h3>
+<div class="level3">
+<table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="stl/bitset/start.html" class="wikilink1" title="stl:bitset:start">&lt;bitset&gt;</a></td><td class="col1">Provides the specialized container class <a href="stl/bitset/start.html" class="wikilink1" title="stl:bitset:start">std::bitset</a>, a bit array.</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="stl/deque/start.html" class="wikilink1" title="stl:deque:start">&lt;deque&gt;</a></td><td class="col1">Provides the container class template <a href="stl/deque/start.html" class="wikilink1" title="stl:deque:start">std::deque</a>, a double-ended queue.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="stl/list/start.html" class="wikilink1" title="stl:list:start">&lt;list&gt;</a></td><td class="col1">Provides the container class template <a href="stl/list/start.html" class="wikilink1" title="stl:list:start">std::list</a>, a doubly-linked list.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="stl/map/start.html" class="wikilink1" title="stl:map:start">&lt;map&gt;</a></td><td class="col1">Provides the container class templates <a href="stl/map/start.html" class="wikilink1" title="stl:map:start">std::map</a> and <a href="stl/multimap/start.html" class="wikilink1" title="stl:multimap:start">std::multimap</a>, an associative array and multimap.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="stl/queue/start.html" class="wikilink1" title="stl:queue:start">&lt;queue&gt;</a></td><td class="col1">Provides the container adapter class <a href="stl/queue/start.html" class="wikilink1" title="stl:queue:start">std::queue</a>, a single-ended queue.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="stl/set/start.html" class="wikilink1" title="stl:set:start">&lt;set&gt;</a></td><td class="col1">Provides the container class templates <a href="stl/set/start.html" class="wikilink1" title="stl:set:start">std::set</a> and <a href="stl/multiset/start.html" class="wikilink1" title="stl:multiset:start">std::multiset</a>, sorted associative containers or sets.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="stl/stack/start.html" class="wikilink1" title="stl:stack:start">&lt;stack&gt;</a></td><td class="col1">Provides the container adapter class <a href="stl/stack/start.html" class="wikilink1" title="stl:stack:start">std::stack</a>, a stack.</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="stl/vector/start.html" class="wikilink1" title="stl:vector:start">&lt;vector&gt;</a></td><td class="col1">Provides the container class template <a href="stl/vector/start.html" class="wikilink1" title="stl:vector:start">std::vector</a>, a dynamic array.</td>
+	</tr>
+</table>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/header_files"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="125-1107" /><input type="hidden" name="rev" value="1272297931" /><input type="submit" value="Edit" class="button" title="Containers" /></div></form></div>
+<h3><a name="general" id="general">General</a></h3>
+<div class="level3">
+<table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="stl/algorithm/start.html" class="wikilink1" title="stl:algorithm:start">&lt;algorithm&gt;</a></td><td class="col1">Provides definitions of many container algorithms.</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="stl/functional/start.html" class="wikilink1" title="stl:functional:start">&lt;functional&gt;</a></td><td class="col1">Provides several function objects, designed for use with the standard algorithms.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="stl/iterators.html" class="wikilink1" title="stl:iterators">&lt;iterator&gt;</a></td><td class="col1">Provides classes and templates for working with iterators.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0">&lt;locale&gt;</td><td class="col1">Provides classes and templates for working with locales.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="stl/memory/start.html" class="wikilink1" title="stl:memory:start">&lt;memory&gt;</a></td><td class="col1">Provides facilities for memory management in C++, including the class template <a href="stl/memory/auto_ptr.html" class="wikilink1" title="stl:memory:auto_ptr">std::auto_ptr</a>.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="exception/start.html" class="wikilink1" title="exception:start">&lt;stdexcept&gt;</a></td><td class="col1">Contains standard exception classes such as std::logic_error and std::runtime_error, both derived from std::exception.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="stl/utility/start.html" class="wikilink1" title="stl:utility:start">&lt;utility&gt;</a></td><td class="col1">Provides the template class <a href="stl/utility/pair.html" class="wikilink1" title="stl:utility:pair">std::pair</a>, for working with pairs (two-member tuples) of objects.</td>
+	</tr>
+</table>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/header_files"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1108-1921" /><input type="hidden" name="rev" value="1272297931" /><input type="submit" value="Edit" class="button" title="General" /></div></form></div>
+<h3><a name="c_strings" id="c_strings">C++ Strings</a></h3>
+<div class="level3">
+<table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="string/start.html" class="wikilink1" title="string:start">&lt;string&gt;</a></td><td class="col1">Provides the C++ standard string classes and templates.</td>
+	</tr>
+</table>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/header_files"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1922-2022" /><input type="hidden" name="rev" value="1272297931" /><input type="submit" value="Edit" class="button" title="C++ Strings" /></div></form></div>
+<h3><a name="c_streams_and_inputoutput" id="c_streams_and_inputoutput">C++ Streams and Input/Output</a></h3>
+<div class="level3">
+<table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="io/start.html" class="wikilink1" title="io:start">&lt;fstream&gt;</a></td><td class="col1">Provides facilities for file-based input and output.</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="io/start.html" class="wikilink1" title="io:start">&lt;ios&gt;</a></td><td class="col1">Provides several types and functions basic to the operation of iostreams.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="io/start.html" class="wikilink1" title="io:start">&lt;iostream&gt;</a></td><td class="col1">Provides C++ input and output fundamentals.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="io/start.html" class="wikilink1" title="io:start">&lt;iosfwd&gt;</a></td><td class="col1">Provides forward declarations of several I/O-related class templates.</td>
+	</tr>
+	<tr class="row4">
+		<td class="col0"><a href="io/start.html" class="wikilink1" title="io:start">&lt;iomanip&gt;</a></td><td class="col1">Provides facilities to manipulate output formatting, such as the base used when formatting integers and the precision of floating point values.</td>
+	</tr>
+	<tr class="row5">
+		<td class="col0"><a href="io/sstream/start.html" class="wikilink1" title="io:sstream:start">&lt;istream&gt;</a></td><td class="col1">Provides the template class std::istream and other supporting classes for input.</td>
+	</tr>
+	<tr class="row6">
+		<td class="col0"><a href="io/sstream/start.html" class="wikilink1" title="io:sstream:start">&lt;ostream&gt;</a></td><td class="col1">Provides the template class std::ostream and other supporting classes for output.</td>
+	</tr>
+	<tr class="row7">
+		<td class="col0"><a href="io/sstream/start.html" class="wikilink1" title="io:sstream:start">&lt;sstream&gt;</a></td><td class="col1">Provides the template class std::sstream and other supporting classes for string manipulation.</td>
+	</tr>
+	<tr class="row8">
+		<td class="col0">&lt;streambuf&gt;</td><td class="col1"> </td>
+	</tr>
+</table>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/header_files"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="2023-2900" /><input type="hidden" name="rev" value="1272297931" /><input type="submit" value="Edit" class="button" title="C++ Streams and Input/Output" /></div></form></div>
+<h3><a name="numerics" id="numerics">Numerics</a></h3>
+<div class="level3">
+<table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="complex/start.html" class="wikilink1" title="complex:start">&lt;complex&gt;</a></td><td class="col1">Provides class template std::complex and associated functions for working with complex numbers.</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="numeric/start.html" class="wikilink2" title="numeric:start" rel="nofollow">&lt;numeric&gt;</a></td><td class="col1">Provides algorithms for numerical processing.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="valarray/start.html" class="wikilink1" title="valarray:start">&lt;valarray&gt;</a></td><td class="col1">Provides the template class std::valarray, an array class optimized for numeric processing.</td>
+	</tr>
+</table>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/header_files"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="2901-3230" /><input type="hidden" name="rev" value="1272297931" /><input type="submit" value="Edit" class="button" title="Numerics" /></div></form></div>
+<h3><a name="language_support" id="language_support">Language Support</a></h3>
+<div class="level3">
+<table class="inline">
+	<tr class="row0">
+		<td class="col0"><a href="exception/start.html" class="wikilink1" title="exception:start">&lt;exception&gt;</a></td><td class="col1">Provides several types and functions related to exception handling, including std::exception, the base class of all exceptions thrown by the Standard Library.</td>
+	</tr>
+	<tr class="row1">
+		<td class="col0"><a href="limits/start.html" class="wikilink1" title="limits:start">&lt;limits&gt;</a></td><td class="col1">Provides the template class <a href="limits/numeric_limits.html" class="wikilink1" title="limits:numeric_limits">std::numeric_limits</a>, used for describing properties of fundamental numeric types.</td>
+	</tr>
+	<tr class="row2">
+		<td class="col0"><a href="new/start.html" class="wikilink2" title="new:start" rel="nofollow">&lt;new&gt;</a></td><td class="col1">Provides operators new and delete and other functions and types composing the fundamentals of C++ memory management.</td>
+	</tr>
+	<tr class="row3">
+		<td class="col0"><a href="typeinfo/start.html" class="wikilink1" title="typeinfo:start">&lt;typeinfo&gt;</a></td><td class="col1">Provides facilities for working with C++ run-time type information.</td>
+	</tr>
+</table>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/header_files"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3231-3833" /><input type="hidden" name="rev" value="1272297931" /><input type="submit" value="Edit" class="button" title="Language Support" /></div></form></div>
+<h3><a name="c_standard_library" id="c_standard_library">C Standard Library</a></h3>
+<div class="level3">
+
+<p>
+
+Each header from the <a href="c/start.html" class="wikilink1" title="c:start">C standard library</a> is included in the C++
+standard library under a different name, generated by removing the .h,
+and adding a &#039;c&#039; at the start, for example <code>time.h</code> becomes
+<code>ctime</code>. The only difference between these headers and the traditional
+C standard library headers is that where possible the functions should
+be placed into the <code>std:: namespace</code> (although few compilers actually do
+this). In <acronym title="International Organization for Standardization">ISO</acronym> C, functions in standard library are allowed to be
+implemented by macros, which is not allowed by <acronym title="International Organization for Standardization">ISO</acronym> C++.
+
+</p>
+<ul>
+<li class="level1"><div class="li"> &lt;cassert&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cctype&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cerrno&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cfloat&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;climits&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cmath&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;csetjmp&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;csignal&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdlib&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstddef&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdarg&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstdio&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cstring&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;ctime&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cwchar&gt;</div>
+</li>
+<li class="level1"><div class="li"> &lt;cwctype&gt;</div>
+</li>
+</ul>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/header_files"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3834-" /><input type="hidden" name="rev" value="1272297931" /><input type="submit" value="Edit" class="button" title="C Standard Library" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        header_files.txt &middot; Last modified: 04/26/2010 09:05 by nate      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="header_files.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="header_files.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="header_files.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="header_files.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="header_files.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=header_files&amp;1273193074" width="1" height="1" alt=""  /></div>
+</body>
+</html>

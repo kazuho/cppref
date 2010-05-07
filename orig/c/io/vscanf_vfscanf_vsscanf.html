@@ -5,25 +5,29 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>
-    vscanf, vfscanf and vsscanf    [C++ Reference]
+    vscanf, vfscanf, vsscanf    [C++ Reference]
   </title>
 
-  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <meta name="generator" content="DokuWiki Release 2009-12-25c &quot;Lemming&quot;" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2008-10-14T15:42:01-0700" />
+<meta name="date" content="2009-11-23T06:17:18-0800" />
 <meta name="keywords" content="c,io,vscanf_vfscanf_vsscanf" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
 <link rel="contents" href="/wiki/c/io/vscanf_vfscanf_vsscanf?do=index" title="Index" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=c:io" />
-<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/c/io/vscanf_vfscanf_vsscanf?do=edit" />
+<link rel="edit" title="Edit this page" href="/wiki/c/io/vscanf_vfscanf_vsscanf?do=edit" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/c/io/vscanf_vfscanf_vsscanf" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/c/io/vscanf_vfscanf_vsscanf" />
-<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+<link rel="canonical" href="http://www.cppreference.com/wiki/c/io/vscanf_vfscanf_vsscanf" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1&amp;tseed=1272971091" />
+<script type="text/javascript" charset="utf-8" ><!--//--><![CDATA[//><!--
+var NS='c:io';var JSINFO = {"id":"c:io:vscanf_vfscanf_vsscanf","namespace":"c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?tseed=1272971091" ></script>
 
   <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
 
@@ -36,7 +40,7 @@
 
     <div class="header">
       <div class="pagename">
-        [[<a href="../../c/io/vscanf_vfscanf_vsscanf.html"  title="Backlinks">vscanf, vfscanf and vsscanf</a>]]
+        [[<a href="../../c/io/vscanf_vfscanf_vsscanf.html"  title="Backlinks">vscanf, vfscanf, vsscanf</a>]]
       </div>
       <div class="logo">
         <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
@@ -47,11 +51,11 @@
     
     
         <div class="breadcrumbs">
-      <span class="bchead">You are here: </span><a href="../../start.html"  title="start">C++ Reference</a> &raquo; <a href="../../c/start.html"  title="c:start">The Standard C Library</a> &raquo; <a href="../../c/io/start.html"  title="c:io:start">Standard C I/O</a> &raquo; <a href="../../c/io/vscanf_vfscanf_vsscanf.html"  title="c:io:vscanf_vfscanf_vsscanf">vscanf, vfscanf and vsscanf</a>    </div>
+      <span class="bchead">You are here: </span><a href="../../start.html"  title="start">C++ Reference</a> &raquo; <a href="../../c/start.html"  title="c:start">The Standard C Library</a> &raquo; <a href="../../c/io/start.html"  title="c:io:start">Standard C I/O</a> &raquo; <a href="../../c/io/vscanf_vfscanf_vsscanf.html"  title="c:io:vscanf_vfscanf_vsscanf">vscanf, vfscanf, vsscanf</a>    </div>
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../c/io/vscanf_vfscanf_vsscanf.html" class="wikilink1" title="c:io:vscanf_vfscanf_vsscanf">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="br-pt:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="cn:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="fr:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="it:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="jp:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="pl:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="ru:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="tr:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../c/io/vscanf_vfscanf_vsscanf.html" class="wikilink1" title="c:io:vscanf_vfscanf_vsscanf">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="br-pt:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="cn:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../cz/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="cz:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="../../de/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="de:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">de</a></div></li>  <li><div class="li"><a href="../../es/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="es:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">es</a></div></li>  <li><div class="li"><a href="../../fr/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="fr:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="it:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink1" title="jp:c:io:vscanf_vfscanf_vsscanf">jp</a></div></li>  <li><div class="li"><a href="../../nl/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="nl:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">nl</a></div></li>  <li><div class="li"><a href="../../pl/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="pl:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ro/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="ro:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="../../ru/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="ru:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../sk/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="sk:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="../../tr/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="tr:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="../../tw/c/io/vscanf_vfscanf_vsscanf.html" class="wikilink2" title="tw:c:io:vscanf_vfscanf_vsscanf" rel="nofollow">tw</a></div></li></ul></div>
   
   
   <div class="page">
@@ -66,18 +70,19 @@ urchinTracker();
     
 
 
-<h2><a name="vscanf_vfscanf_and_vsscanf" id="vscanf_vfscanf_and_vsscanf">vscanf, vfscanf and vsscanf</a></h2>
+<h2><a name="vscanf_vfscanf_vsscanf" id="vscanf_vfscanf_vsscanf">vscanf, vfscanf, vsscanf</a></h2>
 <div class="level2">
 
 <p>
 
 Syntax:
+
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cstdarg&gt;</span>
     <span class="co2">#include &lt;cstdio&gt;</span>
-    <span class="kw4">int</span> vscanf<span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy0">*</span>format<span class="sy0">,</span> va_list arg_ptr <span class="br0">&#41;</span>;
-    <span class="kw4">int</span> vfscanf<span class="br0">&#40;</span> FILE <span class="sy0">*</span>stream<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>format<span class="sy0">,</span> va_list arg_ptr <span class="br0">&#41;</span>;
-    <span class="kw4">int</span> vsscanf<span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy0">*</span>buffer<span class="sy0">,</span> <span class="kw4">char</span> <span class="sy0">*</span>format<span class="sy0">,</span> va_list arg_ptr <span class="br0">&#41;</span>;</pre>
+    <span class="kw4">int</span> vscanf<span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy0">*</span>format<span class="sy0">,</span> va_list arg_ptr <span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw4">int</span> vfscanf<span class="br0">&#40;</span> FILE <span class="sy0">*</span>stream<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>format<span class="sy0">,</span> va_list arg_ptr <span class="br0">&#41;</span><span class="sy0">;</span>
+    <span class="kw4">int</span> vsscanf<span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy0">*</span>buffer<span class="sy0">,</span> <span class="kw4">char</span> <span class="sy0">*</span>format<span class="sy0">,</span> va_list arg_ptr <span class="br0">&#41;</span><span class="sy0">;</span></pre>
 <p>
 
 These functions are very much like scanf(), fscanf(), and sscanf(). The
@@ -85,12 +90,12 @@ difference is that the argument list is a pointer to a list of arguments.
 va_list is defined in cstdarg, and is also used by <a href="../../c/other/va_arg.html" class="wikilink1" title="c:other:va_arg">va_arg</a>. For example:
 </p>
 <pre class="c code c++" style="font-family:monospace;">     <span class="kw4">int</span> scanf_<span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy0">*</span>fmt<span class="sy0">,</span> ... <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-       va_list args;
-       va_start<span class="br0">&#40;</span> args<span class="sy0">,</span> fmt <span class="br0">&#41;</span>;
-       <span class="kw4">int</span> r <span class="sy0">=</span> vscanf<span class="br0">&#40;</span>frmt<span class="sy0">,</span> args<span class="br0">&#41;</span>;
-       scanf<span class="br0">&#40;</span><span class="st0">&quot;%*[^<span class="es0">\n</span>]&quot;</span><span class="br0">&#41;</span><span class="sy0">,</span> getchar<span class="br0">&#40;</span><span class="br0">&#41;</span>; <span class="co1">//Empty buffer</span>
-       va_end<span class="br0">&#40;</span> args <span class="br0">&#41;</span>;
-       <span class="kw1">return</span> r;
+       va_list args<span class="sy0">;</span>
+       va_start<span class="br0">&#40;</span> args<span class="sy0">,</span> fmt <span class="br0">&#41;</span><span class="sy0">;</span>
+       <span class="kw4">int</span> r <span class="sy0">=</span> vscanf<span class="br0">&#40;</span>frmt<span class="sy0">,</span> args<span class="br0">&#41;</span><span class="sy0">;</span>
+       scanf<span class="br0">&#40;</span><span class="st0">&quot;%*[^<span class="es1">\n</span>]&quot;</span><span class="br0">&#41;</span><span class="sy0">,</span> getchar<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">//Empty buffer</span>
+       va_end<span class="br0">&#40;</span> args <span class="br0">&#41;</span><span class="sy0">;</span>
+       <span class="kw1">return</span> r<span class="sy0">;</span>
      <span class="br0">&#125;</span></pre>
 </div>
 
@@ -107,7 +112,7 @@ va_list is defined in cstdarg, and is also used by <a href="../../c/other/va_arg
               </div>
       <!--
       <div class="doc">
-        c/io/vscanf_vfscanf_vsscanf.txt &middot; Last modified: 10/14/2008 15:42 (external edit)      </div>
+        c/io/vscanf_vfscanf_vsscanf.txt &middot; Last modified: 11/23/2009 06:17 by shibu      </div>
       -->
     </div>
 
@@ -134,6 +139,6 @@ va_list is defined in cstdarg, and is also used by <a href="../../c/other/va_arg
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Aio%3Avscanf_vfscanf_vsscanf&amp;1255084752" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Aio%3Avscanf_vfscanf_vsscanf&amp;1273193835" width="1" height="1" alt=""  /></div>
 </body>
 </html>

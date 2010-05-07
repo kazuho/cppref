@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    typeinfo    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-12-25c &quot;Lemming&quot;" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-04-28T06:16:25-0700" />
+<meta name="keywords" content="typeinfo,start" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/typeinfo/start?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=typeinfo" />
+<link rel="edit" title="Edit this page" href="/wiki/typeinfo/start?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/typeinfo/start" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/typeinfo/start" />
+<link rel="canonical" href="http://www.cppreference.com/wiki/typeinfo/start" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1&amp;tseed=1272971091" />
+<script type="text/javascript" charset="utf-8" ><!--//--><![CDATA[//><!--
+var NS='typeinfo';var JSINFO = {"id":"typeinfo:start","namespace":"typeinfo"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?tseed=1272971091" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="../typeinfo/start.html"  title="Backlinks">typeinfo</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="../start.html"  title="start">C++ Reference</a> &raquo; <a href="../typeinfo/start.html"  title="typeinfo:start">typeinfo</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../typeinfo/start.html" class="wikilink1" title="typeinfo:start">en</a></span></div></li>  <li><div class="li"><a href="../br-pt/typeinfo/start.html" class="wikilink2" title="br-pt:typeinfo:start" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../cn/typeinfo/start.html" class="wikilink2" title="cn:typeinfo:start" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../cz/typeinfo/start.html" class="wikilink2" title="cz:typeinfo:start" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="../de/typeinfo/start.html" class="wikilink2" title="de:typeinfo:start" rel="nofollow">de</a></div></li>  <li><div class="li"><a href="../es/typeinfo/start.html" class="wikilink2" title="es:typeinfo:start" rel="nofollow">es</a></div></li>  <li><div class="li"><a href="../fr/typeinfo/start.html" class="wikilink2" title="fr:typeinfo:start" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../it/typeinfo/start.html" class="wikilink2" title="it:typeinfo:start" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../jp/typeinfo/start.html" class="wikilink2" title="jp:typeinfo:start" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../nl/typeinfo/start.html" class="wikilink2" title="nl:typeinfo:start" rel="nofollow">nl</a></div></li>  <li><div class="li"><a href="../pl/typeinfo/start.html" class="wikilink2" title="pl:typeinfo:start" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../ro/typeinfo/start.html" class="wikilink2" title="ro:typeinfo:start" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="../ru/typeinfo/start.html" class="wikilink2" title="ru:typeinfo:start" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../sk/typeinfo/start.html" class="wikilink2" title="sk:typeinfo:start" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="../tr/typeinfo/start.html" class="wikilink2" title="tr:typeinfo:start" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="../tw/typeinfo/start.html" class="wikilink2" title="tw:typeinfo:start" rel="nofollow">tw</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    <!-- TOC START -->
+<div class="toc">
+<div class="tocheader toctoggle" id="toc__header">Table of Contents</div>
+<div id="toc__inside">
+
+<ul class="toc">
+<li class="clear">
+
+<ul class="toc">
+<li class="level2"><div class="li"><span class="li"><a href="#typeinfo" class="toc">typeinfo</a></span></div>
+<ul class="toc">
+<li class="level3"><div class="li"><span class="li"><a href="#type_info" class="toc">type_info</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#bad_cast" class="toc">bad_cast</a></span></div></li>
+<li class="level3"><div class="li"><span class="li"><a href="#bad_typeid" class="toc">bad_typeid</a></span></div></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<!-- TOC END -->
+
+
+
+<h2><a name="typeinfo" id="typeinfo">typeinfo</a></h2>
+<div class="level2">
+
+<p>
+The <code>&lt;typeinfo&gt;</code> header provides class definitions used for run-time type information.
+
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/typeinfo/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1-110" /><input type="hidden" name="rev" value="1272460585" /><input type="submit" value="Edit" class="button" title="typeinfo" /></div></form></div>
+<h3><a name="type_info" id="type_info">type_info</a></h3>
+<div class="level3">
+<pre class="cpp code cpp" style="font-family:monospace;"><span class="kw2">class</span> type_info
+<span class="br0">&#123;</span>
+<span class="kw2">public</span><span class="sy4">:</span>
+    <span class="kw2">virtual</span> ~type_info<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy1">==</span><span class="br0">&#40;</span><span class="kw4">const</span> type_info<span class="sy3">&amp;</span>  rhs <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> operator<span class="sy3">!</span><span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> type_info<span class="sy3">&amp;</span>  rhs <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    <span class="kw4">bool</span> before<span class="br0">&#40;</span><span class="kw4">const</span> type_info<span class="sy3">&amp;</span>  rhs <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+    <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> name<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy4">;</span>
+<span class="kw2">private</span><span class="sy4">:</span>
+    type_info<span class="br0">&#40;</span><span class="kw4">const</span> type_info<span class="sy3">&amp;</span>  rhs <span class="br0">&#41;</span><span class="sy4">;</span>
+    type_info<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> type_info<span class="sy3">&amp;</span>  rhs <span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span><span class="sy4">;</span></pre>
+<p>
+
+Class type_info is the type of the object that is returned by the <a href="../keywords/typeid.html" class="wikilink1" title="keywords:typeid">typeid</a> expression. It provides implementation specific type information. The type name provided and collation sequence are implementation defined, and may vary between programs even when using the same compiler.
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/typeinfo/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="111-773" /><input type="hidden" name="rev" value="1272460585" /><input type="submit" value="Edit" class="button" title="type_info" /></div></form></div>
+<h3><a name="bad_cast" id="bad_cast">bad_cast</a></h3>
+<div class="level3">
+<pre class="cpp code cpp" style="font-family:monospace;"><span class="kw2">class</span> bad_cast <span class="sy4">:</span> <span class="kw2">public</span> exception
+<span class="br0">&#123;</span>
+<span class="kw2">public</span><span class="sy4">:</span>
+    bad_cast<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw1">throw</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    bad_cast<span class="br0">&#40;</span><span class="kw4">const</span> bad_cast<span class="sy3">&amp;</span><span class="br0">&#41;</span> <span class="kw1">throw</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    bad_cast<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> bad_cast<span class="sy3">&amp;</span><span class="br0">&#41;</span> <span class="kw1">throw</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw2">virtual</span> ~bad_cast<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw1">throw</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw2">virtual</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> what<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span> <span class="kw1">throw</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span><span class="sy4">;</span></pre>
+<p>
+
+Class bad_cast is the type of the object that is thrown by an invalid <a href="../keywords/dynamic_cast.html" class="wikilink1" title="keywords:dynamic_cast">dynamic_cast</a> expression. The standard explicitly defines it will be thrown when a cast to a reference type fails.
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/typeinfo/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="774-1248" /><input type="hidden" name="rev" value="1272460585" /><input type="submit" value="Edit" class="button" title="bad_cast" /></div></form></div>
+<h3><a name="bad_typeid" id="bad_typeid">bad_typeid</a></h3>
+<div class="level3">
+<pre class="cpp code cpp" style="font-family:monospace;"><span class="kw2">class</span> bad_typeid <span class="sy4">:</span> <span class="kw2">public</span> exception
+<span class="br0">&#123;</span>
+<span class="kw2">public</span><span class="sy4">:</span>
+    bad_typeid<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw1">throw</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    bad_typeid<span class="br0">&#40;</span><span class="kw4">const</span> bad_typeid<span class="sy3">&amp;</span><span class="br0">&#41;</span> <span class="kw1">throw</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    bad_typeid<span class="sy3">&amp;</span> operator<span class="sy1">=</span><span class="br0">&#40;</span><span class="kw4">const</span> bad_typeid<span class="sy3">&amp;</span><span class="br0">&#41;</span> <span class="kw1">throw</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw2">virtual</span> ~bad_typeid<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw1">throw</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+    <span class="kw2">virtual</span> <span class="kw4">const</span> <span class="kw4">char</span><span class="sy2">*</span> what<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="kw4">const</span> <span class="kw1">throw</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy4">;</span>
+<span class="br0">&#125;</span><span class="sy4">;</span></pre>
+<p>
+
+Class bad_typeid is the type of the object that is thrown if the argument in a <a href="../keywords/typeid.html" class="wikilink1" title="keywords:typeid">typeid</a> expression is null.
+
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/typeinfo/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1249-" /><input type="hidden" name="rev" value="1272460585" /><input type="submit" value="Edit" class="button" title="bad_typeid" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        typeinfo/start.txt &middot; Last modified: 04/28/2010 06:16 by 216.46.98.249      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="../typeinfo/start.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="../typeinfo/start.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="../typeinfo/start.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="../typeinfo/start.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="../typeinfo/start.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="../feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=typeinfo%3Astart&amp;1273199679" width="1" height="1" alt=""  /></div>
+</body>
+</html>

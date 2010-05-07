@@ -8,22 +8,26 @@
     C++ Double-ended Queues    [C++ Reference]
   </title>
 
-  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <meta name="generator" content="DokuWiki Release 2009-12-25c &quot;Lemming&quot;" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-09-29T00:33:58-0700" />
+<meta name="date" content="2009-10-10T18:14:46-0700" />
 <meta name="keywords" content="stl,deque,start" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
 <link rel="contents" href="/wiki/stl/deque/start?do=index" title="Index" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=stl:deque" />
-<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/stl/deque/start?do=edit" />
+<link rel="edit" title="Edit this page" href="/wiki/stl/deque/start?do=edit" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/stl/deque/start" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/stl/deque/start" />
-<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+<link rel="canonical" href="http://www.cppreference.com/wiki/stl/deque/start" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1&amp;tseed=1272971091" />
+<script type="text/javascript" charset="utf-8" ><!--//--><![CDATA[//><!--
+var NS='stl:deque';var JSINFO = {"id":"stl:deque:start","namespace":"stl:deque"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?tseed=1272971091" ></script>
 
   <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
 
@@ -51,7 +55,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/deque/start.html" class="wikilink1" title="stl:deque:start">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/deque/start.html" class="wikilink2" title="br-pt:stl:deque:start" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/deque/start.html" class="wikilink2" title="cn:stl:deque:start" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/deque/start.html" class="wikilink2" title="fr:stl:deque:start" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/deque/start.html" class="wikilink1" title="it:stl:deque:start">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/deque/start.html" class="wikilink2" title="jp:stl:deque:start" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/deque/start.html" class="wikilink2" title="pl:stl:deque:start" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/deque/start.html" class="wikilink1" title="ru:stl:deque:start">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/deque/start.html" class="wikilink2" title="tr:stl:deque:start" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/deque/start.html" class="wikilink1" title="stl:deque:start">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/deque/start.html" class="wikilink2" title="br-pt:stl:deque:start" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/deque/start.html" class="wikilink2" title="cn:stl:deque:start" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../cz/stl/deque/start.html" class="wikilink2" title="cz:stl:deque:start" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="../../de/stl/deque/start.html" class="wikilink2" title="de:stl:deque:start" rel="nofollow">de</a></div></li>  <li><div class="li"><a href="../../es/stl/deque/start.html" class="wikilink2" title="es:stl:deque:start" rel="nofollow">es</a></div></li>  <li><div class="li"><a href="../../fr/stl/deque/start.html" class="wikilink2" title="fr:stl:deque:start" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/deque/start.html" class="wikilink1" title="it:stl:deque:start">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/deque/start.html" class="wikilink1" title="jp:stl:deque:start">jp</a></div></li>  <li><div class="li"><a href="../../nl/stl/deque/start.html" class="wikilink2" title="nl:stl:deque:start" rel="nofollow">nl</a></div></li>  <li><div class="li"><a href="../../pl/stl/deque/start.html" class="wikilink2" title="pl:stl:deque:start" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ro/stl/deque/start.html" class="wikilink2" title="ro:stl:deque:start" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="../../ru/stl/deque/start.html" class="wikilink1" title="ru:stl:deque:start">ru</a></div></li>  <li><div class="li"><a href="../../sk/stl/deque/start.html" class="wikilink2" title="sk:stl:deque:start" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="../../tr/stl/deque/start.html" class="wikilink2" title="tr:stl:deque:start" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="../../tw/stl/deque/start.html" class="wikilink2" title="tw:stl:deque:start" rel="nofollow">tw</a></div></li></ul></div>
   
   
   <div class="page">
@@ -89,7 +93,7 @@ C++ deques are commonly implemented as dynamically allocated arrays that can gro
 		<td class="col0"><a href="../../stl/deque/assign.html" class="wikilink1" title="stl:deque:assign">assign</a></td><td class="col1">assign elements to a deque</td>
 	</tr>
 	<tr class="row3">
-		<td class="col0"><a href="../../stl/deque/at.html" class="wikilink1" title="stl:deque:at">at</a></td><td class="col1">returns an element at a specific location</td>
+		<td class="col0"><a href="../../stl/deque/at.html" class="wikilink1" title="stl:deque:at">at</a></td><td class="col1">returns a reference to an element at a specific location</td>
 	</tr>
 	<tr class="row4">
 		<td class="col0"><a href="../../stl/deque/back.html" class="wikilink1" title="stl:deque:back">back</a></td><td class="col1">returns a reference to last element of a deque</td>
@@ -148,17 +152,17 @@ C++ deques are commonly implemented as dynamically allocated arrays that can gro
 </table>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/deque/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1-1797" /><input type="hidden" name="rev" value="1254209638" /><input type="submit" value="Edit" class="button" title="C++ Double-ended Queues" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/deque/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1-1812" /><input type="hidden" name="rev" value="1255223686" /><input type="submit" value="Edit" class="button" title="C++ Double-ended Queues" /></div></form></div>
 <h3><a name="notes" id="notes">Notes</a></h3>
 <div class="level3">
 
 <p>
 
-The name deque is pronounced “deck”, and stands for “double-ended queue.” Knuth reports that the name was coined by E. J. Schweppe. See section 2.2.1 of Knuth for more information about deques. <a href="http://www-cs-faculty.stanford.edu/~uno/taocp.html" class="urlextern" title="http://www-cs-faculty.stanford.edu/~uno/taocp.html"  rel="nofollow">(D. E. Knuth, The Art of Computer Programming. Volume 1: Fundamental Algorithms, second edition. Addison-Wesley, 1973.)</a> 
+The name deque is pronounced “deck”, and stands for “double-ended queue.” Knuth reports that the name was coined by E. J. Schweppe. See section 2.2.1 of Knuth for more information about deques. <a href="http://www-cs-faculty.stanford.edu/~uno/taocp.html" class="urlextern" title="http://www-cs-faculty.stanford.edu/~uno/taocp.html"  rel="nofollow">(D. E. Knuth, The Art of Computer Programming. Volume 1: Fundamental Algorithms, second edition. Addison-Wesley, 1973.)</a>
 </p>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/deque/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1798-" /><input type="hidden" name="rev" value="1254209638" /><input type="submit" value="Edit" class="button" title="Notes" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/deque/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1813-" /><input type="hidden" name="rev" value="1255223686" /><input type="submit" value="Edit" class="button" title="Notes" /></div></form></div>
     <!-- wikipage stop -->
   </div>
 
@@ -172,7 +176,7 @@ The name deque is pronounced “deck”, and stands for “double-ended queue.�
               </div>
       <!--
       <div class="doc">
-        stl/deque/start.txt &middot; Last modified: 09/29/2009 00:33 by sylwiusz.pytka      </div>
+        stl/deque/start.txt &middot; Last modified: 10/10/2009 18:14 by 124.255.102.233      </div>
       -->
     </div>
 
@@ -199,6 +203,6 @@ The name deque is pronounced “deck”, and stands for “double-ended queue.�
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Adeque%3Astart&amp;1255084690" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Adeque%3Astart&amp;1273193087" width="1" height="1" alt=""  /></div>
 </body>
 </html>

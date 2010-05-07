@@ -8,7 +8,7 @@
     ungetc    [C++ Reference]
   </title>
 
-  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <meta name="generator" content="DokuWiki Release 2009-12-25c &quot;Lemming&quot;" />
 <meta name="robots" content="index,follow" />
 <meta name="date" content="2008-11-18T06:07:11-0800" />
 <meta name="keywords" content="c,io,ungetc" />
@@ -17,13 +17,17 @@
 <link rel="contents" href="/wiki/c/io/ungetc?do=index" title="Index" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=c:io" />
-<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/c/io/ungetc?do=edit" />
+<link rel="edit" title="Edit this page" href="/wiki/c/io/ungetc?do=edit" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/c/io/ungetc" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/c/io/ungetc" />
-<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+<link rel="canonical" href="http://www.cppreference.com/wiki/c/io/ungetc" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1&amp;tseed=1272971091" />
+<script type="text/javascript" charset="utf-8" ><!--//--><![CDATA[//><!--
+var NS='c:io';var JSINFO = {"id":"c:io:ungetc","namespace":"c:io"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?tseed=1272971091" ></script>
 
   <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
 
@@ -51,7 +55,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../c/io/ungetc.html" class="wikilink1" title="c:io:ungetc">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/c/io/ungetc.html" class="wikilink2" title="br-pt:c:io:ungetc" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/c/io/ungetc.html" class="wikilink2" title="cn:c:io:ungetc" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/c/io/ungetc.html" class="wikilink2" title="fr:c:io:ungetc" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/c/io/ungetc.html" class="wikilink2" title="it:c:io:ungetc" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/c/io/ungetc.html" class="wikilink2" title="jp:c:io:ungetc" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/c/io/ungetc.html" class="wikilink2" title="pl:c:io:ungetc" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/c/io/ungetc.html" class="wikilink2" title="ru:c:io:ungetc" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/c/io/ungetc.html" class="wikilink2" title="tr:c:io:ungetc" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../c/io/ungetc.html" class="wikilink1" title="c:io:ungetc">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/c/io/ungetc.html" class="wikilink2" title="br-pt:c:io:ungetc" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/c/io/ungetc.html" class="wikilink2" title="cn:c:io:ungetc" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../cz/c/io/ungetc.html" class="wikilink2" title="cz:c:io:ungetc" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="../../de/c/io/ungetc.html" class="wikilink2" title="de:c:io:ungetc" rel="nofollow">de</a></div></li>  <li><div class="li"><a href="../../es/c/io/ungetc.html" class="wikilink2" title="es:c:io:ungetc" rel="nofollow">es</a></div></li>  <li><div class="li"><a href="../../fr/c/io/ungetc.html" class="wikilink2" title="fr:c:io:ungetc" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/c/io/ungetc.html" class="wikilink2" title="it:c:io:ungetc" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/c/io/ungetc.html" class="wikilink1" title="jp:c:io:ungetc">jp</a></div></li>  <li><div class="li"><a href="../../nl/c/io/ungetc.html" class="wikilink2" title="nl:c:io:ungetc" rel="nofollow">nl</a></div></li>  <li><div class="li"><a href="../../pl/c/io/ungetc.html" class="wikilink2" title="pl:c:io:ungetc" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ro/c/io/ungetc.html" class="wikilink2" title="ro:c:io:ungetc" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="../../ru/c/io/ungetc.html" class="wikilink2" title="ru:c:io:ungetc" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../sk/c/io/ungetc.html" class="wikilink2" title="sk:c:io:ungetc" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="../../tr/c/io/ungetc.html" class="wikilink2" title="tr:c:io:ungetc" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="../../tw/c/io/ungetc.html" class="wikilink2" title="tw:c:io:ungetc" rel="nofollow">tw</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,7 +77,7 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cstdio&gt;</span>
-    <span class="kw4">int</span> ungetc<span class="br0">&#40;</span> <span class="kw4">int</span> ch<span class="sy0">,</span> FILE <span class="sy0">*</span>stream <span class="br0">&#41;</span>;</pre>
+    <span class="kw4">int</span> ungetc<span class="br0">&#40;</span> <span class="kw4">int</span> ch<span class="sy0">,</span> FILE <span class="sy0">*</span>stream <span class="br0">&#41;</span><span class="sy0">;</span></pre>
 <p>
 
 The function ungetc() puts the character ch back in stream.
@@ -125,6 +129,6 @@ Related Topics: <a href="../../c/io/getc.html" class="wikilink1" title="c:io:get
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Aio%3Aungetc&amp;1255084751" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Aio%3Aungetc&amp;1273193812" width="1" height="1" alt=""  /></div>
 </body>
 </html>

@@ -8,7 +8,7 @@
     C++ Multisets    [C++ Reference]
   </title>
 
-  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <meta name="generator" content="DokuWiki Release 2009-12-25c &quot;Lemming&quot;" />
 <meta name="robots" content="index,follow" />
 <meta name="date" content="2008-10-14T15:42:07-0700" />
 <meta name="keywords" content="stl,multiset,start" />
@@ -17,13 +17,17 @@
 <link rel="contents" href="/wiki/stl/multiset/start?do=index" title="Index" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=stl:multiset" />
-<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/stl/multiset/start?do=edit" />
+<link rel="edit" title="Edit this page" href="/wiki/stl/multiset/start?do=edit" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/stl/multiset/start" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/stl/multiset/start" />
-<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+<link rel="canonical" href="http://www.cppreference.com/wiki/stl/multiset/start" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1&amp;tseed=1272971091" />
+<script type="text/javascript" charset="utf-8" ><!--//--><![CDATA[//><!--
+var NS='stl:multiset';var JSINFO = {"id":"stl:multiset:start","namespace":"stl:multiset"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?tseed=1272971091" ></script>
 
   <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
 
@@ -51,7 +55,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/multiset/start.html" class="wikilink1" title="stl:multiset:start">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/multiset/start.html" class="wikilink2" title="br-pt:stl:multiset:start" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/multiset/start.html" class="wikilink2" title="cn:stl:multiset:start" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/multiset/start.html" class="wikilink2" title="fr:stl:multiset:start" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/multiset/start.html" class="wikilink2" title="it:stl:multiset:start" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/multiset/start.html" class="wikilink2" title="jp:stl:multiset:start" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/multiset/start.html" class="wikilink2" title="pl:stl:multiset:start" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/multiset/start.html" class="wikilink1" title="ru:stl:multiset:start">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/multiset/start.html" class="wikilink2" title="tr:stl:multiset:start" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/multiset/start.html" class="wikilink1" title="stl:multiset:start">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/multiset/start.html" class="wikilink2" title="br-pt:stl:multiset:start" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/multiset/start.html" class="wikilink2" title="cn:stl:multiset:start" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../cz/stl/multiset/start.html" class="wikilink2" title="cz:stl:multiset:start" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="../../de/stl/multiset/start.html" class="wikilink2" title="de:stl:multiset:start" rel="nofollow">de</a></div></li>  <li><div class="li"><a href="../../es/stl/multiset/start.html" class="wikilink2" title="es:stl:multiset:start" rel="nofollow">es</a></div></li>  <li><div class="li"><a href="../../fr/stl/multiset/start.html" class="wikilink2" title="fr:stl:multiset:start" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/multiset/start.html" class="wikilink2" title="it:stl:multiset:start" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/multiset/start.html" class="wikilink2" title="jp:stl:multiset:start" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../nl/stl/multiset/start.html" class="wikilink2" title="nl:stl:multiset:start" rel="nofollow">nl</a></div></li>  <li><div class="li"><a href="../../pl/stl/multiset/start.html" class="wikilink2" title="pl:stl:multiset:start" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ro/stl/multiset/start.html" class="wikilink2" title="ro:stl:multiset:start" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="../../ru/stl/multiset/start.html" class="wikilink1" title="ru:stl:multiset:start">ru</a></div></li>  <li><div class="li"><a href="../../sk/stl/multiset/start.html" class="wikilink2" title="sk:stl:multiset:start" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="../../tr/stl/multiset/start.html" class="wikilink2" title="tr:stl:multiset:start" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="../../tw/stl/multiset/start.html" class="wikilink2" title="tw:stl:multiset:start" rel="nofollow">tw</a></div></li></ul></div>
   
   
   <div class="page">
@@ -180,6 +184,6 @@ a sorted set of objects, but differ in that they allow duplicate objects.
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Amultiset%3Astart&amp;1255084692" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Amultiset%3Astart&amp;1273193091" width="1" height="1" alt=""  /></div>
 </body>
 </html>

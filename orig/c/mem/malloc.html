@@ -8,22 +8,26 @@
     malloc    [C++ Reference]
   </title>
 
-  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <meta name="generator" content="DokuWiki Release 2009-12-25c &quot;Lemming&quot;" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-06-17T17:23:39-0700" />
+<meta name="date" content="2010-04-26T09:06:02-0700" />
 <meta name="keywords" content="c,mem,malloc" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
 <link rel="contents" href="/wiki/c/mem/malloc?do=index" title="Index" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=c:mem" />
-<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/c/mem/malloc?do=edit" />
+<link rel="edit" title="Edit this page" href="/wiki/c/mem/malloc?do=edit" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/c/mem/malloc" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/c/mem/malloc" />
-<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+<link rel="canonical" href="http://www.cppreference.com/wiki/c/mem/malloc" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1&amp;tseed=1272971091" />
+<script type="text/javascript" charset="utf-8" ><!--//--><![CDATA[//><!--
+var NS='c:mem';var JSINFO = {"id":"c:mem:malloc","namespace":"c:mem"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?tseed=1272971091" ></script>
 
   <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
 
@@ -51,7 +55,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../c/mem/malloc.html" class="wikilink1" title="c:mem:malloc">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/c/mem/malloc.html" class="wikilink2" title="br-pt:c:mem:malloc" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/c/mem/malloc.html" class="wikilink2" title="cn:c:mem:malloc" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/c/mem/malloc.html" class="wikilink2" title="fr:c:mem:malloc" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/c/mem/malloc.html" class="wikilink2" title="it:c:mem:malloc" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/c/mem/malloc.html" class="wikilink2" title="jp:c:mem:malloc" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/c/mem/malloc.html" class="wikilink1" title="pl:c:mem:malloc">pl</a></div></li>  <li><div class="li"><a href="../../ru/c/mem/malloc.html" class="wikilink2" title="ru:c:mem:malloc" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/c/mem/malloc.html" class="wikilink2" title="tr:c:mem:malloc" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../c/mem/malloc.html" class="wikilink1" title="c:mem:malloc">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/c/mem/malloc.html" class="wikilink1" title="br-pt:c:mem:malloc">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/c/mem/malloc.html" class="wikilink2" title="cn:c:mem:malloc" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../cz/c/mem/malloc.html" class="wikilink2" title="cz:c:mem:malloc" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="../../de/c/mem/malloc.html" class="wikilink1" title="de:c:mem:malloc">de</a></div></li>  <li><div class="li"><a href="../../es/c/mem/malloc.html" class="wikilink2" title="es:c:mem:malloc" rel="nofollow">es</a></div></li>  <li><div class="li"><a href="../../fr/c/mem/malloc.html" class="wikilink2" title="fr:c:mem:malloc" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/c/mem/malloc.html" class="wikilink2" title="it:c:mem:malloc" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/c/mem/malloc.html" class="wikilink1" title="jp:c:mem:malloc">jp</a></div></li>  <li><div class="li"><a href="../../nl/c/mem/malloc.html" class="wikilink1" title="nl:c:mem:malloc">nl</a></div></li>  <li><div class="li"><a href="../../pl/c/mem/malloc.html" class="wikilink1" title="pl:c:mem:malloc">pl</a></div></li>  <li><div class="li"><a href="../../ro/c/mem/malloc.html" class="wikilink2" title="ro:c:mem:malloc" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="../../ru/c/mem/malloc.html" class="wikilink2" title="ru:c:mem:malloc" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../sk/c/mem/malloc.html" class="wikilink2" title="sk:c:mem:malloc" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="../../tr/c/mem/malloc.html" class="wikilink2" title="tr:c:mem:malloc" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="../../tw/c/mem/malloc.html" class="wikilink2" title="tw:c:mem:malloc" rel="nofollow">tw</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,38 +77,35 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;cstdlib&gt;</span>
-    <span class="kw4">void</span> <span class="sy0">*</span>malloc<span class="br0">&#40;</span> size_t size <span class="br0">&#41;</span>;</pre>
+    <span class="kw4">void</span> <span class="sy0">*</span>malloc<span class="br0">&#40;</span> size_t size <span class="br0">&#41;</span><span class="sy0">;</span></pre>
 <p>
 The function malloc() returns a pointer to a chunk of memory of size size, or
 NULL if there is an error. The memory pointed to will be on the heap, not the
 stack, so make sure to free it when you are done with it. An example:
 </p>
 <pre class="c code c++" style="font-family:monospace;">     <span class="kw4">typedef</span> <span class="kw4">struct</span> data_type <span class="br0">&#123;</span>
-       <span class="kw4">int</span> age;
-       <span class="kw4">char</span> name<span class="br0">&#91;</span><span class="nu0">20</span><span class="br0">&#93;</span>;
-     <span class="br0">&#125;</span> data;
+       <span class="kw4">int</span> age<span class="sy0">;</span>
+       <span class="kw4">char</span> name<span class="br0">&#91;</span>20<span class="br0">&#93;</span><span class="sy0">;</span>
+     <span class="br0">&#125;</span> data<span class="sy0">;</span>
 &nbsp;
-     data <span class="sy0">*</span>bob;
-     bob <span class="sy0">=</span> <span class="br0">&#40;</span>data<span class="sy0">*</span><span class="br0">&#41;</span> malloc<span class="br0">&#40;</span> <span class="kw4">sizeof</span><span class="br0">&#40;</span>data<span class="br0">&#41;</span> <span class="br0">&#41;</span>;
-     <span class="kw1">if</span><span class="br0">&#40;</span> bob <span class="sy0">!=</span> <span class="kw2">NULL</span> <span class="br0">&#41;</span> <span class="br0">&#123;</span>
-       bob<span class="sy0">-&gt;</span>age <span class="sy0">=</span> <span class="nu0">22</span>;
-       strcpy<span class="br0">&#40;</span> bob<span class="sy0">-&gt;</span>name<span class="sy0">,</span> <span class="st0">&quot;Robert&quot;</span> <span class="br0">&#41;</span>;
-       <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span class="kw3">printf</span></a><span class="br0">&#40;</span> <span class="st0">&quot;%s is %d years old<span class="es0">\n</span>&quot;</span><span class="sy0">,</span> bob<span class="sy0">-&gt;</span>name<span class="sy0">,</span> bob<span class="sy0">-&gt;</span>age <span class="br0">&#41;</span>;
+     data <span class="sy0">*</span>bob<span class="sy0">;</span>
+     bob <span class="sy0">=</span> <span class="br0">&#40;</span>data<span class="sy0">*</span><span class="br0">&#41;</span> malloc<span class="br0">&#40;</span> <span class="kw4">sizeof</span><span class="br0">&#40;</span>data<span class="br0">&#41;</span> <span class="br0">&#41;</span><span class="sy0">;</span>
+     <span class="kw1">if</span><span class="br0">&#40;</span> bob <span class="sy0">!=</span> NULL <span class="br0">&#41;</span> <span class="br0">&#123;</span>
+       bob<span class="sy0">-&gt;</span>age <span class="sy0">=</span> <span class="nu0">22</span><span class="sy0">;</span>
+       strcpy<span class="br0">&#40;</span> bob<span class="sy0">-&gt;</span>name<span class="sy0">,</span> <span class="st0">&quot;Robert&quot;</span> <span class="br0">&#41;</span><span class="sy0">;</span>
+       <a href="http://www.opengroup.org/onlinepubs/009695399/functions/printf.html"><span class="kw3">printf</span></a><span class="br0">&#40;</span> <span class="st0">&quot;%s is %d years old<span class="es1">\n</span>&quot;</span><span class="sy0">,</span> bob<span class="sy0">-&gt;</span>name<span class="sy0">,</span> bob<span class="sy0">-&gt;</span>age <span class="br0">&#41;</span><span class="sy0">;</span>
      <span class="br0">&#125;</span>
-     free<span class="br0">&#40;</span> bob <span class="br0">&#41;</span>;</pre>
+     free<span class="br0">&#40;</span> bob <span class="br0">&#41;</span><span class="sy0">;</span></pre>
 <p>
 NOTE that new/delete is preferred in C++ (as opposed to malloc/free in C).
 </p>
-<pre class="code"> 
-</pre>
 
 <p>
-
 Related Topics: <a href="../../c/mem/calloc.html" class="wikilink1" title="c:mem:calloc">calloc</a>, <a href="../../keywords/delete.html" class="wikilink1" title="keywords:delete">delete</a>, <a href="../../c/mem/free.html" class="wikilink1" title="c:mem:free">free</a>, <a href="../../keywords/new.html" class="wikilink1" title="keywords:new">new</a>, <a href="../../c/mem/realloc.html" class="wikilink1" title="c:mem:realloc">realloc</a>
 </p>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/mem/malloc"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1245284619" /><input type="submit" value="Edit" class="button" title="malloc" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/mem/malloc"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1272297962" /><input type="submit" value="Edit" class="button" title="malloc" /></div></form></div>
     <!-- wikipage stop -->
   </div>
 
@@ -118,7 +119,7 @@ Related Topics: <a href="../../c/mem/calloc.html" class="wikilink1" title="c:mem
               </div>
       <!--
       <div class="doc">
-        c/mem/malloc.txt &middot; Last modified: 06/17/2009 17:23 by 24.82.151.145      </div>
+        c/mem/malloc.txt &middot; Last modified: 04/26/2010 09:06 by nate      </div>
       -->
     </div>
 
@@ -145,6 +146,6 @@ Related Topics: <a href="../../c/mem/calloc.html" class="wikilink1" title="c:mem
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Amem%3Amalloc&amp;1255084790" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Amem%3Amalloc&amp;1273194795" width="1" height="1" alt=""  /></div>
 </body>
 </html>

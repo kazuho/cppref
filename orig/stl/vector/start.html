@@ -8,22 +8,26 @@
     C++ Vectors    [C++ Reference]
   </title>
 
-  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <meta name="generator" content="DokuWiki Release 2009-12-25c &quot;Lemming&quot;" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-08-06T01:49:33-0700" />
+<meta name="date" content="2010-03-07T11:47:32-0800" />
 <meta name="keywords" content="stl,vector,start" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
 <link rel="contents" href="/wiki/stl/vector/start?do=index" title="Index" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=stl:vector" />
-<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/stl/vector/start?do=edit" />
+<link rel="edit" title="Edit this page" href="/wiki/stl/vector/start?do=edit" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/stl/vector/start" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/stl/vector/start" />
-<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+<link rel="canonical" href="http://www.cppreference.com/wiki/stl/vector/start" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1&amp;tseed=1272971091" />
+<script type="text/javascript" charset="utf-8" ><!--//--><![CDATA[//><!--
+var NS='stl:vector';var JSINFO = {"id":"stl:vector:start","namespace":"stl:vector"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?tseed=1272971091" ></script>
 
   <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
 
@@ -51,7 +55,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/vector/start.html" class="wikilink1" title="stl:vector:start">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/vector/start.html" class="wikilink1" title="br-pt:stl:vector:start">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/vector/start.html" class="wikilink2" title="cn:stl:vector:start" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/vector/start.html" class="wikilink1" title="fr:stl:vector:start">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/vector/start.html" class="wikilink1" title="it:stl:vector:start">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/vector/start.html" class="wikilink2" title="jp:stl:vector:start" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/vector/start.html" class="wikilink2" title="pl:stl:vector:start" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/vector/start.html" class="wikilink1" title="ru:stl:vector:start">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/vector/start.html" class="wikilink2" title="tr:stl:vector:start" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/vector/start.html" class="wikilink1" title="stl:vector:start">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/vector/start.html" class="wikilink1" title="br-pt:stl:vector:start">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/vector/start.html" class="wikilink1" title="cn:stl:vector:start">cn</a></div></li>  <li><div class="li"><a href="../../cz/stl/vector/start.html" class="wikilink2" title="cz:stl:vector:start" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="../../de/stl/vector/start.html" class="wikilink2" title="de:stl:vector:start" rel="nofollow">de</a></div></li>  <li><div class="li"><a href="../../es/stl/vector/start.html" class="wikilink2" title="es:stl:vector:start" rel="nofollow">es</a></div></li>  <li><div class="li"><a href="../../fr/stl/vector/start.html" class="wikilink1" title="fr:stl:vector:start">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/vector/start.html" class="wikilink1" title="it:stl:vector:start">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/vector/start.html" class="wikilink1" title="jp:stl:vector:start">jp</a></div></li>  <li><div class="li"><a href="../../nl/stl/vector/start.html" class="wikilink2" title="nl:stl:vector:start" rel="nofollow">nl</a></div></li>  <li><div class="li"><a href="../../pl/stl/vector/start.html" class="wikilink2" title="pl:stl:vector:start" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ro/stl/vector/start.html" class="wikilink2" title="ro:stl:vector:start" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="../../ru/stl/vector/start.html" class="wikilink1" title="ru:stl:vector:start">ru</a></div></li>  <li><div class="li"><a href="../../sk/stl/vector/start.html" class="wikilink2" title="sk:stl:vector:start" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="../../tr/stl/vector/start.html" class="wikilink2" title="tr:stl:vector:start" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="../../tw/stl/vector/start.html" class="wikilink2" title="tw:stl:vector:start" rel="nofollow">tw</a></div></li></ul></div>
   
   
   <div class="page">
@@ -91,7 +95,7 @@ specific value or inserting elements into the vector takes <a href="../../comple
 		<td class="col0"><a href="../../stl/vector/assign.html" class="wikilink1" title="stl:vector:assign">assign</a></td><td class="col1">assign elements to a vector</td>
 	</tr>
 	<tr class="row3">
-		<td class="col0"><a href="../../stl/vector/at.html" class="wikilink1" title="stl:vector:at">at</a></td><td class="col1">returns an element at a specific location</td>
+		<td class="col0"><a href="../../stl/vector/at.html" class="wikilink1" title="stl:vector:at">at</a></td><td class="col1">return a reference to an element at a specific location</td>
 	</tr>
 	<tr class="row4">
 		<td class="col0"><a href="../../stl/vector/back.html" class="wikilink1" title="stl:vector:back">back</a></td><td class="col1">returns a reference to last element of a vector</td>
@@ -133,7 +137,7 @@ specific value or inserting elements into the vector takes <a href="../../comple
 		<td class="col0"><a href="../../stl/vector/rbegin.html" class="wikilink1" title="stl:vector:rbegin">rbegin</a></td><td class="col1">returns a reverse_iterator to the end of the vector</td>
 	</tr>
 	<tr class="row17">
-		<td class="col0"><a href="../../stl/vector/rend.html" class="wikilink1" title="stl:vector:rend">rend</a></td><td class="col1">returns a reverse_iterator to the beginning of the vector</td>
+		<td class="col0"><a href="../../stl/vector/rend.html" class="wikilink1" title="stl:vector:rend">rend</a></td><td class="col1">returns a reverse_iterator just past the beginning of the vector</td>
 	</tr>
 	<tr class="row18">
 		<td class="col0"><a href="../../stl/vector/reserve.html" class="wikilink1" title="stl:vector:reserve">reserve</a></td><td class="col1">sets the minimum capacity of the vector</td>
@@ -150,17 +154,18 @@ specific value or inserting elements into the vector takes <a href="../../comple
 </table>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/vector/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1-1656" /><input type="hidden" name="rev" value="1249548573" /><input type="submit" value="Edit" class="button" title="C++ Vectors" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/vector/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1-1677" /><input type="hidden" name="rev" value="1267991252" /><input type="submit" value="Edit" class="button" title="C++ Vectors" /></div></form></div>
 <h3><a name="notes" id="notes">Notes:</a></h3>
 <div class="level3">
 
 <p>
 
-Note that a boolean vector (vector&lt;bool&gt;) is a specialization of the vector template that is designed to use less memory.  A normal boolean variable usually uses 1-4 bytes of memory, but a boolean vector should use only one bit per boolean value.
+Note that a boolean vector (vector&lt;bool&gt;) is a specialization of the vector template that is designed to use less memory.  A normal boolean variable usually uses 1-4 bytes of memory, but a boolean vector should use only one bit per boolean value..
+
 </p>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/vector/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1657-" /><input type="hidden" name="rev" value="1249548573" /><input type="submit" value="Edit" class="button" title="Notes:" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/vector/start"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1678-" /><input type="hidden" name="rev" value="1267991252" /><input type="submit" value="Edit" class="button" title="Notes:" /></div></form></div>
     <!-- wikipage stop -->
   </div>
 
@@ -174,7 +179,7 @@ Note that a boolean vector (vector&lt;bool&gt;) is a specialization of the vecto
               </div>
       <!--
       <div class="doc">
-        stl/vector/start.txt &middot; Last modified: 08/06/2009 01:49 by n-839      </div>
+        stl/vector/start.txt &middot; Last modified: 03/07/2010 11:47 by 67.86.74.226      </div>
       -->
     </div>
 
@@ -201,6 +206,6 @@ Note that a boolean vector (vector&lt;bool&gt;) is a specialization of the vecto
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Avector%3Astart&amp;1255084689" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Avector%3Astart&amp;1273193086" width="1" height="1" alt=""  /></div>
 </body>
 </html>

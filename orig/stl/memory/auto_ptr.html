@@ -8,7 +8,7 @@
     auto_ptr    [C++ Reference]
   </title>
 
-  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <meta name="generator" content="DokuWiki Release 2009-12-25c &quot;Lemming&quot;" />
 <meta name="robots" content="index,follow" />
 <meta name="date" content="2008-10-14T15:42:07-0700" />
 <meta name="keywords" content="stl,memory,auto_ptr" />
@@ -17,13 +17,17 @@
 <link rel="contents" href="/wiki/stl/memory/auto_ptr?do=index" title="Index" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=stl:memory" />
-<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/stl/memory/auto_ptr?do=edit" />
+<link rel="edit" title="Edit this page" href="/wiki/stl/memory/auto_ptr?do=edit" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/stl/memory/auto_ptr" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/stl/memory/auto_ptr" />
-<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+<link rel="canonical" href="http://www.cppreference.com/wiki/stl/memory/auto_ptr" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1&amp;tseed=1272971091" />
+<script type="text/javascript" charset="utf-8" ><!--//--><![CDATA[//><!--
+var NS='stl:memory';var JSINFO = {"id":"stl:memory:auto_ptr","namespace":"stl:memory"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?tseed=1272971091" ></script>
 
   <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
 
@@ -51,7 +55,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/memory/auto_ptr.html" class="wikilink1" title="stl:memory:auto_ptr">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/memory/auto_ptr.html" class="wikilink2" title="br-pt:stl:memory:auto_ptr" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/memory/auto_ptr.html" class="wikilink2" title="cn:stl:memory:auto_ptr" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/memory/auto_ptr.html" class="wikilink2" title="fr:stl:memory:auto_ptr" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/memory/auto_ptr.html" class="wikilink2" title="it:stl:memory:auto_ptr" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/memory/auto_ptr.html" class="wikilink2" title="jp:stl:memory:auto_ptr" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/memory/auto_ptr.html" class="wikilink2" title="pl:stl:memory:auto_ptr" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/memory/auto_ptr.html" class="wikilink2" title="ru:stl:memory:auto_ptr" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/memory/auto_ptr.html" class="wikilink2" title="tr:stl:memory:auto_ptr" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/memory/auto_ptr.html" class="wikilink1" title="stl:memory:auto_ptr">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/memory/auto_ptr.html" class="wikilink2" title="br-pt:stl:memory:auto_ptr" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/memory/auto_ptr.html" class="wikilink2" title="cn:stl:memory:auto_ptr" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../cz/stl/memory/auto_ptr.html" class="wikilink2" title="cz:stl:memory:auto_ptr" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="../../de/stl/memory/auto_ptr.html" class="wikilink2" title="de:stl:memory:auto_ptr" rel="nofollow">de</a></div></li>  <li><div class="li"><a href="../../es/stl/memory/auto_ptr.html" class="wikilink2" title="es:stl:memory:auto_ptr" rel="nofollow">es</a></div></li>  <li><div class="li"><a href="../../fr/stl/memory/auto_ptr.html" class="wikilink2" title="fr:stl:memory:auto_ptr" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/memory/auto_ptr.html" class="wikilink2" title="it:stl:memory:auto_ptr" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/memory/auto_ptr.html" class="wikilink1" title="jp:stl:memory:auto_ptr">jp</a></div></li>  <li><div class="li"><a href="../../nl/stl/memory/auto_ptr.html" class="wikilink2" title="nl:stl:memory:auto_ptr" rel="nofollow">nl</a></div></li>  <li><div class="li"><a href="../../pl/stl/memory/auto_ptr.html" class="wikilink2" title="pl:stl:memory:auto_ptr" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ro/stl/memory/auto_ptr.html" class="wikilink2" title="ro:stl:memory:auto_ptr" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="../../ru/stl/memory/auto_ptr.html" class="wikilink2" title="ru:stl:memory:auto_ptr" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../sk/stl/memory/auto_ptr.html" class="wikilink2" title="sk:stl:memory:auto_ptr" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="../../tr/stl/memory/auto_ptr.html" class="wikilink2" title="tr:stl:memory:auto_ptr" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="../../tw/stl/memory/auto_ptr.html" class="wikilink2" title="tw:stl:memory:auto_ptr" rel="nofollow">tw</a></div></li></ul></div>
   
   
   <div class="page">
@@ -103,26 +107,26 @@ Example code:
 
 </p>
 <pre class="c code c++" style="font-family:monospace;"> <span class="co2">#include &lt;memory&gt;</span>
- using namespace std;
+ using namespace std<span class="sy0">;</span>
 &nbsp;
  class MyClass <span class="br0">&#123;</span>
  public<span class="sy0">:</span>
    MyClass<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span><span class="br0">&#125;</span> <span class="co1">// nothing</span>
    ~MyClass<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span><span class="br0">&#125;</span> <span class="co1">// nothing</span>
    <span class="kw4">void</span> myFunc<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span><span class="br0">&#125;</span> <span class="co1">// nothing</span>
- <span class="br0">&#125;</span>;
+ <span class="br0">&#125;</span><span class="sy0">;</span>
 &nbsp;
  <span class="kw4">int</span> main<span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
-   auto_ptr<span class="sy0">&lt;</span>MyClass<span class="sy0">&gt;</span> ptr1<span class="br0">&#40;</span>new MyClass<span class="br0">&#41;</span><span class="sy0">,</span> ptr2;
+   auto_ptr<span class="sy0">&lt;</span>MyClass<span class="sy0">&gt;</span> ptr1<span class="br0">&#40;</span>new MyClass<span class="br0">&#41;</span><span class="sy0">,</span> ptr2<span class="sy0">;</span>
 &nbsp;
-   ptr2 <span class="sy0">=</span> ptr1;
-   ptr2<span class="sy0">-&gt;</span>myFunc<span class="br0">&#40;</span><span class="br0">&#41;</span>;
+   ptr2 <span class="sy0">=</span> ptr1<span class="sy0">;</span>
+   ptr2<span class="sy0">-&gt;</span>myFunc<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
 &nbsp;
-   MyClass<span class="sy0">*</span> ptr <span class="sy0">=</span> ptr2.<span class="me1">get</span><span class="br0">&#40;</span><span class="br0">&#41;</span>;
+   MyClass<span class="sy0">*</span> ptr <span class="sy0">=</span> ptr2.<span class="me1">get</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
 &nbsp;
-   ptr<span class="sy0">-&gt;</span>myFunc<span class="br0">&#40;</span><span class="br0">&#41;</span>;
+   ptr<span class="sy0">-&gt;</span>myFunc<span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span>
 &nbsp;
-   <span class="kw1">return</span> <span class="nu19">0</span>;
+   <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
  <span class="br0">&#125;</span></pre>
 </div>
 <div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/memory/auto_ptr"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1224024127" /><input type="submit" value="Edit" class="button" title="auto_ptr" /></div></form></div>
@@ -166,6 +170,6 @@ Example code:
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Amemory%3Aauto_ptr&amp;1255084836" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Amemory%3Aauto_ptr&amp;1273193266" width="1" height="1" alt=""  /></div>
 </body>
 </html>

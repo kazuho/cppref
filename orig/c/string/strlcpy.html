@@ -8,22 +8,26 @@
     strlcpy    [C++ Reference]
   </title>
 
-  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
+  <meta name="generator" content="DokuWiki Release 2009-12-25c &quot;Lemming&quot;" />
 <meta name="robots" content="index,follow" />
-<meta name="date" content="2009-01-28T07:57:52-0800" />
+<meta name="date" content="2010-03-08T09:30:33-0800" />
 <meta name="keywords" content="c,string,strlcpy" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
 <link rel="contents" href="/wiki/c/string/strlcpy?do=index" title="Index" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=c:string" />
-<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/c/string/strlcpy?do=edit" />
+<link rel="edit" title="Edit this page" href="/wiki/c/string/strlcpy?do=edit" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/c/string/strlcpy" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/c/string/strlcpy" />
-<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+<link rel="canonical" href="http://www.cppreference.com/wiki/c/string/strlcpy" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1&amp;tseed=1272971091" />
+<script type="text/javascript" charset="utf-8" ><!--//--><![CDATA[//><!--
+var NS='c:string';var JSINFO = {"id":"c:string:strlcpy","namespace":"c:string"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?tseed=1272971091" ></script>
 
   <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
 
@@ -51,7 +55,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../c/string/strlcpy.html" class="wikilink1" title="c:string:strlcpy">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/c/string/strlcpy.html" class="wikilink2" title="br-pt:c:string:strlcpy" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/c/string/strlcpy.html" class="wikilink2" title="cn:c:string:strlcpy" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/c/string/strlcpy.html" class="wikilink2" title="fr:c:string:strlcpy" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/c/string/strlcpy.html" class="wikilink2" title="it:c:string:strlcpy" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/c/string/strlcpy.html" class="wikilink2" title="jp:c:string:strlcpy" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/c/string/strlcpy.html" class="wikilink2" title="pl:c:string:strlcpy" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/c/string/strlcpy.html" class="wikilink2" title="ru:c:string:strlcpy" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/c/string/strlcpy.html" class="wikilink2" title="tr:c:string:strlcpy" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../c/string/strlcpy.html" class="wikilink1" title="c:string:strlcpy">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/c/string/strlcpy.html" class="wikilink2" title="br-pt:c:string:strlcpy" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/c/string/strlcpy.html" class="wikilink2" title="cn:c:string:strlcpy" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../cz/c/string/strlcpy.html" class="wikilink2" title="cz:c:string:strlcpy" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="../../de/c/string/strlcpy.html" class="wikilink2" title="de:c:string:strlcpy" rel="nofollow">de</a></div></li>  <li><div class="li"><a href="../../es/c/string/strlcpy.html" class="wikilink2" title="es:c:string:strlcpy" rel="nofollow">es</a></div></li>  <li><div class="li"><a href="../../fr/c/string/strlcpy.html" class="wikilink2" title="fr:c:string:strlcpy" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/c/string/strlcpy.html" class="wikilink2" title="it:c:string:strlcpy" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/c/string/strlcpy.html" class="wikilink2" title="jp:c:string:strlcpy" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../nl/c/string/strlcpy.html" class="wikilink2" title="nl:c:string:strlcpy" rel="nofollow">nl</a></div></li>  <li><div class="li"><a href="../../pl/c/string/strlcpy.html" class="wikilink2" title="pl:c:string:strlcpy" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ro/c/string/strlcpy.html" class="wikilink2" title="ro:c:string:strlcpy" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="../../ru/c/string/strlcpy.html" class="wikilink2" title="ru:c:string:strlcpy" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../sk/c/string/strlcpy.html" class="wikilink2" title="sk:c:string:strlcpy" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="../../tr/c/string/strlcpy.html" class="wikilink2" title="tr:c:string:strlcpy" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="../../tw/c/string/strlcpy.html" class="wikilink2" title="tw:c:string:strlcpy" rel="nofollow">tw</a></div></li></ul></div>
   
   
   <div class="page">
@@ -93,7 +97,7 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;string.h&gt;  // On BSD or compatible systems</span>
-    size_t strlcpy<span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy0">*</span>dst<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>src<span class="sy0">,</span> size_t siz<span class="br0">&#41;</span>;</pre>
+    size_t strlcpy<span class="br0">&#40;</span> <span class="kw4">char</span> <span class="sy0">*</span>dst<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>src<span class="sy0">,</span> size_t siz<span class="br0">&#41;</span><span class="sy0">;</span></pre>
 <p>
 An attempt of the BSD people to “fix” <a href="../../c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a>.  There is a reason this function is not in any <acronym title="International Organization for Standardization">ISO</acronym> standard.  See explanation after the description.
 </p>
@@ -104,14 +108,14 @@ An attempt of the BSD people to “fix” <a href="../../c/string/strncpy.html" 
 
 <p>
 Copy <code>src</code> to string <code>dst</code> of size <code>siz</code>.<br/>
- At most <code>siz-1</code> characters will be copied.<br/>
- Always <code>NUL</code> terminates (unless <code>siz == 0</code>).<br/>
- Returns <code>strlen(src);</code> if <code>retval &gt;= siz</code>, truncation occurred.
+At most <code>siz-1</code> characters will be copied.<br/>
+Always <code>NUL</code> terminates (unless <code>siz == 0</code>).<br/>
+Returns <code>strlen(src);</code> if <code>retval &gt;= siz</code>, truncation occurred.
 
 </p>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/string/strlcpy"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1-594" /><input type="hidden" name="rev" value="1233158272" /><input type="submit" value="Edit" class="button" title="strlcpy" /></div></form></div><div class="level2">
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/string/strlcpy"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="1-594" /><input type="hidden" name="rev" value="1268069433" /><input type="submit" value="Edit" class="button" title="strlcpy" /></div></form></div><div class="level2">
 
 <p>
 <strong>Why strlcpy is not an improvement, but rather a different, and quite possibly worse compromise:</strong>
@@ -142,7 +146,7 @@ Not much different from <a href="../../c/string/strncpy.html" class="wikilink1" 
 </p>
 
 <p>
-<em>The second “advantage”</em> seems to be more straightforward.  If I copy 5 bytes into a 42K buffer, <a href="../../c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a> will write nearly 42K for no reason whatsoever, because we are only possibly interested in the <code>NUL</code> after the 5 characters and the <code>NUL</code> at the end of the buffer.  That may be a perforance hit you do not want to pay.  If you meet such a rare situation while coding ask yourself: what is the maximum size for what I am copying?  Is this the only thing that may go into that large buffer?  It may well turn out that instead of 42*1024, you actually need 255 bytes max. for that filename you are copying.  Depending on your situation, zeroing out a few bytes more might as well worth the trouble: you can use an <acronym title="International Organization for Standardization">ISO</acronym> <em>standard</em> function.
+<em>The second “advantage”</em> seems to be more straightforward.  If I copy 5 bytes into a 42K buffer, <a href="../../c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a> will write nearly 42K for no reason whatsoever, because we are only possibly interested in the <code>NUL</code> after the 5 characters and the <code>NUL</code> at the end of the buffer.  That may be a performance hit you do not want to pay.  If you meet such a rare situation while coding ask yourself: what is the maximum size for what I am copying?  Is this the only thing that may go into that large buffer?  It may well turn out that instead of 42*1024, you actually need 255 bytes max. for that filename you are copying.  Depending on your situation, zeroing out a few bytes more might as well worth the trouble: you can use an <acronym title="International Organization for Standardization">ISO</acronym> <em>standard</em> function.
 </p>
 
 <p>
@@ -153,8 +157,20 @@ So while there are corner cases when <code>strlcpy</code> may actually be a lot 
 So even the second, not-so-controversial “benefit” of <code>strlcpy</code> over <a href="../../c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a> is questionable at best, and bogus at worse.
 </p>
 
+<p>
+<strong>Why strlcpy is actually well-designed.</strong>
+</p>
+
+<p>
+The above rant is misguided at best, a troll at worst.
+</p>
+
+<p>
+The reason strlcpy returns the number of bytes written is so that you can check for short counts. This is the “error handling” that you are ranting about. Also, if you think that not NULL-terminating a string is an acceptable mechanism of error handling, then you&#039;re pretty far gone.
+</p>
+
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/string/strlcpy"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="595-4369" /><input type="hidden" name="rev" value="1233158272" /><input type="submit" value="Edit" class="button" title="Edit" /></div></form></div><div class="level2">
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/string/strlcpy"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="595-4755" /><input type="hidden" name="rev" value="1268069433" /><input type="submit" value="Edit" class="button" title="Edit" /></div></form></div><div class="level2">
 
 <p>
 Related Topics: <a href="../../c/string/memcpy.html" class="wikilink1" title="c:string:memcpy">memcpy</a>, <a href="../../c/string/strchr.html" class="wikilink1" title="c:string:strchr">strchr</a>, <a href="../../c/string/strncpy.html" class="wikilink1" title="c:string:strncpy">strncpy</a>, <a href="../../c/string/strncat.html" class="wikilink1" title="c:string:strncat">strncat</a>, <a href="../../c/string/strncmp.html" class="wikilink1" title="c:string:strncmp">strncmp</a>
@@ -165,7 +181,7 @@ Another related (but non-standard) function is <a href="../../c/string/strlcat.h
 </p>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/string/strlcpy"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="4370-" /><input type="hidden" name="rev" value="1233158272" /><input type="submit" value="Edit" class="button" title="Edit" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/c/string/strlcpy"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="4756-" /><input type="hidden" name="rev" value="1268069433" /><input type="submit" value="Edit" class="button" title="Edit" /></div></form></div>
     <!-- wikipage stop -->
   </div>
 
@@ -179,7 +195,7 @@ Another related (but non-standard) function is <a href="../../c/string/strlcat.h
               </div>
       <!--
       <div class="doc">
-        c/string/strlcpy.txt &middot; Last modified: 01/28/2009 07:57 by 194.237.142.21      </div>
+        c/string/strlcpy.txt &middot; Last modified: 03/08/2010 09:30 by 143.111.239.69      </div>
       -->
     </div>
 
@@ -206,6 +222,6 @@ Another related (but non-standard) function is <a href="../../c/string/strlcat.h
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Astring%3Astrlcpy&amp;1255084958" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=c%3Astring%3Astrlcpy&amp;1273199896" width="1" height="1" alt=""  /></div>
 </body>
 </html>

@@ -8,22 +8,26 @@
     partial_sort_copy    [C++ Reference]
   </title>
 
-  <meta name="generator" content="DokuWiki Release 2009-02-14b" />
-<meta name="robots" content="noindex,nofollow" />
-<meta name="date" content="2009-10-09T01:47:27-0700" />
+  <meta name="generator" content="DokuWiki Release 2009-12-25c &quot;Lemming&quot;" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2010-04-07T05:01:56-0700" />
 <meta name="keywords" content="stl,algorithm,partial_sort_copy" />
 <link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
 <link rel="start" href="/wiki/" />
 <link rel="contents" href="/wiki/stl/algorithm/partial_sort_copy?do=index" title="Index" />
 <link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
 <link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=stl:algorithm" />
-<link rel="alternate" type="application/wiki" title="Edit this page" href="/wiki/stl/algorithm/partial_sort_copy?do=edit" />
+<link rel="edit" title="Edit this page" href="/wiki/stl/algorithm/partial_sort_copy?do=edit" />
 <link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/stl/algorithm/partial_sort_copy" />
 <link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/stl/algorithm/partial_sort_copy" />
-<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1" />
-<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1" />
-<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1" />
-<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?edit=0&amp;write=1" ></script>
+<link rel="canonical" href="http://www.cppreference.com/wiki/stl/algorithm/partial_sort_copy" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1&amp;tseed=1272971091" />
+<script type="text/javascript" charset="utf-8" ><!--//--><![CDATA[//><!--
+var NS='stl:algorithm';var JSINFO = {"id":"stl:algorithm:partial_sort_copy","namespace":"stl:algorithm"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?tseed=1272971091" ></script>
 
   <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
 
@@ -51,7 +55,7 @@
     
   </div>
 
-<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/partial_sort_copy.html" class="wikilink1" title="stl:algorithm:partial_sort_copy">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="br-pt:stl:algorithm:partial_sort_copy" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="cn:stl:algorithm:partial_sort_copy" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="fr:stl:algorithm:partial_sort_copy" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="it:stl:algorithm:partial_sort_copy" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="jp:stl:algorithm:partial_sort_copy" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="pl:stl:algorithm:partial_sort_copy" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="ru:stl:algorithm:partial_sort_copy" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="tr:stl:algorithm:partial_sort_copy" rel="nofollow">tr</a></div></li></ul></div>
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../../stl/algorithm/partial_sort_copy.html" class="wikilink1" title="stl:algorithm:partial_sort_copy">en</a></span></div></li>  <li><div class="li"><a href="../../br-pt/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="br-pt:stl:algorithm:partial_sort_copy" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../../cn/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="cn:stl:algorithm:partial_sort_copy" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../../cz/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="cz:stl:algorithm:partial_sort_copy" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="../../de/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="de:stl:algorithm:partial_sort_copy" rel="nofollow">de</a></div></li>  <li><div class="li"><a href="../../es/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="es:stl:algorithm:partial_sort_copy" rel="nofollow">es</a></div></li>  <li><div class="li"><a href="../../fr/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="fr:stl:algorithm:partial_sort_copy" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../../it/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="it:stl:algorithm:partial_sort_copy" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../../jp/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="jp:stl:algorithm:partial_sort_copy" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../../nl/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="nl:stl:algorithm:partial_sort_copy" rel="nofollow">nl</a></div></li>  <li><div class="li"><a href="../../pl/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="pl:stl:algorithm:partial_sort_copy" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../../ro/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="ro:stl:algorithm:partial_sort_copy" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="../../ru/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="ru:stl:algorithm:partial_sort_copy" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../../sk/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="sk:stl:algorithm:partial_sort_copy" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="../../tr/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="tr:stl:algorithm:partial_sort_copy" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="../../tw/stl/algorithm/partial_sort_copy.html" class="wikilink2" title="tw:stl:algorithm:partial_sort_copy" rel="nofollow">tw</a></div></li></ul></div>
   
   
   <div class="page">
@@ -73,8 +77,8 @@ urchinTracker();
 Syntax:
 </p>
 <pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;algorithm&gt;</span>
-    random_iterator partial_sort_copy<span class="br0">&#40;</span> input_iterator start<span class="sy0">,</span> input_iterator end<span class="sy0">,</span> random_iterator result_start<span class="sy0">,</span> random_iterator result_end <span class="br0">&#41;</span>;
-    random_iterator partial_sort_copy<span class="br0">&#40;</span> input_iterator start<span class="sy0">,</span> input_iterator end<span class="sy0">,</span> random_iterator result_start<span class="sy0">,</span> random_iterator result_end<span class="sy0">,</span> StrictWeakOrdering cmp <span class="br0">&#41;</span>;</pre>
+    random_access_iterator partial_sort_copy<span class="br0">&#40;</span> input_iterator start<span class="sy0">,</span> input_iterator end<span class="sy0">,</span> random_access_iterator result_start<span class="sy0">,</span> random_access_iterator result_end <span class="br0">&#41;</span><span class="sy0">;</span>
+    random_access_iterator partial_sort_copy<span class="br0">&#40;</span> input_iterator start<span class="sy0">,</span> input_iterator end<span class="sy0">,</span> random_access_iterator result_start<span class="sy0">,</span> random_access_iterator result_end<span class="sy0">,</span> StrictWeakOrdering cmp <span class="br0">&#41;</span><span class="sy0">;</span></pre>
 <p>
 The partial_sort_copy() algorithm behaves like partial_sort(), except that
 instead of partially sorting the range in-place, a copy of the range is created
@@ -89,11 +93,49 @@ sorted range of elements.
 </p>
 
 <p>
+
+Example:
+
+</p>
+<pre class="c code c++" style="font-family:monospace;"><span class="co1">// partial_sort_copy example</span>
+<span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;algorithm&gt;</span>
+<span class="co2">#include &lt;vector&gt;</span>
+using namespace std<span class="sy0">;</span>
+&nbsp;
+bool myfunction <span class="br0">&#40;</span><span class="kw4">int</span> i<span class="sy0">,</span><span class="kw4">int</span> j<span class="br0">&#41;</span> <span class="br0">&#123;</span> <span class="kw1">return</span> <span class="br0">&#40;</span>i<span class="sy0">&lt;</span>j<span class="br0">&#41;</span><span class="sy0">;</span> <span class="br0">&#125;</span>
+&nbsp;
+<span class="kw4">int</span> main <span class="br0">&#40;</span><span class="br0">&#41;</span> <span class="br0">&#123;</span>
+  <span class="kw4">int</span> myints<span class="br0">&#91;</span><span class="br0">&#93;</span> <span class="sy0">=</span> <span class="br0">&#123;</span>9<span class="sy0">,</span>8<span class="sy0">,</span>7<span class="sy0">,</span>6<span class="sy0">,</span>5<span class="sy0">,</span>4<span class="sy0">,</span>3<span class="sy0">,</span>2<span class="sy0">,</span>1<span class="br0">&#125;</span><span class="sy0">;</span>
+  vector<span class="sy0">&lt;</span>int<span class="sy0">&gt;</span> myvector <span class="br0">&#40;</span>5<span class="br0">&#41;</span><span class="sy0">;</span>
+  vector<span class="sy0">&lt;</span>int<span class="sy0">&gt;::</span><span class="me2">iterator</span> it<span class="sy0">;</span>
+&nbsp;
+  <span class="co1">// using default comparison (operator &lt;):</span>
+  partial_sort_copy <span class="br0">&#40;</span>myints<span class="sy0">,</span> myints<span class="sy0">+</span>9<span class="sy0">,</span> myvector.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span> myvector.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+  <span class="co1">// using function as comp</span>
+  partial_sort_copy <span class="br0">&#40;</span>myints<span class="sy0">,</span> myints<span class="sy0">+</span>9<span class="sy0">,</span> myvector.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span> myvector.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">,</span> myfunction<span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+  <span class="co1">// print out content:</span>
+  <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot;myvector contains:&quot;</span><span class="sy0">;</span>
+  <span class="kw1">for</span> <span class="br0">&#40;</span>it<span class="sy0">=</span>myvector.<span class="me1">begin</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> it<span class="sy0">!=</span>myvector.<span class="me1">end</span><span class="br0">&#40;</span><span class="br0">&#41;</span><span class="sy0">;</span> <span class="sy0">++</span>it<span class="br0">&#41;</span>
+    <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> <span class="st0">&quot; &quot;</span> <span class="sy0">&lt;&lt;</span> <span class="sy0">*</span>it<span class="sy0">;</span>
+&nbsp;
+  <a href="http://www.opengroup.org/onlinepubs/009695399/functions/cout.html"><span class="kw3">cout</span></a> <span class="sy0">&lt;&lt;</span> endl<span class="sy0">;</span>
+&nbsp;
+  <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
+<span class="br0">&#125;</span></pre>
+<p>
+Output:
+myvector contains: 1 2 3 4 5
+</p>
+
+<p>
 Related Topics: <a href="../../stl/algorithm/binary_search.html" class="wikilink1" title="stl:algorithm:binary_search">binary_search</a>, <a href="../../stl/algorithm/is_sorted.html" class="wikilink2" title="stl:algorithm:is_sorted" rel="nofollow">is_sorted</a>, <a href="../../stl/algorithm/partial_sort.html" class="wikilink1" title="stl:algorithm:partial_sort">partial_sort</a>, <a href="../../stl/algorithm/sort.html" class="wikilink1" title="stl:algorithm:sort">sort</a>, <a href="../../stl/algorithm/stable_sort.html" class="wikilink1" title="stl:algorithm:stable_sort">stable_sort</a>
 </p>
 
 </div>
-<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/algorithm/partial_sort_copy"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1255078047" /><input type="submit" value="Edit" class="button" title="partial_sort_copy" /></div></form></div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/stl/algorithm/partial_sort_copy"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1270641716" /><input type="submit" value="Edit" class="button" title="partial_sort_copy" /></div></form></div>
     <!-- wikipage stop -->
   </div>
 
@@ -107,7 +149,7 @@ Related Topics: <a href="../../stl/algorithm/binary_search.html" class="wikilink
               </div>
       <!--
       <div class="doc">
-        stl/algorithm/partial_sort_copy.txt &middot; Last modified: 10/09/2009 01:47 by 124.255.102.233      </div>
+        stl/algorithm/partial_sort_copy.txt &middot; Last modified: 04/07/2010 05:01 by 60.191.2.238      </div>
       -->
     </div>
 
@@ -134,6 +176,6 @@ Related Topics: <a href="../../stl/algorithm/binary_search.html" class="wikilink
 
 </div>
 
-<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Apartial_sort_copy&amp;1255084854" width="1" height="1" alt=""  /></div>
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=stl%3Aalgorithm%3Apartial_sort_copy&amp;1273196598" width="1" height="1" alt=""  /></div>
 </body>
 </html>

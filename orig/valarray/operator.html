@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+ lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>
+    Valarray operators    [C++ Reference]
+  </title>
+
+  <meta name="generator" content="DokuWiki Release 2009-12-25c &quot;Lemming&quot;" />
+<meta name="robots" content="index,follow" />
+<meta name="date" content="2009-11-24T17:36:36-0800" />
+<meta name="keywords" content="valarray,valarray_operators" />
+<link rel="search" type="application/opensearchdescription+xml" href="/wiki/lib/exe/opensearch.php" title="C++ Reference" />
+<link rel="start" href="/wiki/" />
+<link rel="contents" href="/wiki/valarray/valarray_operators?do=index" title="Index" />
+<link rel="alternate" type="application/rss+xml" title="Recent Changes" href="/wiki/feed.php" />
+<link rel="alternate" type="application/rss+xml" title="Current Namespace" href="/wiki/feed.php?mode=list&amp;ns=valarray" />
+<link rel="edit" title="Edit this page" href="/wiki/valarray/valarray_operators?do=edit" />
+<link rel="alternate" type="text/html" title="Plain HTML" href="/wiki/_export/xhtml/valarray/valarray_operators" />
+<link rel="alternate" type="text/plain" title="Wiki Markup" href="/wiki/_export/raw/valarray/valarray_operators" />
+<link rel="canonical" href="http://www.cppreference.com/wiki/valarray/valarray_operators" />
+<link rel="stylesheet" media="all" type="text/css" href="/wiki/lib/exe/css.php?s=all&amp;t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="screen" type="text/css" href="/wiki/lib/exe/css.php?t=custom1&amp;tseed=1272971091" />
+<link rel="stylesheet" media="print" type="text/css" href="/wiki/lib/exe/css.php?s=print&amp;t=custom1&amp;tseed=1272971091" />
+<script type="text/javascript" charset="utf-8" ><!--//--><![CDATA[//><!--
+var NS='valarray';var JSINFO = {"id":"valarray:valarray_operators","namespace":"valarray"};
+//--><!]]></script>
+<script type="text/javascript" charset="utf-8" src="/wiki/lib/exe/js.php?tseed=1272971091" ></script>
+
+  <link rel="shortcut icon" href="/wiki/lib/tpl/custom1/images/favicon.png" />
+
+  </head>
+
+<body>
+<div class="dokuwiki">
+  
+  <div class="stylehead">
+
+    <div class="header">
+      <div class="pagename">
+        [[<a href="../valarray/operator.html"  title="Backlinks">Valarray operators</a>]]
+      </div>
+      <div class="logo">
+        <a href="http://www.cppreference.com"  name="dokuwiki__top" id="dokuwiki__top" accesskey="h" title="[ALT+H]">C++ Reference</a>      </div>
+
+      <div class="clearer"></div>
+    </div>
+
+    
+    
+        <div class="breadcrumbs">
+      <span class="bchead">You are here: </span><a href="../start.html"  title="start">C++ Reference</a> &raquo; <a href="../valarray/start.html"  title="valarray:start">valarray</a> &raquo; <a href="../valarray/operator.html"  title="valarray:valarray_operators">Valarray operators</a>    </div>
+    
+  </div>
+
+<div class="plugin_translation"><span>Translations of this page<sup><a href="../localization.html" class="wikilink1" title="localization">?</a></sup>:</span> <ul>  <li><div class="li"><span class="curid"><a href="../valarray/operator.html" class="wikilink1" title="valarray:valarray_operators">en</a></span></div></li>  <li><div class="li"><a href="../br-pt/valarray/operator.html" class="wikilink2" title="br-pt:valarray:valarray_operators" rel="nofollow">br-pt</a></div></li>  <li><div class="li"><a href="../cn/valarray/operator.html" class="wikilink2" title="cn:valarray:valarray_operators" rel="nofollow">cn</a></div></li>  <li><div class="li"><a href="../cz/valarray/operator.html" class="wikilink2" title="cz:valarray:valarray_operators" rel="nofollow">cz</a></div></li>  <li><div class="li"><a href="../de/valarray/operator.html" class="wikilink2" title="de:valarray:valarray_operators" rel="nofollow">de</a></div></li>  <li><div class="li"><a href="../es/valarray/operator.html" class="wikilink2" title="es:valarray:valarray_operators" rel="nofollow">es</a></div></li>  <li><div class="li"><a href="../fr/valarray/operator.html" class="wikilink2" title="fr:valarray:valarray_operators" rel="nofollow">fr</a></div></li>  <li><div class="li"><a href="../it/valarray/operator.html" class="wikilink2" title="it:valarray:valarray_operators" rel="nofollow">it</a></div></li>  <li><div class="li"><a href="../jp/valarray/operator.html" class="wikilink2" title="jp:valarray:valarray_operators" rel="nofollow">jp</a></div></li>  <li><div class="li"><a href="../nl/valarray/operator.html" class="wikilink2" title="nl:valarray:valarray_operators" rel="nofollow">nl</a></div></li>  <li><div class="li"><a href="../pl/valarray/operator.html" class="wikilink2" title="pl:valarray:valarray_operators" rel="nofollow">pl</a></div></li>  <li><div class="li"><a href="../ro/valarray/operator.html" class="wikilink2" title="ro:valarray:valarray_operators" rel="nofollow">ro</a></div></li>  <li><div class="li"><a href="../ru/valarray/operator.html" class="wikilink2" title="ru:valarray:valarray_operators" rel="nofollow">ru</a></div></li>  <li><div class="li"><a href="../sk/valarray/operator.html" class="wikilink2" title="sk:valarray:valarray_operators" rel="nofollow">sk</a></div></li>  <li><div class="li"><a href="../tr/valarray/operator.html" class="wikilink2" title="tr:valarray:valarray_operators" rel="nofollow">tr</a></div></li>  <li><div class="li"><a href="../tw/valarray/operator.html" class="wikilink2" title="tw:valarray:valarray_operators" rel="nofollow">tw</a></div></li></ul></div>
+  
+  
+  <div class="page">
+
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2828341-1";
+urchinTracker();
+</script>
+    <!-- wikipage start -->
+    
+
+
+<h2><a name="valarray_operators" id="valarray_operators">Valarray operators</a></h2>
+<div class="level2">
+
+<p>
+Syntax:
+</p>
+<pre class="c code c++" style="font-family:monospace;">    <span class="co2">#include &lt;valarray&gt;</span>
+    valarray<span class="sy0">&amp;</span> operator<span class="sy0">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> valarray<span class="sy0">&amp;</span> v <span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// copy v</span>
+    valarray<span class="sy0">&amp;</span> operator<span class="sy0">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> T<span class="sy0">&amp;</span> val <span class="br0">&#41;</span><span class="sy0">;</span> <span class="co1">// assign val to every element</span>
+&nbsp;
+    TYPE operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> size_t index <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy0">;</span>
+    TYPE<span class="sy0">&amp;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> size_t index <span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+    valarray operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> slice s <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy0">;</span>
+    slice_array<span class="sy0">&lt;</span>TYPE<span class="sy0">&gt;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> slice s <span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+    valarray operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> gslice<span class="sy0">&amp;</span> s <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy0">;</span>
+    gslice_array<span class="sy0">&lt;</span>TYPE<span class="sy0">&gt;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> gslice<span class="sy0">&amp;</span> s <span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+    valarray operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> valarray<span class="sy0">&lt;</span>bool<span class="sy0">&gt;&amp;</span> mask <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy0">;</span>
+    mask_array<span class="sy0">&lt;</span>TYPE<span class="sy0">&gt;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> valarray<span class="sy0">&lt;</span>bool<span class="sy0">&gt;&amp;</span> mask <span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+    valarray operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> valarray<span class="sy0">&lt;</span>size_t<span class="sy0">&gt;&amp;</span> indirect <span class="br0">&#41;</span> <span class="kw4">const</span><span class="sy0">;</span>
+    indirect_array<span class="sy0">&lt;</span>TYPE<span class="sy0">&gt;</span> operator<span class="br0">&#91;</span><span class="br0">&#93;</span><span class="br0">&#40;</span> <span class="kw4">const</span> valarray<span class="sy0">&lt;</span>size_t<span class="sy0">&gt;&amp;</span> indirect <span class="br0">&#41;</span><span class="sy0">;</span>
+&nbsp;
+    valarray<span class="sy0">&amp;</span> operator<span class="sy0">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> slice_array<span class="sy0">&amp;</span> s <span class="br0">&#41;</span><span class="sy0">;</span>
+    valarray<span class="sy0">&amp;</span> operator<span class="sy0">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> gslice_array<span class="sy0">&amp;</span> g <span class="br0">&#41;</span><span class="sy0">;</span>
+    valarray<span class="sy0">&amp;</span> operator<span class="sy0">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> mask_array<span class="sy0">&amp;</span> mask <span class="br0">&#41;</span><span class="sy0">;</span>
+    valarray<span class="sy0">&amp;</span> operator<span class="sy0">=</span><span class="br0">&#40;</span> <span class="kw4">const</span> indirect_array<span class="sy0">&amp;</span> i <span class="br0">&#41;</span><span class="sy0">;</span></pre>
+<p>
+A valarray can be assigned to another of the same size. The assignment operator will copied each element from one array to the other as expected. However, if the arrays are of different sizes, the result is undefined. It is unwise to expect any errors or exception handling to occur because of mismatched array sizes or exceeding bounds of the valarray. Valarrays are optimized for speed and their implementation is machine and compiler specific.
+</p>
+
+</div>
+<div class="secedit"><form class="button btn_secedit" method="post" action="/wiki/valarray/valarray_operators"><div class="no"><input type="hidden" name="do" value="edit" /><input type="hidden" name="lines" value="3-" /><input type="hidden" name="rev" value="1259112996" /><input type="submit" value="Edit" class="button" title="Valarray operators" /></div></form></div>
+    <!-- wikipage stop -->
+  </div>
+
+  <div class="clearer">&nbsp;</div>
+
+  
+  <div class="stylefoot">
+
+    <div class="meta">
+      <div class="user">
+              </div>
+      <!--
+      <div class="doc">
+        valarray/valarray_operators.txt &middot; Last modified: 11/24/2009 17:36 by 71.199.51.93      </div>
+      -->
+    </div>
+
+   
+    <div class="bar" id="bar__bottom">
+      <div class="bar-left" id="bar__bottomleft">
+        <a href="../valarray/operator.html"  class="action edit" accesskey="e" rel="nofollow">Edit this page</a> &#149;
+        <a href="../valarray/operator.html"  class="action revisions" accesskey="o" rel="nofollow">Old revisions</a>      </div>
+      <div class="bar-right" id="bar__bottomright">
+         &#149;
+         &#149;
+         &#149;
+        <a href="../valarray/operator.html"  class="action login" rel="nofollow">Login</a> &#149;
+        <a href="../valarray/operator.html"  class="action index" accesskey="x" rel="nofollow">Index</a> &#149;
+        <a href="../valarray/operator.html"  class="action recent" accesskey="r" rel="nofollow">Recent changes</a> &#149;
+        <a  href="../feed.php.html" title="Recent changes RSS feed">RSS</a> &#149;
+        <a href='http://creativecommons.org/licenses/by/3.0/us/' title='Creative Commons license'>cc</a> &#149;
+        <form action="/wiki/" accept-charset="utf-8" class="search" id="dw__search"><div class="no"><input type="hidden" name="do" value="search" /><input type="text" id="qsearch__in" accesskey="f" name="id" class="edit" title="[ALT+F]" /><input type="submit" value="Search" class="button" title="Search" /><div id="qsearch__out" class="ajax_qsearch JSpopup"></div></div></form>&nbsp;
+      </div>
+      <div class="clearer"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="no"><img src="/wiki/lib/exe/indexer.php?id=valarray%3Avalarray_operators&amp;1273199728" width="1" height="1" alt=""  /></div>
+</body>
+</html>
