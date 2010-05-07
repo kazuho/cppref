@@ -24,7 +24,7 @@ do 'tools/tidy.pl';
 install_share 'doc';
 
 auto_include;
-auto_install;
+# auto_install;
 
 WriteAll;
 

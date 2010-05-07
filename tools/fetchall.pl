@@ -18,6 +18,7 @@ while (my $fn = shift @queue) {
     $fetched{$fn} = 1;
     my $html = get("$prefix$fn");
     $html =~ s|(<a\s+href=")/wiki/(.*?)(")|$1 . handle_link($fn, $2) . $3|eg;
+    utf8::encode($html);
     write_file(rewrite_ctor_op($fn) . ".html", $html);
 }
 
@@ -25,7 +26,7 @@ sub handle_link {
     my ($base, $dest) = @_;
     $dest =~ s/\?.*$//;
     $dest =~ s|/$|/start|;
-    unless ($dest =~ m{^(?:br-pt|cn|fr|it|jp|pl|ru|tr)/}) {
+    unless ($dest =~ m{^(?:br-pt|cn|cz|de|es|fr|it|jp|nl|pl|ro|ru|sk|tr|tw|_media)/}) {
         push @queue, $dest
             unless $fetched{$dest};
     }

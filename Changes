@@ -1,5 +1,9 @@
 Revision history for cppref.
 
+0.08  Fri May 07 07:48:00 2010
+	- fix installation issues thanks to walf443 (build script happened to be installed as well, and docs were not installed unless Makefile.PL was called multiple times)
+	- no more auto_include
+
 0.07  Wed Oct 21 10:24:00 2009
 	- change distribution_type to 'module' so that cppref will (hopefully) be indexed
 
