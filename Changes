@@ -1,5 +1,8 @@
 Revision history for cppref.
 
+0.09
+	- fix install error (do not bundle ExtUtils::MakeMaker in inc/)
+
 0.08  Fri May 07 07:48:00 2010
 	- fix installation issues thanks to walf443 (build script happened to be installed as well, and docs were not installed unless Makefile.PL was called multiple times)
 	- no more auto_include
